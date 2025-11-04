@@ -1,0 +1,239 @@
+ger than the size in the binary image header(2048k). Usin�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 11 2025 02:52:55[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a88ch ( 43148) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a8b4 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001cb10 vaddr=40080000 size=03508h ( 13576) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=154a0h ( 87200) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=000354c8 vaddr=40083508 size=09524h ( 38180) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     sr04[0m
+[0;32mI (212) cpu_start: App version:      1[0m
+[0;32mI (216) cpu_start: Compile time:     May 11 2025 02:52:14[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  100324defbb14bf4...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (233) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CA2C len 000135D4 (77 KiB): IRAM[0m
+[0;32mI (287) spi_flash: detected chip: gd[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (294) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) main: diatance is 0.00[0m
+[0;32mI (2327) main: can't wait diatance[0m
+[0;32mI (2367) main: diatance is 0.00[0m
+[0;32mI (4367) main: can't wait diatance[0m
+[0;32mI (4407) main: diatance is 0.00[0m
+[0;32mI (6407) main: can't wait diatance[0m
+[0;32mI (6407) main: diatance is 0.00[0m
+[0;32mI (8407) main: can't wait diatance[0m
+[0;32mI (8407) main: diatance is 0.00[0m
+[0;32mI (10407) main: can't wait diatance[0m
+[0;32mI (10407) main: diatance is 0.00[0m
+[0;32mI (12407) main: can't wait diatance[0m
+[0;32mI (12427) main: diatance is 0.00[0m
+[0;32mI (14427) main: can't wait diatance[0m
+[0;32mI (14467) main: diatance is 0.00[0m
+[0;32mI (16467) main: can't wait diatance[0m
+[0;32mI (16507) main: diatance is 0.00[0m
+[0;32mI (18507) main: can't wait diatance[0m
+[0;32mI (18547) main: diatance is 0.00[0m
+[0;32mI (20547) main: can't wait diatance[0m
+[0;32mI (20587) main: diatance is 0.00[0m
+[0;32mI (22587) main: can't wait diatance[0m
+[0;32mI (22587) main: diatance is 0.00[0m
+[0;32mI (24587) main: can't wait diatance[0m
+[0;32mI (24587) main: diatance is 0.00[0m
+[0;32mI (26587) main: can't wait diatance[0m
+[0;32mI (26587) main: diatance is 0.00[0m
+[0;32mI (28587) main: can't wait diatance[0m
+[0;32mI (28587) main: diatance is 0.00[0m
+[0;32mI (30587) main: can't wait diatance[0m
+[0;32mI (30587) main: diatance is 0.00[0m
+[0;32mI (32587) main: can't wait diatance[0m
+[0;32mI (32587) main: diatance is 0.00[0m
+[0;32mI (34587) main: can't wait diatance[0m
+[0;32mI (34587) main: diatance is 0.00[0m
+[0;32mI (36587) main: can't wait diatance[0m
+[0;32mI (36587) main: diatance is 0.00[0m
+[0;32mI (38587) main: can't wait diatance[0m
+[0;32mI (38587) main: diatance is 0.00[0m
+[0;32mI (40587) main: can't wait diatance[0m
+[0;32mI (40587) main: diatance is 0.00[0m
+[0;32mI (42587) main: can't wait diatance[0m
+[0;32mI (42587) main: diatance is 0.00[0m
+[0;32mI (44587) main: can't wait diatance[0m
+[0;32mI (44587) main: diatance is 0.00[0m
+[0;32mI (46587) main: can't wait diatance[0m
+[0;32mI (46587) main: diatance is 0.00[0m
+[0;32mI (48587) main: can't wait diatance[0m
+[0;32mI (48587) main: diatance is 0.00[0m
+[0;32mI (50587) main: can't wait diatance[0m
+[0;32mI (50587) main: diatance is 0.00[0m
+[0;32mI (52587) main: can't wait diatance[0m
+[0;32mI (52587) main: diatance is 0.00[0m
+[0;32mI (54587) main: can't wait diatance[0m
+[0;32mI (54587) main: diatance is 0.00[0m
+[0;32mI (56587) main: can't wait diatance[0m
+[0;32mI (56587) main: diatance is 0.00[0m
+[0;32mI (58587) main: can't wait diatance[0m
+[0;32mI (58587) main: diatance is 0.00[0m
+[0;32mI (60587) main: can't wait diatance[0m
+[0;32mI (60587) main: diatance is 0.00[0m
+[0;32mI (62587) main: can't wait diatance[0m
+[0;32mI (62587) main: diatance is 0.00[0m
+[0;32mI (64587) main: can't wait diatance[0m
+[0;32mI (64587) main: diatance is 0.00[0m
+[0;32mI (66587) main: can't wait diatance[0m
+[0;32mI (66587) main: diatance is 0.00[0m
+[0;32mI (68587) main: can't wait diatance[0m
+[0;32mI (68587) main: diatance is 0.00[0m
+[0;32mI (70587) main: can't wait diatance[0m
+[0;32mI (70587) main: diatance is 0.00[0m
+[0;32mI (72587) main: can't wait diatance[0m
+[0;32mI (72587) main: diatance is 0.00[0m
+[0;32mI (74587) main: can't wait diatance[0m
+[0;32mI (74587) main: diatance is 0.00[0m
+[0;32mI (76587) main: can't wait diatance[0m
+[0;32mI (76587) main: diatance is 0.00[0m
+[0;32mI (78587) main: can't wait diatance[0m
+[0;32mI (78587) main: diatance is 0.00[0m
+[0;32mI (80587) main: can't wait diatance[0m
+[0;32mI (80587) main: diatance is 0.00[0m
+[0;32mI (82587) main: can't wait diatance[0m
+[0;32mI (82587) main: diatance is 0.00[0m
+[0;32mI (84587) main: can't wait diatance[0m
+[0;32mI (84587) main: diatance is 0.00[0m
+[0;32mI (86587) main: can't wait diatance[0m
+[0;32mI (86587) main: diatance is 0.00[0m
+[0;32mI (88587) main: can't wait diatance[0m
+[0;32mI (88587) main: diatance is 0.00[0m
+[0;32mI (90587) main: can't wait diatance[0m
+[0;32mI (90587) main: diatance is 0.00[0m
+[0;32mI (92587) main: can't wait diatance[0m
+[0;32mI (92587) main: diatance is 0.00[0m
+[0;32mI (94587) main: can't wait diatance[0m
+[0;32mI (94587) main: diatance is 0.00[0m
+[0;32mI (96587) main: can't wait diatance[0m
+[0;32mI (96587) main: diatance is 0.00[0m
+[0;32mI (98587) main: can't wait diatance[0m
+[0;32mI (98587) main: diatance is 0.00[0m
+[0;32mI (100587) main: can't wait diatance[0m
+[0;32mI (100587) main: diatance is 0.00[0m
+[0;32mI (102587) main: can't wait diatance[0m
+[0;32mI (102587) main: diatance is 0.00[0m
+[0;32mI (104587) main: can't wait diatance[0m
+[0;32mI (104587) main: diatance is 0.00[0m
+[0;32mI (106587) main: can't wait diatance[0m
+[0;32mI (106587) main: diatance is 0.00[0m
+[0;32mI (108587) main: can't wait diatance[0m
+[0;32mI (108587) main: diatance is 0.00[0m
+[0;32mI (110587) main: can't wait diatance[0m
+[0;32mI (110587) main: diatance is 0.00[0m
+[0;32mI (112587) main: can't wait diatance[0m
+[0;32mI (112587) main: diatance is 0.00[0m
+[0;32mI (114587) main: can't wait diatance[0m
+[0;32mI (114587) main: diatance is 0.00[0m
+[0;32mI (116587) main: can't wait diatance[0m
+[0;32mI (116587) main: diatance is 0.00[0m
+[0;32mI (118587) main: can't wait diatance[0m
+[0;32mI (118587) main: diatance is 0.00[0m
+[0;32mI (120587) main: can't wait diatance[0m
+[0;32mI (120617) main: diatance is 0.00[0m
+[0;32mI (122617) main: can't wait diatance[0m
+[0;32mI (122657) main: diatance is 0.00[0m
+[0;32mI (124657) main: can't wait diatance[0m
+[0;32mI (124697) main: diatance is 0.00[0m
+[0;32mI (126697) main: can't wait diatance[0m
+[0;32mI (126737) main: diatance is 0.00[0m
+[0;32mI (128737) main: can't wait diatance[0m
+[0;32mI (128777) main: diatance is 0.00[0m
+[0;32mI (130777) main: can't wait diatance[0m
+[0;32mI (130797) main: diatance is 0.00[0m
+[0;32mI (132797) main: can't wait diatance[0m
+[0;32mI (132817) main: diatance is 0.00[0m
+[0;32mI (134817) main: can't wait diatance[0m
+[0;32mI (134857) main: diatance is 0.00[0m
+[0;32mI (136857) main: can't wait diatance[0m
+[0;32mI (136897) main: diatance is 0.00[0m
+[0;32mI (138897) main: can't wait diatance[0m
+[0;32mI (138937) main: diatance is 0.00[0m
+[0;32mI (140937) main: can't wait diatance[0m
+[0;32mI (140937) main: diatance is 0.00[0m
+[0;32mI (142937) main: can't wait diatance[0m
+[0;32mI (142957) main: diatance is 0.00[0m
+[0;32mI (144957) main: can't wait diatance[0m
+[0;32mI (144977) main: diatance is 0.00[0m
+[0;32mI (146977) main: can't wait diatance[0m
+[0;32mI (147017) main: diatance is 0.00[0m
+[0;32mI (149017) main: can't wait diatance[0m
+[0;32mI (149057) main: diatance is 0.00[0m
+[0;32mI (151057) main: can't wait diatance[0m
+[0;32mI (151057) main: diatance is 0.00[0m
+[0;32mI (153057) main: can't wait diatance[0m
+[0;32mI (153067) main: diatance is 0.00[0m
+[0;32mI (155067) main: can't wait diatance[0m
+[0;32mI (155107) main: diatance is 0.00[0m
+[0;32mI (157107) main: can't wait diatance[0m
+[0;32mI (157147) main: diatance is 0.00[0m
+[0;32mI (159147) main: can't wait diatance[0m
+[0;32mI (159187) main: diatance is 0.00[0m
+[0;32mI (161187) main: can't wait diatance[0m
+[0;32mI (161187) main: diatance is 0.00[0m
+[0;32mI (163187) main: can't wait diatance[0m
+[0;32mI (163187) main: diatance is 0.00[0m
+[0;32mI (165187) main: can't wait diatance[0m
+[0;32mI (165187) main: diatance is 0.00[0m
+[0;32mI (167187) main: can't wait diatance[0m
+[0;32mI (167187) main: diatance is 0.00[0m
+[0;32mI (169187) main: can't wait diatance[0m
+[0;32mI (169187) main: diatance is 0.00[0m
+[0;32mI (171187) main: can't wait diatance[0m
+[0;32mI (171187) main: diatance is 0.00[0m
+[0;32mI (173187) main: can't wait diatance[0m
+[0;32mI (173187) main: diatance is 0.00[0m
+[0;32mI (175187) main: can't wait diatance[0m
+[0;32mI (175187) main: diatance is 0.00[0m
+[0;32mI (177187) main: can't wait diatance[0m
+[0;32mI (177187) main: diatance is 0.00[0m
+[0;32mI (179187) main: can't wait diatance[0m
+[0;32mI (179187) main: diatance is 0.00[0m
+[0;32mI (181187) main: can't wait diatance[0m
+[0;32mI (181187) main: diatance is 0.00[0m
+[0;32mI (183187) main: can't wait diatance[0m
+[0;32mI (183187) main: diatance is 0.00[0m

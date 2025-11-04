@@ -1,0 +1,16 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d56a1: Task_NTC_read at /home/ys/esp/cx/07_ADC_ntc/build/../main/ntc_tst.c:291
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d56a1: Task_NTC_read at /home/ys/esp/cx/07_ADC_ntc/build/../main/ntc_tst.c:291
+[0m
+[0;33m--- 0x400d569e: Task_NTC_read at /home/ys/esp/cx/07_ADC_ntc/build/../main/ntc_tst.c:291
+0x40086021: vPortTaskWrapper at /home/ys/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

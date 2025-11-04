@@ -1,0 +1,138 @@
+ilable for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 l�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:00_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 16 2025 17:35:16[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MH0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 32mI (125) esp_image: segment 2: paddr=0001fa68 vaddr=40080000 size=005b0h (  1456) load[0m
+[0;32mI (128) esp_image: segment [0;32mI (171) esp_image: segment 4: paddr=00038c6c vaddr=400805b0 size=0d4f0h ( 54512) load[0m
+[0;32mI (199) boot: Loaded ap source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_ rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008DAA0 len 00012560 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (444) DHT11_Demo: [APP] APP Is Start!~
+[0m
+[0;32mI (444) DHT11_Demo: [APP] IDF Version is 5.2.0[0m
+[0;32mI (444) DHT11_Demo: [APP] Free memory: 298752 bytes[0m
+[0;32mI (444) DHT11_Demo: [APP] IDF version: v5.2[0m
+[0;31mE (444) rmt: rmt_new_rx_channel(192): mem_block_symbols must be even and at least 64[0m
+[0;31mE (454) rmt: rmt_rx_register_event_callbacks(327): invalid argument[0m
+[0;31mE (464) rmt: rmt_enable(214): invalid argument[0m
+[0;32mI (474) DHT11_Demo: START[0m
+[0;31mE (494) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (494) dth11: dth11_data_deal[0m
+[0;32mI (2494) DHT11_Demo: END[0m
+[0;31mE (3514) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (3514) dth11: dth11_data_deal[0m
+[0;32mI (5514) DHT11_Demo: END[0m
+[0;31mE (6534) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (6534) dth11: dth11_data_deal[0m
+[0;32mI (8534) DHT11_Demo: END[0m
+[0;31mE (9554) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (9554) dth11: dth11_data_deal[0m
+[0;32mI (11554) DHT11_Demo: END[0m
+[0;31mE (12574) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (12574) dth11: dth11_data_deal[0m
+[0;32mI (14574) DHT11_Demo: END[0m
+[0;31mE (15594) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (15594) dth11: dth11_data_deal[0m
+[0;32mI (17594) DHT11_Demo: END[0m
+[0;31mE (18614) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (18614) dth11: dth11_data_deal[0m
+[0;32mI (20614) DHT11_Demo: END[0m
+[0;31mE (21634) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (21634) dth11: dth11_data_deal[0m
+[0;32mI (23634) DHT11_Demo: END[0m
+[0;31mE (24654) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (24654) dth11: dth11_data_deal[0m
+[0;32mI (26654) DHT11_Demo: END[0m
+[0;31mE (27674) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (27674) dth11: dth11_data_deal[0m
+[0;32mI (29674) DHT11_Demo: END[0m
+[0;31mE (30694) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (30694) dth11: dth11_data_deal[0m
+[0;32mI (32694) DHT11_Demo: END[0m
+[0;31mE (33714) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (33714) dth11: dth11_data_deal[0m
+[0;32mI (35714) DHT11_Demo: END[0m
+[0;31mE (36734) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (36734) dth11: dth11_data_deal[0m
+[0;32mI (38734) DHT11_Demo: END[0m
+[0;31mE (39754) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (39754) dth11: dth11_data_deal[0m
+[0;32mI (41754) DHT11_Demo: END[0m
+[0;31mE (42774) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (42774) dth11: dth11_data_deal[0m
+[0;32mI (44774) DHT11_Demo: END[0m
+[0;31mE (45794) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (45794) dth11: dth11_data_deal[0m
+[0;32mI (47794) DHT11_Demo: END[0m
+[0;31mE (48814) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (48814) dth11: dth11_data_deal[0m
+[0;32mI (50814) DHT11_Demo: END[0m
+[0;31mE (51834) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (51834) dth11: dth11_data_deal[0m
+[0;32mI (53834) DHT11_Demo: END[0m
+[0;31mE (54854) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (54854) dth11: dth11_data_deal[0m
+[0;32mI (56854) DHT11_Demo: END[0m
+[0;31mE (57874) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (57874) dth11: dth11_data_deal[0m
+[0;32mI (59874) DHT11_Demo: END[0m
+[0;31mE (60894) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (60894) dth11: dth11_data_deal[0m
+[0;32mI (62894) DHT11_Demo: END[0m
+[0;31mE (63914) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (63914) dth11: dth11_data_deal[0m
+[0;32mI (65914) DHT11_Demo: END[0m
+[0;31mE (66934) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (66934) dth11: dth11_data_deal[0m
+[0;32mI (68934) DHT11_Demo: END[0m
+[0;31mE (69954) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (69954) dth11: dth11_data_deal[0m
+[0;32mI (71954) DHT11_Demo: END[0m
+[0;31mE (72974) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (72974) dth11: dth11_data_deal[0m
+[0;32mI (74974) DHT11_Demo: END[0m
+[0;31mE (75994) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (75994) dth11: dth11_data_deal[0m
+[0;32mI (77994) DHT11_Demo: END[0m
+[0;31mE (79014) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (79014) dth11: dth11_data_deal[0m
+[0;32mI (81014) DHT11_Demo: END[0m
+[0;31mE (82034) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (82034) dth11: dth11_data_deal[0m
+[0;32mI (84034) DHT11_Demo: END[0m
+[0;31mE (85054) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (85054) dth11: dth11_data_deal[0m
+[0;32mI (87054) DHT11_Demo: END[0m
+[0;31mE (88074) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (88074) dth11: dth11_data_deal[0m
+[0;32mI (90074) DHT11_Demo: END[0m
+[0;31mE (91094) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (91094) dth11: dth11_data_deal[0m

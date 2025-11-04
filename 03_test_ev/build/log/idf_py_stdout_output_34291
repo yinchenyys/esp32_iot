@@ -1,0 +1,173 @@
+�
+с4008C71C len 000138E4 (78 KiB): IRAM[�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 14 2025 10:09:28[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09524h ( 38180) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=0001954c vaddr=3ffb0000 size=0220ch (  8716) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001b760 vaddr=40080000 size=048b8h ( 18616) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13470h ( 78960) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=00033498 vaddr=400848b8 size=07e64h ( 32356) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (177) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu start user code[0m
+[0;32mI (197) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (197) cpu_start: Application information:[0m
+[0;32mI (200) cpu_start: Project name:     03_test_ev[0m
+[0;32mI (205) cpu_start: App version:      1[0m
+[0;32mI (210) cpu_start: Compile time:     Mar 14 2025 10:09:09[0m
+[0;32mI (216) cpu_start: ELF file SHA256:  9c7668580...[0m
+[0;32mI (221) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (226) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (231) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (236) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (241) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (248) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFB2AD8 len 0002D528 (181 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (280) spi_flash: detected chip: gd[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[0;32mI (311) TaskB: wait notify is 0[0m
+[0;32mI (311) TaskB: ??????[0m
+[0;32mI (1311) TaskB: wait notify is 1[0m
+[0;32mI (1311) TaskB: ??????[0m
+[0;32mI (2311) TaskB: wait notify is 2[0m
+[0;32mI (2311) TaskB: ??????[0m
+[0;32mI (3311) TaskB: wait notify is 3[0m
+[0;32mI (3311) TaskB: ??????[0m
+[0;32mI (4311) TaskB: wait notify is 4[0m
+[0;32mI (4311) TaskB: ??????[0m
+[0;32mI (5311) TaskB: wait notify is 5[0m
+[0;32mI (5311) TaskB: ??????[0m
+[0;32mI (6311) TaskB: wait notify is 6[0m
+[0;32mI (6311) TaskB: ??????[0m
+[0;32mI (7311) TaskB: wait notify is 7[0m
+[0;32mI (7311) TaskB: ??????[0m
+[0;32mI (8311) TaskB: wait notify is 8[0m
+[0;32mI (8311) TaskB: ??????[0m
+[0;32mI (9311) TaskB: wait notify is 9[0m
+[0;32mI (9311) TaskB: ??????[0m
+[0;32mI (10311) TaskB: wait notify is 10[0m
+[0;32mI (10311) TaskB: ??????[0m
+[0;32mI (11311) TaskB: wait notify is 11[0m
+[0;32mI (11311) TaskB: ??????[0m
+[0;32mI (12311) TaskB: wait notify is 12[0m
+[0;32mI (12311) TaskB: ??????[0m
+[0;32mI (13311) TaskB: wait notify is 13[0m
+[0;32mI (13311) TaskB: ??????[0m
+[0;32mI (14311) TaskB: wait notify is 14[0m
+[0;32mI (14311) TaskB: ??????[0m
+[0;32mI (15311) TaskB: wait notify is 15[0m
+[0;32mI (15311) TaskB: ??????[0m
+[0;32mI (16311) TaskB: wait notify is 16[0m
+[0;32mI (16311) TaskB: ??????[0m
+[0;32mI (17311) TaskB: wait notify is 17[0m
+[0;32mI (17311) TaskB: ??????[0m
+[0;32mI (18311) TaskB: wait notify is 18[0m
+[0;32mI (18311) TaskB: ??????[0m
+[0;32mI (19311) TaskB: wait notify is 19[0m
+[0;32mI (19311) TaskB: ??????[0m
+[0;32mI (20311) TaskB: wait notify is 20[0m
+[0;32mI (20311) TaskB: ??????[0m
+[0;32mI (21311) TaskB: wait notify is 21[0m
+[0;32mI (21311) TaskB: ??????[0m
+[0;32mI (22311) TaskB: wait notify is 22[0m
+[0;32mI (22311) TaskB: ??????[0m
+[0;32mI (23311) TaskB: wait notify is 23[0m
+[0;32mI (23311) TaskB: ??????[0m
+[0;32mI (24311) TaskB: wait notify is 24[0m
+[0;32mI (24311) TaskB: ??????[0m
+[0;32mI (25311) TaskB: wait notify is 25[0m
+[0;32mI (25311) TaskB: ??????[0m
+[0;32mI (26311) TaskB: wait notify is 26[0m
+[0;32mI (26311) TaskB: ??????[0m
+[0;32mI (27311) TaskB: wait notify is 27[0m
+[0;32mI (27311) TaskB: ??????[0m
+[0;32mI (28311) TaskB: wait notify is 28[0m
+[0;32mI (28311) TaskB: ??????[0m
+[0;32mI (29311) TaskB: wait notify is 29[0m
+[0;32mI (29311) TaskB: ??????[0m
+[0;32mI (30311) TaskB: wait notify is 30[0m
+[0;32mI (30311) TaskB: ??????[0m
+[0;32mI (31311) TaskB: wait notify is 31[0m
+[0;32mI (31311) TaskB: ??????[0m
+[0;32mI (32311) TaskB: wait notify is 32[0m
+[0;32mI (32311) TaskB: ??????[0m
+[0;32mI (33311) TaskB: wait notify is 33[0m
+[0;32mI (33311) TaskB: ??????[0m
+[0;32mI (34311) TaskB: wait notify is 34[0m
+[0;32mI (34311) TaskB: ??????[0m
+[0;32mI (35311) TaskB: wait notify is 35[0m
+[0;32mI (35311) TaskB: ??????[0m
+[0;32mI (36311) TaskB: wait notify is 36[0m
+[0;32mI (36311) TaskB: ??????[0m
+[0;32mI (37311) TaskB: wait notify is 37[0m
+[0;32mI (37311) TaskB: ??????[0m
+[0;32mI (38311) TaskB: wait notify is 38[0m
+[0;32mI (38311) TaskB: ??????[0m
+[0;32mI (39311) TaskB: wait notify is 39[0m
+[0;32mI (39311) TaskB: ??????[0m
+[0;32mI (40311) TaskB: wait notify is 40[0m
+[0;32mI (40311) TaskB: ??????[0m
+[0;32mI (41311) TaskB: wait notify is 41[0m
+[0;32mI (41311) TaskB: ??????[0m
+[0;32mI (42311) TaskB: wait notify is 42[0m
+[0;32mI (42311) TaskB: ??????[0m
+[0;32mI (43311) TaskB: wait notify is 43[0m
+[0;32mI (43311) TaskB: ??????[0m
+[0;32mI (44311) TaskB: wait notify is 44[0m
+[0;32mI (44311) TaskB: ??????[0m
+[0;32mI (45311) TaskB: wait notify is 45[0m
+[0;32mI (45311) TaskB: ??????[0m
+[0;32mI (46311) TaskB: wait notify is 46[0m
+[0;32mI (46311) TaskB: ??????[0m
+[0;32mI (47311) TaskB: wait notify is 47[0m
+[0;32mI (47311) TaskB: ??????[0m
+[0;32mI (48311) TaskB: wait notify is 48[0m
+[0;32mI (48311) TaskB: ??????[0m
+[0;32mI (49311) TaskB: wait notify is 49[0m
+[0;32mI (49311) TaskB: ??????[0m
+[0;32mI (50311) TaskB: wait notify is 50[0m
+[0;32mI (50311) TaskB: ??????[0m
+[0;32mI (51311) TaskB: wait notify is 51[0m
+[0;32mI (51311) TaskB: ??????[0m
+[0;32mI (52311) TaskB: wait notify is 52[0m
+[0;32mI (52311) TaskB: ??????[0m
+[0;32mI (53311) TaskB: wait notify is 53[0m
+[0;32mI (53311) TaskB: ??????[0m
+[0;32mI (54311) TaskB: wait notify is 54[0m
+[0;32mI (54311) TaskB: ??????[0m
+[0;32mI (55311) TaskB: wait notify is 55[0m
+[0;32mI (55311) TaskB: ??????[0m
+[0;32mI (56311) TaskB: wait notify is 56[0m
+[0;32mI (56311) TaskB: ??????[0m
+[0;32mI (57311) TaskB: wait notify is 57[0m
+[0;32mI (57311) TaskB: ??????[0m

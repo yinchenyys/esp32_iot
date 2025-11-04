@@ -1,0 +1,22 @@
+{
+    "idf.pythonInstallPath": "/home/ys/.espressif/python_env/idf5.2_py3.8_env/bin/python",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.tcc": "c",
+        "charconv": "c",
+        "chrono": "c",
+        "optional": "c",
+        "format": "c",
+        "ratio": "c",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "regex": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "istream": "c",
+        "ostream": "c",
+        "variant": "c"
+    }
+}

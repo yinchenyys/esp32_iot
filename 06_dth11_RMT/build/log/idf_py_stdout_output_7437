@@ -1,0 +1,50 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootlotion table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d688h ( 54920) map[0m
+[0;32mI (122) e[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...ation information:[0m
+[0;32mI (223) cpu_start: Project name:     dht11[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Mar 16 2025 17:33:47[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  3308e7880c92d24b...[0m
+[0;32mI (244) cpu_2) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008DAA0 len 00012560 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(8192k) largethan the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (443) DHT11_Demo: [APP] APP Is Start!~
+[0m
+[0;32mI (443) DHT11_Demo: [APP] IDF Version is 5.2.0[0m
+[0;32mI (443) DHT11_Demo: [APP] Free memory: 298752 bytes[0m
+[0;32mI (443) DHT11_Demo: [APP] IDF version: v5.2[0m
+[0;31mE (443) rmt: rmt_new_rx_channel(192): mem_block_symbols must be even and at lem
+[0;31mE (453) rmt: rmt_rx_register_event_callbacks(327): invalid argument[0m
+[0;31mE (463) rmt: rmt_enable(214): invalid argument[0m
+[0;32mI (473) DHT11_Demo: START[0m
+[0;31mE (493) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (2493) DHT11_Demo: END[0m
+[0;31mE (3513) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (5513) DHT11_Demo: END[0m
+[0;31mE (6533) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (8533) DHT11_Demo: END[0m
+[0;31mE (9553) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (11553) DHT11_Demo: END[0m
+[0;31mE (12573) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (14573) DHT11_Demo: END[0m
+[0;31mE (15593) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (17593) DHT11_Demo: END[0m
+[0;31mE (18613) rmt: rmt_receive(347): invalid argument[0m
+[0;32mI (20613) DHT11_Demo: END[0m

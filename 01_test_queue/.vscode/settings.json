@@ -1,0 +1,7 @@
+{
+    "idf.pythonInstallPath": "/usr/bin/python3",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "esp_log.h": "c"
+    }
+}

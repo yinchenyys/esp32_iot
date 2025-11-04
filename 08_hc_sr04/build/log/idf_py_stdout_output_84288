@@ -1,0 +1,150 @@
+it: At 3FFE4350 len 0001BCB0 (111 KiB): D/�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time May 11 2025 02:52:55[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot:0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi d 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a8ach ( 43180) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a8d4 vaddr=3ffb0000 size=02254h (  8788) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001cb30 vaddr=40080000 size=034e8h ( 13544) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15458h ( 87128) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=00035480 vaddr=400834e8 size=09544h ( 38212) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     sr04[0m
+[0;32mI (212) cpu_start: App version:      1[0m
+[0;32mI (216) cpu_start: Compile time:     May 11 2025 02:52:14[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  81d1e5384d3ed60c...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (233) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2B38 len 0002D4C8 (181 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008CA2C len 000135D4 (77 KiB): IRAM[0m
+[0;32mI (287) spi_flash: detected chip: gd[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (294) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (317) SR04: Configure Trig pin[0m
+[0;32mI (327) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (377) main: diatance is 924822.12[0m
+[0;32mI (2377) main: can't wait diatance[0m
+[0;32mI (2417) main: diatance is 924822.19[0m
+[0;32mI (4427) main: can't wait diatance[0m
+[0;32mI (4467) main: diatance is 924822.12[0m
+[0;32mI (6477) main: can't wait diatance[0m
+[0;32mI (6517) main: diatance is 924822.12[0m
+[0;32mI (8527) main: can't wait diatance[0m
+[0;32mI (8567) main: diatance is 924822.06[0m
+[0;32mI (10577) main: can't wait diatance[0m
+[0;32mI (10617) main: diatance is 924822.38[0m
+[0;32mI (12627) main: can't wait diatance[0m
+[0;32mI (12667) main: diatance is 924822.06[0m
+[0;32mI (14677) main: can't wait diatance[0m
+[0;32mI (14717) main: diatance is 924822.12[0m
+[0;32mI (16727) main: can't wait diatance[0m
+[0;32mI (16767) main: diatance is 924822.12[0m
+[0;32mI (18777) main: can't wait diatance[0m
+[0;32mI (18817) main: diatance is 924822.25[0m
+[0;32mI (20827) main: can't wait diatance[0m
+[0;32mI (20867) main: diatance is 924822.38[0m
+[0;32mI (22877) main: can't wait diatance[0m
+[0;32mI (22917) main: diatance is 924822.12[0m
+[0;32mI (24927) main: can't wait diatance[0m
+[0;32mI (24967) main: diatance is 924822.00[0m
+[0;32mI (26977) main: can't wait diatance[0m
+[0;32mI (27017) main: diatance is 924822.38[0m
+[0;32mI (29027) main: can't wait diatance[0m
+[0;32mI (29067) main: diatance is 924822.25[0m
+[0;32mI (31077) main: can't wait diatance[0m
+[0;32mI (31117) main: diatance is 924822.19[0m
+[0;32mI (33127) main: can't wait diatance[0m
+[0;32mI (33167) main: diatance is 924822.38[0m
+[0;32mI (35177) main: can't wait diatance[0m
+[0;32mI (35217) main: diatance is 924822.50[0m
+[0;32mI (37227) main: can't wait diatance[0m
+[0;32mI (37267) main: diatance is 924822.25[0m
+[0;32mI (39277) main: can't wait diatance[0m
+[0;32mI (39317) main: diatance is 924822.44[0m
+[0;32mI (41327) main: can't wait diatance[0m
+[0;32mI (41367) main: diatance is 924822.25[0m
+[0;32mI (43377) main: can't wait diatance[0m
+[0;32mI (43417) main: diatance is 924822.38[0m
+[0;32mI (45427) main: can't wait diatance[0m
+[0;32mI (45467) main: diatance is 924822.50[0m
+[0;32mI (47477) main: can't wait diatance[0m
+[0;32mI (47517) main: diatance is 924822.25[0m
+[0;32mI (49527) main: can't wait diatance[0m
+[0;32mI (49567) main: diatance is 924822.38[0m
+[0;32mI (51577) main: can't wait diatance[0m
+[0;32mI (51617) main: diatance is 924822.44[0m
+[0;32mI (53627) main: can't wait diatance[0m
+[0;32mI (53667) main: diatance is 924822.25[0m
+[0;32mI (55677) main: can't wait diatance[0m
+[0;32mI (55717) main: diatance is 924822.50[0m
+[0;32mI (57727) main: can't wait diatance[0m
+[0;32mI (57767) main: diatance is 924822.25[0m
+[0;32mI (59777) main: can't wait diatance[0m
+[0;32mI (59817) main: diatance is 924822.50[0m
+[0;32mI (61827) main: can't wait diatance[0m
+[0;32mI (61867) main: diatance is 924822.62[0m
+[0;32mI (63877) main: can't wait diatance[0m
+[0;32mI (63917) main: diatance is 924822.44[0m
+[0;32mI (65927) main: can't wait diatance[0m
+[0;32mI (65967) main: diatance is 924822.44[0m
+[0;32mI (67977) main: can't wait diatance[0m
+[0;32mI (68017) main: diatance is 924822.56[0m
+[0;32mI (70027) main: can't wait diatance[0m
+[0;32mI (70067) main: diatance is 924822.62[0m
+[0;32mI (72077) main: can't wait diatance[0m
+[0;32mI (72117) main: diatance is 924822.44[0m
+[0;32mI (74127) main: can't wait diatance[0m
+[0;32mI (74167) main: diatance is 924822.62[0m
+[0;32mI (76177) main: can't wait diatance[0m
+[0;32mI (76217) main: diatance is 924822.50[0m
+[0;32mI (78227) main: can't wait diatance[0m
+[0;32mI (78267) main: diatance is 924822.44[0m
+[0;32mI (80277) main: can't wait diatance[0m
+[0;32mI (80317) main: diatance is 924822.25[0m
+[0;32mI (82327) main: can't wait diatance[0m
+[0;32mI (82367) main: diatance is 924822.38[0m
+[0;32mI (84377) main: can't wait diatance[0m
+[0;32mI (84417) main: diatance is 924822.44[0m
+[0;32mI (86427) main: can't wait diatance[0m
+[0;32mI (86467) main: diatance is 924822.38[0m
+[0;32mI (88477) main: can't wait diatance[0m
+[0;32mI (88517) main: diatance is 924822.25[0m
+[0;32mI (90527) main: can't wait diatance[0m
+[0;32mI (90567) main: diatance is 924822.44[0m
+[0;32mI (92577) main: can't wait diatance[0m
+[0;32mI (92617) main: diatance is 924822.56[0m
+[0;32mI (94627) main: can't wait diatance[0m
+[0;32mI (94667) main: diatance is 924822.50[0m

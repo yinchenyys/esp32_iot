@@ -1,0 +1,194 @@
+0.安装网络远程，可用ifconfig
+sudo apt-get install net-tools
+1.安装基础软件环境
+sudo apt-get install git wget flex bison gperf python3-pip python3-venv cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0 net-tools
+2.创建一个esp文件夹，拉取工具箱
+git clone https://gitee.com/EspressifSystems/esp-gitee-tools.git
+3.打开工具箱文件夹，运行下列语句，修改指向
+./jihu-mirror.sh set
+4.回到esp文件夹，安装esp芯片包
+git clone --recursive https://github.com/espressif/esp-idf.git
+5.打开esp-idf.git切换esp版本
+git checkout v5.2
+
+git submodule update --init --recursive 
+
+../esp-gitee-tools/install.sh（下载不同版本的安装工具）
+
+
+6.安装板子
+git clone --recursive https://gitee.com/vi-iot/esp32-board.git
+
+7.打开esp-idf,执行，设置环境变量（每次打开中断需重新执行，可cd ~，打开根目录的vim .profile ，最后加入source esp/esp-idf/export.sh
+这条语句，使其打开终端自动执行）                                                                                                         source ~/esp/esp-idf/export.sh
+source export.sh
+
+8.打开esp32-board随便一个有make代码
+idf.py build 编译
+idf.py flash  烧录（看不到sudosudo chmod 777 /dev/ttyUSB0）
+idf.py monitor 查看串口输入   cltr+】关闭  
+idf.py menuconfig 配置芯片（用这个就无需使用lv_conf.h文件里，前提是打开 Component config  --->    LVGL configuration  --->[*] Uncheck this to use custom lv_conf.h
+1） Component config  --->  ESP System Settings  ---> CPU frequency (240 MHz)  --->改成240MZ
+2)  Serial flasher config  ---> Flash size (2 MB)  --->改成4MB
+3） Component config  ---> ESP PSRAM  --->[*] Support for external, SPI-connected RAM 选上
+按s,回车，回车，q
+
+
+9.打开vscode，安装esp-idf,然后打开代码点 ctrl+shift+p,搜ESP-IDF:add，添加ESP-IDF管理该代码，可以跳转查看esp代码
+
+10.添加秘钥，去除每次远程填写填写密码
+（1）打开电脑终端，写入ssh-keygen -t ed25519 -C 1617908519@qq.com，一直确定
+（2）打开电脑用户的y文件夹id_ed25519里面就写着公钥
+（3）赋值粘贴到Linux的~目录下的.ssh里面
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG7GZ2hy3r3PF28PKCfMsLJtBLO7ZYX6hEtG5IKzv92j 1617908519@qq.com
+
+
+wangmin@ut.cn  https://qnrc.newjobs.com.cn/positionDetail?id=afbf373f34eab2146a9e897bb0a5ee54
+
+
+
+
+//2025.10.28
+idf.py build
+//ESP32报错：The following Python requirements are not satisfied
+可能是安装了esp5.4.1的原因
+解决方法：
+1.rm ~/.espressif/python_env
+2. 打开需要的esp-idf 运行：
+./install.sh
+. ./export.sh
+
+sudo ifconfid ens33 up
+sudo dhclient ens33
+
+
+
+
+
+
+
+
+
+
+=======================                                  lvgl                        ==============================================
+1.创建一个lvgl_display文件夹
+idf.py create-project lvgl_display
+
+2.创建components
+
+3.在lvgl_display文件夹的make文件写入 
+set(EXRA_COMPONENT_DIRS ./components) （弹幕说最好加在include前）
+
+4.在componrnts进行克隆
+git clone --recursive https://github.com/lvgl/lvgl
+
+5.git tag 查看版本
+
+6.切换到 v8.3.10
+
+7.创建bsp放自己的组件，把~/esp/esp32-board/display/main的
+cp cst816t_driver.* ~/esp/lvgl_display/components/bsp/
+cp st7789_driver.* ~/esp/lvgl_display/components/bsp/
+ 显示屏文件移到 ~/esp/lvgl_display/components/bsp/
+
+8.并在bap创建CMakeList.txt
+写入
+idf_components_register(
+    SRCS "cst816t_driver.c"  "st7789_driver.c"  
+    INCLUDE_DIRS "."
+    REQUIRES esp_lcd
+)
+其中
+SRCS 放源码  
+INCLUDE_DIRS 包含路径
+REQUIRES  组件依赖项（main文件默认对所有组件依赖）
+
+个人编译错误总结：
+(1).一直显示找不到 #include "st7789_driver.h"  和  #include "cst816t_driver.h"
+	CMakeLists.txt                                                                  编写错误    CMakeLits   (E)->(Y)    CMakeLists
+	set(EXTRA_COMPONENT_DIRS ./components)                编写错误    EXTA   (E)->(Y)    EXTRA
+(2).heap_caps_calloc缺少参数
+	应该用heap_caps_malloc
+(3)很多错误，原因
+	#include "freertos/FreeRTOS.h"
+	#include "freertos/task.h"               要放在"freertos/FreeRTOS.h"之后
+
+9.在main文件同等目录下编写代码（由于CMakeLists已经添加components包含路径，
+所以会自动索检components文件下每一个文件夹，所以引用时不用写相对路径）
+
+//1.初始化显示屏
+//第一步：初始化空间缓存，定义 lv_disp_draw_buf_init,参看其所需类型
+//第二部,初始化lv_disp_drv_init（disp_drv）
+//并注册驱动,定义lv_disp_drv_register(disp_drv);
+
+//2.初始化触摸
+//第一部,初始化，lv_indev_drv_init
+//第二部,注册驱动, lv_indev_drv_register();
+
+//3.显示屏硬件驱动初始化，调用lv_disp_flush_ready 开启disp_drv
+//第一步，创建st7789_driver_hw_init(&st7789_config);
+/第二部：调用lv_disp_flush_ready 开启disp_drv
+
+//4.触摸硬件驱动初始化
+//第一步，创建cst816t_init(&cst816t_config);
+
+//5.给lvgl一个定时器，
+/第一步：esp_timer_create(&arg,&timer_handle);
+//第二步：esp_timer_start_periodic(timer_handle,tick_interval*1000);//让定时器周期地运行,参数：(句柄，周期时间，)
+//第三步:lv_tick_inc();写入时间间隔
+
+6.配置：
+idf.py menuconfig 
+            Serial flasher config  --->Flash size (2 MB)      ---> 4MB
+esc-->  Component config   --->ESP PSRAM              --->[*] Support for external, SPI-connected RAM  (打来SPI RAM)
+                                                    ESP System Settings  --->CPU frequency (160 MHz)  --->240MHZ
+			    LVGL configuration  --->Color settings  --->[* ] Swap the 2 bytes of RGB565 color. Useful if the display has an 8-bit interface (e.g. SPI).
+                                                                                            Memory settings  --->[* ] If true use custom malloc/free, otherwise use the built-in `lv_mem_alloc()` and `lv_mem_free()`
+                                                                                             Demos  --->[* ] Show some widget
+按s,回车，回车，q
+
+
+
+
+7.改变字体大小：
+idf.py menuconfig 
+            
+esc-->  Component config   ---> LVGL configuration  --->  Font usage  ---> Select theme default title font (Montserrat 20)  --->
+
+
+
+
+8.创建子组件
+lv_btn_create();                                                 lv_label_set_text();                     
+lv_obj_align();                                                   lv_obj_set_style_text_font(lv_font_montserrat_20);
+lv_obj_set_size();                                                        
+lv_obj_set_style_bg_color(lv_palette_main);
+
+                   lv_obj_add_event_cb(ui_button,lv_event_cb,LV_EVENT_CLICKED,NULL);
+                   lv_event_get_code(e)
+
+
+
+
+
+
+9.图片转换地址：https://lvgl.io/tools/imageconverter
+
+声波测距
+esp_clk_apb_freq（)//获取时钟频率
+
+
+
+
+
+10.连接不到串口
+window+R 输入seriverce.msc
+找到 VMare USB 选为手动 打开 重启 VMare
+
+
+11.设置自定义分区表
+//    Partition Table  --->  第一行 ： Partition Table (Custom partition table CSV)  ---> (X) Custom partition table CSV
+//                                      第二行 : (partitions_user.csv) Custom partition CSV file 输入分区表名(分区表要放在根目录)   partitions_user.csv 
+
+
+

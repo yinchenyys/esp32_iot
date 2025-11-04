@@ -1,0 +1,88 @@
+detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;33mW (300) spi_flash: Detected size(8192k) larger than the size i�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+ent[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Apr  9 2025 14:48:32[0m
+[0;32mI (otloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early ..[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f  00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a274h ( 41588) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001a29c vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (118) esp_image: segmp_image: segment 3: paddr=0001c4bc vaddr=40080000 size=03b5ch ( 15196) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1506ch ( 86124) map[0m
+[0;32mI (170) esp_image: segment 5: paddr=00035094 vaddr=40083b5c size=08bc0h ( 35776) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI pu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     np version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Apr  9 2025 14:47:55[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  6c2af53fa82fb526...[0mrt: Max chip rev:     v3.99 [0m
+[0;32mI (249) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (254) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FFAE6E0 len 00001920 (6I (273) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (293) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;33mW (300) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image heade
+[0;32mI (324) main: current temp:0.00[0m
+[0;32mI (1334) main: current temp:26.93[0m
+[0;32mI (2334) main: current temp:26.90[0m
+[0;32mI (3334) main: current temp:26.96[0m
+[0;32mI (4334) main: current temp:26.96[0m
+[0;32mI (5334) main: current temp:27.02[0m
+[0;32mI (6334) main: current temp:26.93[0m
+[0;32mI (7334) main: current temp:27.04[0m
+[0;32mI (8334) main: current temp:27.07[0m
+[0;32mI (9334) main: current temp:27.04[0m
+[0;32mI (10334) main: current temp:27.04[0m
+[0;32mI (11334) main: current temp:27.07[0m
+[0;32mI (12334) main: current temp:27.04[0m
+[0;32mI (13334) main: current temp:27.07[0m
+[0;32mI (14334) main: current temp:27.04[0m
+[0;32mI (15334) main: current temp:27.10[0m
+[0;32mI (16334) main: current temp:27.07[0m
+[0;32mI (17334) main: current temp:27.10[0m
+[0;32mI (18334) main: current temp:27.07[0m
+[0;32mI (19334) main: current temp:27.10[0m
+[0;32mI (20334) main: current temp:27.13[0m
+[0;32mI (21334) main: current temp:27.16[0m
+[0;32mI (22334) main: current temp:27.13[0m
+[0;32mI (23334) main: current temp:27.16[0m
+[0;32mI (24334) main: current temp:27.22[0m
+[0;32mI (25334) main: current temp:27.13[0m
+[0;32mI (26334) main: current temp:27.19[0m
+[0;32mI (27334) main: current temp:27.19[0m
+[0;32mI (28334) main: current temp:27.16[0m
+[0;32mI (29334) main: current temp:27.22[0m
+[0;32mI (30334) main: current temp:27.22[0m
+[0;32mI (31334) main: current temp:27.24[0m
+[0;32mI (32334) main: current temp:27.19[0m
+[0;32mI (33334) main: current temp:27.22[0m
+[0;32mI (34334) main: current temp:27.16[0m
+[0;32mI (35334) main: current temp:27.22[0m
+[0;32mI (36334) main: current temp:27.24[0m
+[0;32mI (37334) main: current temp:27.19[0m
+[0;32mI (38334) main: current temp:27.24[0m
+[0;32mI (39334) main: current temp:27.30[0m
+[0;32mI (40334) main: current temp:27.33[0m

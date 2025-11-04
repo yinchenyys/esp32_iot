@@ -1,0 +1,12 @@
+{
+    "idf.pythonInstallPath": "/usr/bin/python3",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "mqtt_client.h": "c",
+        "semphr.h": "c",
+        "esp_log.h": "c",
+        "esp_wifi.h": "c",
+        "simple_wifi_sta.h": "c",
+        "esp_err.h": "c"
+    }
+}

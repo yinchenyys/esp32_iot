@@ -1,0 +1,1316 @@
+ Detected size(8192k) larger than the size in the binaryets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 16 2025 17:35:16[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) bp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d718h ( 55064) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001d740 vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001fa68 vaddr=40080000 size=005b0h (  1456) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18c64h (101476) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00038c8c vaddr=400805b0 size=0d4f0h ( 54512) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     dht11[0m
+[0;32mI (228) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Mar 16 2025 17:33:47[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  a7edb4e48693a8ac...[0m
+[0;32mI (244) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (249) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008DAA0 len 00012560 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (444) DHT11_Demo: [APP] APP Is Start!~
+[0m
+[0;32mI (444) DHT11_Demo: [APP] IDF Version is 5.2.0[0m
+[0;32mI (444) DHT11_Demo: [APP] Free memory: 298752 bytes[0m
+[0;32mI (444) DHT11_Demo: [APP] IDF version: v5.2[0m
+[0;32mI (454) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (454) DHT11_Demo: START[0m
+[0;32mI (484) dth11: dth11_data_deal[0m
+[0;32mI (484) dth11: xQueueReceive get[0m
+[0;32mI (484) DHT11_Demo: END[0m
+[0;32mI (1504) dth11: dth11_data_deal[0m
+[0;32mI (1504) dth11: xQueueReceive get[0m
+[0;32mI (1504) DHT11_Demo: END[0m
+[0;32mI (2524) dth11: dth11_data_deal[0m
+[0;32mI (2524) dth11: xQueueReceive get[0m
+[0;32mI (2524) DHT11_Demo: END[0m
+[0;32mI (3544) dth11: dth11_data_deal[0m
+[0;32mI (3544) dth11: xQueueReceive get[0m
+[0;32mI (3544) DH[0;32mI (4564) dth11: dth11_data_deal[0m
+[0;32mI (4564) dth11: xQueueReceive get[0m
+[0;32mI (4564) DHT11_Demo: END[0m
+[0;32mI (5584) dth11: dth11_data_deal[0m
+[0;32mI (5584) dth11: xQueueReceive get[0m
+[0;32mI (5584) DHT11_Demo: END[0m
+[0;32mI (6604) dth11: dth11_data_deal[0m
+[0;32mI (6604) dth11: xQueueReceive get[0m
+[0;32mI (6604) DHT11_Demo: END[0m
+[0;32mI (7624) dth11: dth11_data_deal[0m
+[0;32mI (7624) dth11: xQueueReceive get[0m
+[0;32mI (7624) DHT11_Demo: END[0m
+[0;32mI (8644) dth11: dth11_data_deal[0m
+[0;32mI (8644) dth11: xQueueReceive get[0m
+[0;32mI (8644) DHT11_Demo: END[0m
+[0;32mI (9664) dth11: dth11_data_deal[0m
+[0;32mI (9664) dth11: xQueueReceive get[0m
+[0;32mI (9664) DHT11_Demo: END[0m
+[0;32mI (10684) dth11: dth11_data_deal[0m
+[0;32mI (10684) dth11: xQueueReceive get[0m
+[0;32mI (10684) DHT11_Demo: END[0m
+[0;32mI (11704) dth11: dth11_data_deal[0m
+[0;32mI (11704) dth11: xQueueReceive get[0m
+[0;32mI (11704) DHT11_Demo: END[0m
+[0;32mI (12724) dth11: dth11_data_deal[0m
+[0;32mI (12724) dth11: xQueueReceive get[0m
+[0;32mI (12724) DHT11_Demo: END[0m
+[0;32mI (13744) dth11: dth11_data_deal[0m
+[0;32mI (13744) dth11: xQueueReceive get[0m
+[0;32mI (13744) DHT11_Demo: END[0m
+[0;32mI (14764) dth11: dth11_data_deal[0m
+[0;32mI (14764) dth11: xQueueReceive get[0m
+[0;32mI (14764) DHT11_Demo: END[0m
+[0;32mI (15784) dth11: dth11_data_deal[0m
+[0;32mI (15784) dth11: xQueueReceive get[0m
+[0;32mI (15784) DHT11_Demo: END[0m
+[0;32mI (16804) dth11: dth11_data_deal[0m
+[0;32mI (16804) dth11: xQueueReceive get[0m
+[0;32mI (16804) DHT11_Demo: END[0m
+[0;32mI (17824) dth11: dth11_data_deal[0m
+[0;32mI (17824) dth11: xQueueReceive get[0m
+[0;32mI (17824) DHT11_Demo: END[0m
+[0;32mI (18844) dth11: dth11_data_deal[0m
+[0;32mI (18844) dth11: xQueueReceive get[0m
+[0;32mI (18844) DHT11_Demo: END[0m
+[0;32mI (19864) dth11: dth11_data_deal[0m
+[0;32mI (19864) dth11: xQueueReceive get[0m
+[0;32mI (19864) DHT11_Demo: END[0m
+[0;32mI (20884) dth11: dth11_data_deal[0m
+[0;32mI (20884) dth11: xQueueReceive get[0m
+[0;32mI (20884) DHT11_Demo: END[0m
+[0;32mI (21904) dth11: dth11_data_deal[0m
+[0;32mI (21904) dth11: xQueueReceive get[0m
+[0;32mI (21904) DHT11_Demo: END[0m
+[0;32mI (22924) dth11: dth11_data_deal[0m
+[0;32mI (22924) dth11: xQueueReceive get[0m
+[0;32mI (22924) DHT11_Demo: END[0m
+[0;32mI (23944) dth11: dth11_data_deal[0m
+[0;32mI (23944) dth11: xQueueReceive get[0m
+[0;32mI (23944) DHT11_Demo: END[0m
+[0;32mI (24964) dth11: dth11_data_deal[0m
+[0;32mI (24964) dth11: xQueueReceive get[0m
+[0;32mI (24964) DHT11_Demo: END[0m
+[0;32mI (25984) dth11: dth11_data_deal[0m
+[0;32mI (25984) dth11: xQueueReceive get[0m
+[0;32mI (25984) DHT11_Demo: END[0m
+[0;32mI (27004) dth11: dth11_data_deal[0m
+[0;32mI (27004) dth11: xQueueReceive get[0m
+[0;32mI (27004) DHT11_Demo: END[0m
+[0;32mI (28024) dth11: dth11_data_deal[0m
+[0;32mI (28024) dth11: xQueueReceive get[0m
+[0;32mI (28024) DHT11_Demo: END[0m
+[0;32mI (29044) dth11: dth11_data_deal[0m
+[0;32mI (29044) dth11: xQueueReceive get[0m
+[0;32mI (29044) DHT11_Demo: END[0m
+[0;32mI (30064) dth11: dth11_data_deal[0m
+[0;32mI (30064) dth11: xQueueReceive get[0m
+[0;32mI (30064) DHT11_Demo: END[0m
+[0;32mI (31084) dth11: dth11_data_deal[0m
+[0;32mI (31084) dth11: xQueueReceive get[0m
+[0;32mI (31084) DHT11_Demo: END[0m
+[0;32mI (32104) dth11: dth11_data_deal[0m
+[0;32mI (32104) dth11: xQueueReceive get[0m
+[0;32mI (32104) DHT11_Demo: END[0m
+[0;32mI (33124) dth11: dth11_data_deal[0m
+[0;32mI (33124) dth11: xQueueReceive get[0m
+[0;32mI (33124) DHT11_Demo: END[0m
+[0;32mI (34144) dth11: dth11_data_deal[0m
+[0;32mI (34144) dth11: xQueueReceive get[0m
+[0;32mI (34144) DHT11_Demo: END[0m
+[0;32mI (35164) dth11: dth11_data_deal[0m
+[0;32mI (35164) dth11: xQueueReceive get[0m
+[0;32mI (35164) DHT11_Demo: END[0m
+[0;32mI (36184) dth11: dth11_data_deal[0m
+[0;32mI (36184) dth11: xQueueReceive get[0m
+[0;32mI (36184) DHT11_Demo: END[0m
+[0;32mI (37204) dth11: dth11_data_deal[0m
+[0;32mI (37204) dth11: xQueueReceive get[0m
+[0;32mI (37204) DHT11_Demo: END[0m
+[0;32mI (38224) dth11: dth11_data_deal[0m
+[0;32mI (38224) dth11: xQueueReceive get[0m
+[0;32mI (38224) DHT11_Demo: END[0m
+[0;32mI (39244) dth11: dth11_data_deal[0m
+[0;32mI (39244) dth11: xQueueReceive get[0m
+[0;32mI (39244) DHT11_Demo: END[0m
+[0;32mI (40264) dth11: dth11_data_deal[0m
+[0;32mI (40264) dth11: xQueueReceive get[0m
+[0;32mI (40264) DHT11_Demo: END[0m
+[0;32mI (41284) dth11: dth11_data_deal[0m
+[0;32mI (41284) dth11: xQueueReceive get[0m
+[0;32mI (41284) DHT11_Demo: END[0m
+[0;32mI (42304) dth11: dth11_data_deal[0m
+[0;32mI (42304) dth11: xQueueReceive get[0m
+[0;32mI (42304) DHT11_Demo: END[0m
+[0;32mI (43324) dth11: dth11_data_deal[0m
+[0;32mI (43324) dth11: xQueueReceive get[0m
+[0;32mI (43324) DHT11_Demo: END[0m
+[0;32mI (44344) dth11: dth11_data_deal[0m
+[0;32mI (44344) dth11: xQueueReceive get[0m
+[0;32mI (44344) DHT11_Demo: END[0m
+[0;32mI (45364) dth11: dth11_data_deal[0m
+[0;32mI (45364) dth11: xQueueReceive get[0m
+[0;32mI (45364) DHT11_Demo: END[0m
+[0;32mI (46384) dth11: dth11_data_deal[0m
+[0;32mI (46384) dth11: xQueueReceive get[0m
+[0;32mI (46384) DHT11_Demo: END[0m
+[0;32mI (47404) dth11: dth11_data_deal[0m
+[0;32mI (47404) dth11: xQueueReceive get[0m
+[0;32mI (47404) DHT11_Demo: END[0m
+[0;32mI (48424) dth11: dth11_data_deal[0m
+[0;32mI (48424) dth11: xQueueReceive get[0m
+[0;32mI (48424) DHT11_Demo: END[0m
+[0;32mI (49444) dth11: dth11_data_deal[0m
+[0;32mI (49444) dth11: xQueueReceive get[0m
+[0;32mI (49444) DHT11_Demo: END[0m
+[0;32mI (50464) dth11: dth11_data_deal[0m
+[0;32mI (50464) dth11: xQueueReceive get[0m
+[0;32mI (50464) DHT11_Demo: END[0m
+[0;32mI (51484) dth11: dth11_data_deal[0m
+[0;32mI (51484) dth11: xQueueReceive get[0m
+[0;32mI (51484) DHT11_Demo: END[0m
+[0;32mI (52504) dth11: dth11_data_deal[0m
+[0;32mI (52504) dth11: xQueueReceive get[0m
+[0;32mI (52504) DHT11_Demo: END[0m
+[0;32mI (53524) dth11: dth11_data_deal[0m
+[0;32mI (53524) dth11: xQueueReceive get[0m
+[0;32mI (53524) DHT11_Demo: END[0m
+[0;32mI (54544) dth11: dth11_data_deal[0m
+[0;32mI (54544) dth11: xQueueReceive get[0m
+[0;32mI (54544) DHT11_Demo: END[0m
+[0;32mI (55564) dth11: dth11_data_deal[0m
+[0;32mI (55564) dth11: xQueueReceive get[0m
+[0;32mI (55564) DHT11_Demo: END[0m
+[0;32mI (56584) dth11: dth11_data_deal[0m
+[0;32mI (56584) dth11: xQueueReceive get[0m
+[0;32mI (56584) DHT11_Demo: END[0m
+[0;32mI (57604) dth11: dth11_data_deal[0m
+[0;32mI (57604) dth11: xQueueReceive get[0m
+[0;32mI (57604) DHT11_Demo: END[0m
+[0;32mI (58624) dth11: dth11_data_deal[0m
+[0;32mI (58624) dth11: xQueueReceive get[0m
+[0;32mI (58624) DHT11_Demo: END[0m
+[0;32mI (59644) dth11: dth11_data_deal[0m
+[0;32mI (59644) dth11: xQueueReceive get[0m
+[0;32mI (59644) DHT11_Demo: END[0m
+[0;32mI (60664) dth11: dth11_data_deal[0m
+[0;32mI (60664) dth11: xQueueReceive get[0m
+[0;32mI (60664) DHT11_Demo: END[0m
+[0;32mI (61684) dth11: dth11_data_deal[0m
+[0;32mI (61684) dth11: xQueueReceive get[0m
+[0;32mI (61684) DHT11_Demo: END[0m
+[0;32mI (62704) dth11: dth11_data_deal[0m
+[0;32mI (62704) dth11: xQueueReceive get[0m
+[0;32mI (62704) DHT11_Demo: END[0m
+[0;32mI (63724) dth11: dth11_data_deal[0m
+[0;32mI (63724) dth11: xQueueReceive get[0m
+[0;32mI (63724) DHT11_Demo: END[0m
+[0;32mI (64744) dth11: dth11_data_deal[0m
+[0;32mI (64744) dth11: xQueueReceive get[0m
+[0;32mI (64744) DHT11_Demo: END[0m
+[0;32mI (65764) dth11: dth11_data_deal[0m
+[0;32mI (65764) dth11: xQueueReceive get[0m
+[0;32mI (65764) DHT11_Demo: END[0m
+[0;32mI (66784) dth11: dth11_data_deal[0m
+[0;32mI (66784) dth11: xQueueReceive get[0m
+[0;32mI (66784) DHT11_Demo: END[0m
+[0;32mI (67804) dth11: dth11_data_deal[0m
+[0;32mI (67804) dth11: xQueueReceive get[0m
+[0;32mI (67804) DHT11_Demo: END[0m
+[0;32mI (68824) dth11: dth11_data_deal[0m
+[0;32mI (68824) dth11: xQueueReceive get[0m
+[0;32mI (68824) DHT11_Demo: END[0m
+[0;32mI (69844) dth11: dth11_data_deal[0m
+[0;32mI (69844) dth11: xQueueReceive get[0m
+[0;32mI (69844) DHT11_Demo: END[0m
+[0;32mI (70864) dth11: dth11_data_deal[0m
+[0;32mI (70864) dth11: xQueueReceive get[0m
+[0;32mI (70864) DHT11_Demo: END[0m
+[0;32mI (71884) dth11: dth11_data_deal[0m
+[0;32mI (71884) dth11: xQueueReceive get[0m
+[0;32mI (71884) DHT11_Demo: END[0m
+[0;32mI (72904) dth11: dth11_data_deal[0m
+[0;32mI (72904) dth11: xQueueReceive get[0m
+[0;32mI (72904) DHT11_Demo: END[0m
+[0;32mI (73924) dth11: dth11_data_deal[0m
+[0;32mI (73924) dth11: xQueueReceive get[0m
+[0;32mI (73924) DHT11_Demo: END[0m
+[0;32mI (74944) dth11: dth11_data_deal[0m
+[0;32mI (74944) dth11: xQueueReceive get[0m
+[0;32mI (74944) DHT11_Demo: END[0m
+[0;32mI (75964) dth11: dth11_data_deal[0m
+[0;32mI (75964) dth11: xQueueReceive get[0m
+[0;32mI (75964) DHT11_Demo: END[0m
+[0;32mI (76984) dth11: dth11_data_deal[0m
+[0;32mI (76984) dth11: xQueueReceive get[0m
+[0;32mI (76984) DHT11_Demo: END[0m
+[0;32mI (78004) dth11: dth11_data_deal[0m
+[0;32mI (78004) dth11: xQueueReceive get[0m
+[0;32mI (78004) DHT11_Demo: END[0m
+[0;32mI (79024) dth11: dth11_data_deal[0m
+[0;32mI (79024) dth11: xQueueReceive get[0m
+[0;32mI (79024) DHT11_Demo: END[0m
+[0;32mI (80044) dth11: dth11_data_deal[0m
+[0;32mI (80044) dth11: xQueueReceive get[0m
+[0;32mI (80044) DHT11_Demo: END[0m
+[0;32mI (81064) dth11: dth11_data_deal[0m
+[0;32mI (81064) dth11: xQueueReceive get[0m
+[0;32mI (81064) DHT11_Demo: END[0m
+[0;32mI (82084) dth11: dth11_data_deal[0m
+[0;32mI (82084) dth11: xQueueReceive get[0m
+[0;32mI (82084) DHT11_Demo: END[0m
+[0;32mI (83104) dth11: dth11_data_deal[0m
+[0;32mI (83104) dth11: xQueueReceive get[0m
+[0;32mI (83104) DHT11_Demo: END[0m
+[0;32mI (84124) dth11: dth11_data_deal[0m
+[0;32mI (84124) dth11: xQueueReceive get[0m
+[0;32mI (84124) DHT11_Demo: END[0m
+[0;32mI (85144) dth11: dth11_data_deal[0m
+[0;32mI (85144) dth11: xQueueReceive get[0m
+[0;32mI (85144) DHT11_Demo: END[0m
+[0;32mI (86164) dth11: dth11_data_deal[0m
+[0;32mI (86164) dth11: xQueueReceive get[0m
+[0;32mI (86164) DHT11_Demo: END[0m
+[0;32mI (87184) dth11: dth11_data_deal[0m
+[0;32mI (87184) dth11: xQueueReceive get[0m
+[0;32mI (87184) DHT11_Demo: END[0m
+[0;32mI (88204) dth11: dth11_data_deal[0m
+[0;32mI (88204) dth11: xQueueReceive get[0m
+[0;32mI (88204) DHT11_Demo: END[0m
+[0;32mI (89224) dth11: dth11_data_deal[0m
+[0;32mI (89224) dth11: xQueueReceive get[0m
+[0;32mI (89224) DHT11_Demo: END[0m
+[0;32mI (90244) dth11: dth11_data_deal[0m
+[0;32mI (90244) dth11: xQueueReceive get[0m
+[0;32mI (90244) DHT11_Demo: END[0m
+[0;32mI (91264) dth11: dth11_data_deal[0m
+[0;32mI (91264) dth11: xQueueReceive get[0m
+[0;32mI (91264) DHT11_Demo: END[0m
+[0;32mI (92284) dth11: dth11_data_deal[0m
+[0;32mI (92284) dth11: xQueueReceive get[0m
+[0;32mI (92284) DHT11_Demo: END[0m
+[0;32mI (93304) dth11: dth11_data_deal[0m
+[0;32mI (93304) dth11: xQueueReceive get[0m
+[0;32mI (93304) DHT11_Demo: END[0m
+[0;32mI (94324) dth11: dth11_data_deal[0m
+[0;32mI (94324) dth11: xQueueReceive get[0m
+[0;32mI (94324) DHT11_Demo: END[0m
+[0;32mI (95344) dth11: dth11_data_deal[0m
+[0;32mI (95344) dth11: xQueueReceive get[0m
+[0;32mI (95344) DHT11_Demo: END[0m
+[0;32mI (96364) dth11: dth11_data_deal[0m
+[0;32mI (96364) dth11: xQueueReceive get[0m
+[0;32mI (96364) DHT11_Demo: END[0m
+[0;32mI (97384) dth11: dth11_data_deal[0m
+[0;32mI (97384) dth11: xQueueReceive get[0m
+[0;32mI (97384) DHT11_Demo: END[0m
+[0;32mI (98404) dth11: dth11_data_deal[0m
+[0;32mI (98404) dth11: xQueueReceive get[0m
+[0;32mI (98404) DHT11_Demo: END[0m
+[0;32mI (99424) dth11: dth11_data_deal[0m
+[0;32mI (99424) dth11: xQueueReceive get[0m
+[0;32mI (99424) DHT11_Demo: END[0m
+[0;32mI (100444) dth11: dth11_data_deal[0m
+[0;32mI (100444) dth11: xQueueReceive get[0m
+[0;32mI (100444) DHT11_Demo: END[0m
+[0;32mI (101464) dth11: dth11_data_deal[0m
+[0;32mI (101464) dth11: xQueueReceive get[0m
+[0;32mI (101464) DHT11_Demo: END[0m
+[0;32mI (102484) dth11: dth11_data_deal[0m
+[0;32mI (102484) dth11: xQueueReceive get[0m
+[0;32mI (102484) DHT11_Demo: END[0m
+[0;32mI (103504) dth11: dth11_data_deal[0m
+[0;32mI (103504) dth11: xQueueReceive get[0m
+[0;32mI (103504) DHT11_Demo: END[0m
+[0;32mI (104524) dth11: dth11_data_deal[0m
+[0;32mI (104524) dth11: xQueueReceive get[0m
+[0;32mI (104524) DHT11_Demo: END[0m
+[0;32mI (105544) dth11: dth11_data_deal[0m
+[0;32mI (105544) dth11: xQueueReceive get[0m
+[0;32mI (105544) DHT11_Demo: END[0m
+[0;32mI (106564) dth11: dth11_data_deal[0m
+[0;32mI (106564) dth11: xQueueReceive get[0m
+[0;32mI (106564) DHT11_Demo: END[0m
+[0;32mI (107584) dth11: dth11_data_deal[0m
+[0;32mI (107584) dth11: xQueueReceive get[0m
+[0;32mI (107584) DHT11_Demo: END[0m
+[0;32mI (108604) dth11: dth11_data_deal[0m
+[0;32mI (108604) dth11: xQueueReceive get[0m
+[0;32mI (108604) DHT11_Demo: END[0m
+[0;32mI (109624) dth11: dth11_data_deal[0m
+[0;32mI (109624) dth11: xQueueReceive get[0m
+[0;32mI (109624) DHT11_Demo: END[0m
+[0;32mI (110644) dth11: dth11_data_deal[0m
+[0;32mI (110644) dth11: xQueueReceive get[0m
+[0;32mI (110644) DHT11_Demo: END[0m
+[0;32mI (111664) dth11: dth11_data_deal[0m
+[0;32mI (111664) dth11: xQueueReceive get[0m
+[0;32mI (111664) DHT11_Demo: END[0m
+[0;32mI (112684) dth11: dth11_data_deal[0m
+[0;32mI (112684) dth11: xQueueReceive get[0m
+[0;32mI (112684) DHT11_Demo: END[0m
+[0;32mI (113704) dth11: dth11_data_deal[0m
+[0;32mI (113704) dth11: xQueueReceive get[0m
+[0;32mI (113704) DHT11_Demo: END[0m
+[0;32mI (114724) dth11: dth11_data_deal[0m
+[0;32mI (114724) dth11: xQueueReceive get[0m
+[0;32mI (114724) DHT11_Demo: END[0m
+[0;32mI (115744) dth11: dth11_data_deal[0m
+[0;32mI (115744) dth11: xQueueReceive get[0m
+[0;32mI (115744) DHT11_Demo: END[0m
+[0;32mI (116764) dth11: dth11_data_deal[0m
+[0;32mI (116764) dth11: xQueueReceive get[0m
+[0;32mI (116764) DHT11_Demo: END[0m
+[0;32mI (117784) dth11: dth11_data_deal[0m
+[0;32mI (117784) dth11: xQueueReceive get[0m
+[0;32mI (117784) DHT11_Demo: END[0m
+[0;32mI (118804) dth11: dth11_data_deal[0m
+[0;32mI (118804) dth11: xQueueReceive get[0m
+[0;32mI (118804) DHT11_Demo: END[0m
+[0;32mI (119824) dth11: dth11_data_deal[0m
+[0;32mI (119824) dth11: xQueueReceive get[0m
+[0;32mI (119824) DHT11_Demo: END[0m
+[0;32mI (120844) dth11: dth11_data_deal[0m
+[0;32mI (120844) dth11: xQueueReceive get[0m
+[0;32mI (120844) DHT11_Demo: END[0m
+[0;32mI (121864) dth11: dth11_data_deal[0m
+[0;32mI (121864) dth11: xQueueReceive get[0m
+[0;32mI (121864) DHT11_Demo: END[0m
+[0;32mI (122884) dth11: dth11_data_deal[0m
+[0;32mI (122884) dth11: xQueueReceive get[0m
+[0;32mI (122884) DHT11_Demo: END[0m
+[0;32mI (123904) dth11: dth11_data_deal[0m
+[0;32mI (123904) dth11: xQueueReceive get[0m
+[0;32mI (123904) DHT11_Demo: END[0m
+[0;32mI (124924) dth11: dth11_data_deal[0m
+[0;32mI (124924) dth11: xQueueReceive get[0m
+[0;32mI (124924) DHT11_Demo: END[0m
+[0;32mI (125944) dth11: dth11_data_deal[0m
+[0;32mI (125944) dth11: xQueueReceive get[0m
+[0;32mI (125944) DHT11_Demo: END[0m
+[0;32mI (126964) dth11: dth11_data_deal[0m
+[0;32mI (126964) dth11: xQueueReceive get[0m
+[0;32mI (126964) DHT11_Demo: END[0m
+[0;32mI (127984) dth11: dth11_data_deal[0m
+[0;32mI (127984) dth11: xQueueReceive get[0m
+[0;32mI (127984) DHT11_Demo: END[0m
+[0;32mI (129004) dth11: dth11_data_deal[0m
+[0;32mI (129004) dth11: xQueueReceive get[0m
+[0;32mI (129004) DHT11_Demo: END[0m
+[0;32mI (130024) dth11: dth11_data_deal[0m
+[0;32mI (130024) dth11: xQueueReceive get[0m
+[0;32mI (130024) DHT11_Demo: END[0m
+[0;32mI (131044) dth11: dth11_data_deal[0m
+[0;32mI (131044) dth11: xQueueReceive get[0m
+[0;32mI (131044) DHT11_Demo: END[0m
+[0;32mI (132064) dth11: dth11_data_deal[0m
+[0;32mI (132064) dth11: xQueueReceive get[0m
+[0;32mI (132064) DHT11_Demo: END[0m
+[0;32mI (133084) dth11: dth11_data_deal[0m
+[0;32mI (133084) dth11: xQueueReceive get[0m
+[0;32mI (133084) DHT11_Demo: END[0m
+[0;32mI (134104) dth11: dth11_data_deal[0m
+[0;32mI (134104) dth11: xQueueReceive get[0m
+[0;32mI (134104) DHT11_Demo: END[0m
+[0;32mI (135124) dth11: dth11_data_deal[0m
+[0;32mI (135124) dth11: xQueueReceive get[0m
+[0;32mI (135124) DHT11_Demo: END[0m
+[0;32mI (136144) dth11: dth11_data_deal[0m
+[0;32mI (136144) dth11: xQueueReceive get[0m
+[0;32mI (136144) DHT11_Demo: END[0m
+[0;32mI (137164) dth11: dth11_data_deal[0m
+[0;32mI (137164) dth11: xQueueReceive get[0m
+[0;32mI (137164) DHT11_Demo: END[0m
+[0;32mI (138184) dth11: dth11_data_deal[0m
+[0;32mI (138184) dth11: xQueueReceive get[0m
+[0;32mI (138184) DHT11_Demo: END[0m
+[0;32mI (139204) dth11: dth11_data_deal[0m
+[0;32mI (139204) dth11: xQueueReceive get[0m
+[0;32mI (139204) DHT11_Demo: END[0m
+[0;32mI (140224) dth11: dth11_data_deal[0m
+[0;32mI (140224) dth11: xQueueReceive get[0m
+[0;32mI (140224) DHT11_Demo: END[0m
+[0;32mI (141244) dth11: dth11_data_deal[0m
+[0;32mI (141244) dth11: xQueueReceive get[0m
+[0;32mI (141244) DHT11_Demo: END[0m
+[0;32mI (142264) dth11: dth11_data_deal[0m
+[0;32mI (142264) dth11: xQueueReceive get[0m
+[0;32mI (142264) DHT11_Demo: END[0m
+[0;32mI (143284) dth11: dth11_data_deal[0m
+[0;32mI (143284) dth11: xQueueReceive get[0m
+[0;32mI (143284) DHT11_Demo: END[0m
+[0;32mI (144304) dth11: dth11_data_deal[0m
+[0;32mI (144304) dth11: xQueueReceive get[0m
+[0;32mI (144304) DHT11_Demo: END[0m
+[0;32mI (145324) dth11: dth11_data_deal[0m
+[0;32mI (145324) dth11: xQueueReceive get[0m
+[0;32mI (145324) DHT11_Demo: END[0m
+[0;32mI (146344) dth11: dth11_data_deal[0m
+[0;32mI (146344) dth11: xQueueReceive get[0m
+[0;32mI (146344) DHT11_Demo: END[0m
+[0;32mI (147364) dth11: dth11_data_deal[0m
+[0;32mI (147364) dth11: xQueueReceive get[0m
+[0;32mI (147364) DHT11_Demo: END[0m
+[0;32mI (148384) dth11: dth11_data_deal[0m
+[0;32mI (148384) dth11: xQueueReceive get[0m
+[0;32mI (148384) DHT11_Demo: END[0m
+[0;32mI (149404) dth11: dth11_data_deal[0m
+[0;32mI (149404) dth11: xQueueReceive get[0m
+[0;32mI (149404) DHT11_Demo: END[0m
+[0;32mI (150424) dth11: dth11_data_deal[0m
+[0;32mI (150424) dth11: xQueueReceive get[0m
+[0;32mI (150424) DHT11_Demo: END[0m
+[0;32mI (151444) dth11: dth11_data_deal[0m
+[0;32mI (151444) dth11: xQueueReceive get[0m
+[0;32mI (151444) DHT11_Demo: END[0m
+[0;32mI (152464) dth11: dth11_data_deal[0m
+[0;32mI (152464) dth11: xQueueReceive get[0m
+[0;32mI (152464) DHT11_Demo: END[0m
+[0;32mI (153484) dth11: dth11_data_deal[0m
+[0;32mI (153484) dth11: xQueueReceive get[0m
+[0;32mI (153484) DHT11_Demo: END[0m
+[0;32mI (154504) dth11: dth11_data_deal[0m
+[0;32mI (154504) dth11: xQueueReceive get[0m
+[0;32mI (154504) DHT11_Demo: END[0m
+[0;32mI (155524) dth11: dth11_data_deal[0m
+[0;32mI (155524) dth11: xQueueReceive get[0m
+[0;32mI (155524) DHT11_Demo: END[0m
+[0;32mI (156544) dth11: dth11_data_deal[0m
+[0;32mI (156544) dth11: xQueueReceive get[0m
+[0;32mI (156544) DHT11_Demo: END[0m
+[0;32mI (157564) dth11: dth11_data_deal[0m
+[0;32mI (157564) dth11: xQueueReceive get[0m
+[0;32mI (157564) DHT11_Demo: END[0m
+[0;32mI (158584) dth11: dth11_data_deal[0m
+[0;32mI (158584) dth11: xQueueReceive get[0m
+[0;32mI (158584) DHT11_Demo: END[0m
+[0;32mI (159604) dth11: dth11_data_deal[0m
+[0;32mI (159604) dth11: xQueueReceive get[0m
+[0;32mI (159604) DHT11_Demo: END[0m
+[0;32mI (160624) dth11: dth11_data_deal[0m
+[0;32mI (160624) dth11: xQueueReceive get[0m
+[0;32mI (160624) DHT11_Demo: END[0m
+[0;32mI (161644) dth11: dth11_data_deal[0m
+[0;32mI (161644) dth11: xQueueReceive get[0m
+[0;32mI (161644) DHT11_Demo: END[0m
+[0;32mI (162664) dth11: dth11_data_deal[0m
+[0;32mI (162664) dth11: xQueueReceive get[0m
+[0;32mI (162664) DHT11_Demo: END[0m
+[0;32mI (163684) dth11: dth11_data_deal[0m
+[0;32mI (163684) dth11: xQueueReceive get[0m
+[0;32mI (163684) DHT11_Demo: END[0m
+[0;32mI (164704) dth11: dth11_data_deal[0m
+[0;32mI (164704) dth11: xQueueReceive get[0m
+[0;32mI (164704) DHT11_Demo: END[0m
+[0;32mI (165724) dth11: dth11_data_deal[0m
+[0;32mI (165724) dth11: xQueueReceive get[0m
+[0;32mI (165724) DHT11_Demo: END[0m
+[0;32mI (166744) dth11: dth11_data_deal[0m
+[0;32mI (166744) dth11: xQueueReceive get[0m
+[0;32mI (166744) DHT11_Demo: END[0m
+[0;32mI (167764) dth11: dth11_data_deal[0m
+[0;32mI (167764) dth11: xQueueReceive get[0m
+[0;32mI (167764) DHT11_Demo: END[0m
+[0;32mI (168784) dth11: dth11_data_deal[0m
+[0;32mI (168784) dth11: xQueueReceive get[0m
+[0;32mI (168784) DHT11_Demo: END[0m
+[0;32mI (169804) dth11: dth11_data_deal[0m
+[0;32mI (169804) dth11: xQueueReceive get[0m
+[0;32mI (169804) DHT11_Demo: END[0m
+[0;32mI (170824) dth11: dth11_data_deal[0m
+[0;32mI (170824) dth11: xQueueReceive get[0m
+[0;32mI (170824) DHT11_Demo: END[0m
+[0;32mI (171844) dth11: dth11_data_deal[0m
+[0;32mI (171844) dth11: xQueueReceive get[0m
+[0;32mI (171844) DHT11_Demo: END[0m
+[0;32mI (172864) dth11: dth11_data_deal[0m
+[0;32mI (172864) dth11: xQueueReceive get[0m
+[0;32mI (172864) DHT11_Demo: END[0m
+[0;32mI (173884) dth11: dth11_data_deal[0m
+[0;32mI (173884) dth11: xQueueReceive get[0m
+[0;32mI (173884) DHT11_Demo: END[0m
+[0;32mI (174904) dth11: dth11_data_deal[0m
+[0;32mI (174904) dth11: xQueueReceive get[0m
+[0;32mI (174904) DHT11_Demo: END[0m
+[0;32mI (175924) dth11: dth11_data_deal[0m
+[0;32mI (175924) dth11: xQueueReceive get[0m
+[0;32mI (175924) DHT11_Demo: END[0m
+[0;32mI (176944) dth11: dth11_data_deal[0m
+[0;32mI (176944) dth11: xQueueReceive get[0m
+[0;32mI (176944) DHT11_Demo: END[0m
+[0;32mI (177964) dth11: dth11_data_deal[0m
+[0;32mI (177964) dth11: xQueueReceive get[0m
+[0;32mI (177964) DHT11_Demo: END[0m
+[0;32mI (178984) dth11: dth11_data_deal[0m
+[0;32mI (178984) dth11: xQueueReceive get[0m
+[0;32mI (178984) DHT11_Demo: END[0m
+[0;32mI (180004) dth11: dth11_data_deal[0m
+[0;32mI (180004) dth11: xQueueReceive get[0m
+[0;32mI (180004) DHT11_Demo: END[0m
+[0;32mI (181024) dth11: dth11_data_deal[0m
+[0;32mI (181024) dth11: xQueueReceive get[0m
+[0;32mI (181024) DHT11_Demo: END[0m
+[0;32mI (182044) dth11: dth11_data_deal[0m
+[0;32mI (182044) dth11: xQueueReceive get[0m
+[0;32mI (182044) DHT11_Demo: END[0m
+[0;32mI (183064) dth11: dth11_data_deal[0m
+[0;32mI (183064) dth11: xQueueReceive get[0m
+[0;32mI (183064) DHT11_Demo: END[0m
+[0;32mI (184084) dth11: dth11_data_deal[0m
+[0;32mI (184084) dth11: xQueueReceive get[0m
+[0;32mI (184084) DHT11_Demo: END[0m
+[0;32mI (185104) dth11: dth11_data_deal[0m
+[0;32mI (185104) dth11: xQueueReceive get[0m
+[0;32mI (185104) DHT11_Demo: END[0m
+[0;32mI (186124) dth11: dth11_data_deal[0m
+[0;32mI (186124) dth11: xQueueReceive get[0m
+[0;32mI (186124) DHT11_Demo: END[0m
+[0;32mI (187144) dth11: dth11_data_deal[0m
+[0;32mI (187144) dth11: xQueueReceive get[0m
+[0;32mI (187144) DHT11_Demo: END[0m
+[0;32mI (188164) dth11: dth11_data_deal[0m
+[0;32mI (188164) dth11: xQueueReceive get[0m
+[0;32mI (188164) DHT11_Demo: END[0m
+[0;32mI (189184) dth11: dth11_data_deal[0m
+[0;32mI (189184) dth11: xQueueReceive get[0m
+[0;32mI (189184) DHT11_Demo: END[0m
+[0;32mI (190204) dth11: dth11_data_deal[0m
+[0;32mI (190204) dth11: xQueueReceive get[0m
+[0;32mI (190204) DHT11_Demo: END[0m
+[0;32mI (191224) dth11: dth11_data_deal[0m
+[0;32mI (191224) dth11: xQueueReceive get[0m
+[0;32mI (191224) DHT11_Demo: END[0m
+[0;32mI (192244) dth11: dth11_data_deal[0m
+[0;32mI (192244) dth11: xQueueReceive get[0m
+[0;32mI (192244) DHT11_Demo: END[0m
+[0;32mI (193264) dth11: dth11_data_deal[0m
+[0;32mI (193264) dth11: xQueueReceive get[0m
+[0;32mI (193264) DHT11_Demo: END[0m
+[0;32mI (194284) dth11: dth11_data_deal[0m
+[0;32mI (194284) dth11: xQueueReceive get[0m
+[0;32mI (194284) DHT11_Demo: END[0m
+[0;32mI (195304) dth11: dth11_data_deal[0m
+[0;32mI (195304) dth11: xQueueReceive get[0m
+[0;32mI (195304) DHT11_Demo: END[0m
+[0;32mI (196324) dth11: dth11_data_deal[0m
+[0;32mI (196324) dth11: xQueueReceive get[0m
+[0;32mI (196324) DHT11_Demo: END[0m
+[0;32mI (197344) dth11: dth11_data_deal[0m
+[0;32mI (197344) dth11: xQueueReceive get[0m
+[0;32mI (197344) DHT11_Demo: END[0m
+[0;32mI (198364) dth11: dth11_data_deal[0m
+[0;32mI (198364) dth11: xQueueReceive get[0m
+[0;32mI (198364) DHT11_Demo: END[0m
+[0;32mI (199384) dth11: dth11_data_deal[0m
+[0;32mI (199384) dth11: xQueueReceive get[0m
+[0;32mI (199384) DHT11_Demo: END[0m
+[0;32mI (200404) dth11: dth11_data_deal[0m
+[0;32mI (200404) dth11: xQueueReceive get[0m
+[0;32mI (200404) DHT11_Demo: END[0m
+[0;32mI (201424) dth11: dth11_data_deal[0m
+[0;32mI (201424) dth11: xQueueReceive get[0m
+[0;32mI (201424) DHT11_Demo: END[0m
+[0;32mI (202444) dth11: dth11_data_deal[0m
+[0;32mI (202444) dth11: xQueueReceive get[0m
+[0;32mI (202444) DHT11_Demo: END[0m
+[0;32mI (203464) dth11: dth11_data_deal[0m
+[0;32mI (203464) dth11: xQueueReceive get[0m
+[0;32mI (203464) DHT11_Demo: END[0m
+[0;32mI (204484) dth11: dth11_data_deal[0m
+[0;32mI (204484) dth11: xQueueReceive get[0m
+[0;32mI (204484) DHT11_Demo: END[0m
+[0;32mI (205504) dth11: dth11_data_deal[0m
+[0;32mI (205504) dth11: xQueueReceive get[0m
+[0;32mI (205504) DHT11_Demo: END[0m
+[0;32mI (206524) dth11: dth11_data_deal[0m
+[0;32mI (206524) dth11: xQueueReceive get[0m
+[0;32mI (206524) DHT11_Demo: END[0m
+[0;32mI (207544) dth11: dth11_data_deal[0m
+[0;32mI (207544) dth11: xQueueReceive get[0m
+[0;32mI (207544) DHT11_Demo: END[0m
+[0;32mI (208564) dth11: dth11_data_deal[0m
+[0;32mI (208564) dth11: xQueueReceive get[0m
+[0;32mI (208564) DHT11_Demo: END[0m
+[0;32mI (209584) dth11: dth11_data_deal[0m
+[0;32mI (209584) dth11: xQueueReceive get[0m
+[0;32mI (209584) DHT11_Demo: END[0m
+[0;32mI (210604) dth11: dth11_data_deal[0m
+[0;32mI (210604) dth11: xQueueReceive get[0m
+[0;32mI (210604) DHT11_Demo: END[0m
+[0;32mI (211624) dth11: dth11_data_deal[0m
+[0;32mI (211624) dth11: xQueueReceive get[0m
+[0;32mI (211624) DHT11_Demo: END[0m
+[0;32mI (212644) dth11: dth11_data_deal[0m
+[0;32mI (212644) dth11: xQueueReceive get[0m
+[0;32mI (212644) DHT11_Demo: END[0m
+[0;32mI (213664) dth11: dth11_data_deal[0m
+[0;32mI (213664) dth11: xQueueReceive get[0m
+[0;32mI (213664) DHT11_Demo: END[0m
+[0;32mI (214684) dth11: dth11_data_deal[0m
+[0;32mI (214684) dth11: xQueueReceive get[0m
+[0;32mI (214684) DHT11_Demo: END[0m
+[0;32mI (215704) dth11: dth11_data_deal[0m
+[0;32mI (215704) dth11: xQueueReceive get[0m
+[0;32mI (215704) DHT11_Demo: END[0m
+[0;32mI (216724) dth11: dth11_data_deal[0m
+[0;32mI (216724) dth11: xQueueReceive get[0m
+[0;32mI (216724) DHT11_Demo: END[0m
+[0;32mI (217744) dth11: dth11_data_deal[0m
+[0;32mI (217744) dth11: xQueueReceive get[0m
+[0;32mI (217744) DHT11_Demo: END[0m
+[0;32mI (218764) dth11: dth11_data_deal[0m
+[0;32mI (218764) dth11: xQueueReceive get[0m
+[0;32mI (218764) DHT11_Demo: END[0m
+[0;32mI (219784) dth11: dth11_data_deal[0m
+[0;32mI (219784) dth11: xQueueReceive get[0m
+[0;32mI (219784) DHT11_Demo: END[0m
+[0;32mI (220804) dth11: dth11_data_deal[0m
+[0;32mI (220804) dth11: xQueueReceive get[0m
+[0;32mI (220804) DHT11_Demo: END[0m
+[0;32mI (221824) dth11: dth11_data_deal[0m
+[0;32mI (221824) dth11: xQueueReceive get[0m
+[0;32mI (221824) DHT11_Demo: END[0m
+[0;32mI (222844) dth11: dth11_data_deal[0m
+[0;32mI (222844) dth11: xQueueReceive get[0m
+[0;32mI (222844) DHT11_Demo: END[0m
+[0;32mI (223864) dth11: dth11_data_deal[0m
+[0;32mI (223864) dth11: xQueueReceive get[0m
+[0;32mI (223864) DHT11_Demo: END[0m
+[0;32mI (224884) dth11: dth11_data_deal[0m
+[0;32mI (224884) dth11: xQueueReceive get[0m
+[0;32mI (224884) DHT11_Demo: END[0m
+[0;32mI (225904) dth11: dth11_data_deal[0m
+[0;32mI (225904) dth11: xQueueReceive get[0m
+[0;32mI (225904) DHT11_Demo: END[0m
+[0;32mI (226924) dth11: dth11_data_deal[0m
+[0;32mI (226924) dth11: xQueueReceive get[0m
+[0;32mI (226924) DHT11_Demo: END[0m
+[0;32mI (227944) dth11: dth11_data_deal[0m
+[0;32mI (227944) dth11: xQueueReceive get[0m
+[0;32mI (227944) DHT11_Demo: END[0m
+[0;32mI (228964) dth11: dth11_data_deal[0m
+[0;32mI (228964) dth11: xQueueReceive get[0m
+[0;32mI (228964) DHT11_Demo: END[0m
+[0;32mI (229984) dth11: dth11_data_deal[0m
+[0;32mI (229984) dth11: xQueueReceive get[0m
+[0;32mI (229984) DHT11_Demo: END[0m
+[0;32mI (231004) dth11: dth11_data_deal[0m
+[0;32mI (231004) dth11: xQueueReceive get[0m
+[0;32mI (231004) DHT11_Demo: END[0m
+[0;32mI (232024) dth11: dth11_data_deal[0m
+[0;32mI (232024) dth11: xQueueReceive get[0m
+[0;32mI (232024) DHT11_Demo: END[0m
+[0;32mI (233044) dth11: dth11_data_deal[0m
+[0;32mI (233044) dth11: xQueueReceive get[0m
+[0;32mI (233044) DHT11_Demo: END[0m
+[0;32mI (234064) dth11: dth11_data_deal[0m
+[0;32mI (234064) dth11: xQueueReceive get[0m
+[0;32mI (234064) DHT11_Demo: END[0m
+[0;32mI (235084) dth11: dth11_data_deal[0m
+[0;32mI (235084) dth11: xQueueReceive get[0m
+[0;32mI (235084) DHT11_Demo: END[0m
+[0;32mI (236104) dth11: dth11_data_deal[0m
+[0;32mI (236104) dth11: xQueueReceive get[0m
+[0;32mI (236104) DHT11_Demo: END[0m
+[0;32mI (237124) dth11: dth11_data_deal[0m
+[0;32mI (237124) dth11: xQueueReceive get[0m
+[0;32mI (237124) DHT11_Demo: END[0m
+[0;32mI (238144) dth11: dth11_data_deal[0m
+[0;32mI (238144) dth11: xQueueReceive get[0m
+[0;32mI (238144) DHT11_Demo: END[0m
+[0;32mI (239164) dth11: dth11_data_deal[0m
+[0;32mI (239164) dth11: xQueueReceive get[0m
+[0;32mI (239164) DHT11_Demo: END[0m
+[0;32mI (240184) dth11: dth11_data_deal[0m
+[0;32mI (240184) dth11: xQueueReceive get[0m
+[0;32mI (240184) DHT11_Demo: END[0m
+[0;32mI (241204) dth11: dth11_data_deal[0m
+[0;32mI (241204) dth11: xQueueReceive get[0m
+[0;32mI (241204) DHT11_Demo: END[0m
+[0;32mI (242224) dth11: dth11_data_deal[0m
+[0;32mI (242224) dth11: xQueueReceive get[0m
+[0;32mI (242224) DHT11_Demo: END[0m
+[0;32mI (243244) dth11: dth11_data_deal[0m
+[0;32mI (243244) dth11: xQueueReceive get[0m
+[0;32mI (243244) DHT11_Demo: END[0m
+[0;32mI (244264) dth11: dth11_data_deal[0m
+[0;32mI (244264) dth11: xQueueReceive get[0m
+[0;32mI (244264) DHT11_Demo: END[0m
+[0;32mI (245284) dth11: dth11_data_deal[0m
+[0;32mI (245284) dth11: xQueueReceive get[0m
+[0;32mI (245284) DHT11_Demo: END[0m
+[0;32mI (246304) dth11: dth11_data_deal[0m
+[0;32mI (246304) dth11: xQueueReceive get[0m
+[0;32mI (246304) DHT11_Demo: END[0m
+[0;32mI (247324) dth11: dth11_data_deal[0m
+[0;32mI (247324) dth11: xQueueReceive get[0m
+[0;32mI (247324) DHT11_Demo: END[0m
+[0;32mI (248344) dth11: dth11_data_deal[0m
+[0;32mI (248344) dth11: xQueueReceive get[0m
+[0;32mI (248344) DHT11_Demo: END[0m
+[0;32mI (249364) dth11: dth11_data_deal[0m
+[0;32mI (249364) dth11: xQueueReceive get[0m
+[0;32mI (249364) DHT11_Demo: END[0m
+[0;32mI (250384) dth11: dth11_data_deal[0m
+[0;32mI (250384) dth11: xQueueReceive get[0m
+[0;32mI (250384) DHT11_Demo: END[0m
+[0;32mI (251404) dth11: dth11_data_deal[0m
+[0;32mI (251404) dth11: xQueueReceive get[0m
+[0;32mI (251404) DHT11_Demo: END[0m
+[0;32mI (252424) dth11: dth11_data_deal[0m
+[0;32mI (252424) dth11: xQueueReceive get[0m
+[0;32mI (252424) DHT11_Demo: END[0m
+[0;32mI (253444) dth11: dth11_data_deal[0m
+[0;32mI (253444) dth11: xQueueReceive get[0m
+[0;32mI (253444) DHT11_Demo: END[0m
+[0;32mI (254464) dth11: dth11_data_deal[0m
+[0;32mI (254464) dth11: xQueueReceive get[0m
+[0;32mI (254464) DHT11_Demo: END[0m
+[0;32mI (255484) dth11: dth11_data_deal[0m
+[0;32mI (255484) dth11: xQueueReceive get[0m
+[0;32mI (255484) DHT11_Demo: END[0m
+[0;32mI (256504) dth11: dth11_data_deal[0m
+[0;32mI (256504) dth11: xQueueReceive get[0m
+[0;32mI (256504) DHT11_Demo: END[0m
+[0;32mI (257524) dth11: dth11_data_deal[0m
+[0;32mI (257524) dth11: xQueueReceive get[0m
+[0;32mI (257524) DHT11_Demo: END[0m
+[0;32mI (258544) dth11: dth11_data_deal[0m
+[0;32mI (258544) dth11: xQueueReceive get[0m
+[0;32mI (258544) DHT11_Demo: END[0m
+[0;32mI (259564) dth11: dth11_data_deal[0m
+[0;32mI (259564) dth11: xQueueReceive get[0m
+[0;32mI (259564) DHT11_Demo: END[0m
+[0;32mI (260584) dth11: dth11_data_deal[0m
+[0;32mI (260584) dth11: xQueueReceive get[0m
+[0;32mI (260584) DHT11_Demo: END[0m
+[0;32mI (261604) dth11: dth11_data_deal[0m
+[0;32mI (261604) dth11: xQueueReceive get[0m
+[0;32mI (261604) DHT11_Demo: END[0m
+[0;32mI (262624) dth11: dth11_data_deal[0m
+[0;32mI (262624) dth11: xQueueReceive get[0m
+[0;32mI (262624) DHT11_Demo: END[0m
+[0;32mI (263644) dth11: dth11_data_deal[0m
+[0;32mI (263644) dth11: xQueueReceive get[0m
+[0;32mI (263644) DHT11_Demo: END[0m
+[0;32mI (264664) dth11: dth11_data_deal[0m
+[0;32mI (264664) dth11: xQueueReceive get[0m
+[0;32mI (264664) DHT11_Demo: END[0m
+[0;32mI (265684) dth11: dth11_data_deal[0m
+[0;32mI (265684) dth11: xQueueReceive get[0m
+[0;32mI (265684) DHT11_Demo: END[0m
+[0;32mI (266704) dth11: dth11_data_deal[0m
+[0;32mI (266704) dth11: xQueueReceive get[0m
+[0;32mI (266704) DHT11_Demo: END[0m
+[0;32mI (267724) dth11: dth11_data_deal[0m
+[0;32mI (267724) dth11: xQueueReceive get[0m
+[0;32mI (267724) DHT11_Demo: END[0m
+[0;32mI (268744) dth11: dth11_data_deal[0m
+[0;32mI (268744) dth11: xQueueReceive get[0m
+[0;32mI (268744) DHT11_Demo: END[0m
+[0;32mI (269764) dth11: dth11_data_deal[0m
+[0;32mI (269764) dth11: xQueueReceive get[0m
+[0;32mI (269764) DHT11_Demo: END[0m
+[0;32mI (270784) dth11: dth11_data_deal[0m
+[0;32mI (270784) dth11: xQueueReceive get[0m
+[0;32mI (270784) DHT11_Demo: END[0m
+[0;32mI (271804) dth11: dth11_data_deal[0m
+[0;32mI (271804) dth11: xQueueReceive get[0m
+[0;32mI (271804) DHT11_Demo: END[0m
+[0;32mI (272824) dth11: dth11_data_deal[0m
+[0;32mI (272824) dth11: xQueueReceive get[0m
+[0;32mI (272824) DHT11_Demo: END[0m
+[0;32mI (273844) dth11: dth11_data_deal[0m
+[0;32mI (273844) dth11: xQueueReceive get[0m
+[0;32mI (273844) DHT11_Demo: END[0m
+[0;32mI (274864) dth11: dth11_data_deal[0m
+[0;32mI (274864) dth11: xQueueReceive get[0m
+[0;32mI (274864) DHT11_Demo: END[0m
+[0;32mI (275884) dth11: dth11_data_deal[0m
+[0;32mI (275884) dth11: xQueueReceive get[0m
+[0;32mI (275884) DHT11_Demo: END[0m
+[0;32mI (276904) dth11: dth11_data_deal[0m
+[0;32mI (276904) dth11: xQueueReceive get[0m
+[0;32mI (276904) DHT11_Demo: END[0m
+[0;32mI (277924) dth11: dth11_data_deal[0m
+[0;32mI (277924) dth11: xQueueReceive get[0m
+[0;32mI (277924) DHT11_Demo: END[0m
+[0;32mI (278944) dth11: dth11_data_deal[0m
+[0;32mI (278944) dth11: xQueueReceive get[0m
+[0;32mI (278944) DHT11_Demo: END[0m
+[0;32mI (279964) dth11: dth11_data_deal[0m
+[0;32mI (279964) dth11: xQueueReceive get[0m
+[0;32mI (279964) DHT11_Demo: END[0m
+[0;32mI (280984) dth11: dth11_data_deal[0m
+[0;32mI (280984) dth11: xQueueReceive get[0m
+[0;32mI (280984) DHT11_Demo: END[0m
+[0;32mI (282004) dth11: dth11_data_deal[0m
+[0;32mI (282004) dth11: xQueueReceive get[0m
+[0;32mI (282004) DHT11_Demo: END[0m
+[0;32mI (283024) dth11: dth11_data_deal[0m
+[0;32mI (283024) dth11: xQueueReceive get[0m
+[0;32mI (283024) DHT11_Demo: END[0m
+[0;32mI (284044) dth11: dth11_data_deal[0m
+[0;32mI (284044) dth11: xQueueReceive get[0m
+[0;32mI (284044) DHT11_Demo: END[0m
+[0;32mI (285064) dth11: dth11_data_deal[0m
+[0;32mI (285064) dth11: xQueueReceive get[0m
+[0;32mI (285064) DHT11_Demo: END[0m
+[0;32mI (286084) dth11: dth11_data_deal[0m
+[0;32mI (286084) dth11: xQueueReceive get[0m
+[0;32mI (286084) DHT11_Demo: END[0m
+[0;32mI (287104) dth11: dth11_data_deal[0m
+[0;32mI (287104) dth11: xQueueReceive get[0m
+[0;32mI (287104) DHT11_Demo: END[0m
+[0;32mI (288124) dth11: dth11_data_deal[0m
+[0;32mI (288124) dth11: xQueueReceive get[0m
+[0;32mI (288124) DHT11_Demo: END[0m
+[0;32mI (289144) dth11: dth11_data_deal[0m
+[0;32mI (289144) dth11: xQueueReceive get[0m
+[0;32mI (289144) DHT11_Demo: END[0m
+[0;32mI (290164) dth11: dth11_data_deal[0m
+[0;32mI (290164) dth11: xQueueReceive get[0m
+[0;32mI (290164) DHT11_Demo: END[0m
+[0;32mI (291184) dth11: dth11_data_deal[0m
+[0;32mI (291184) dth11: xQueueReceive get[0m
+[0;32mI (291184) DHT11_Demo: END[0m
+[0;32mI (292204) dth11: dth11_data_deal[0m
+[0;32mI (292204) dth11: xQueueReceive get[0m
+[0;32mI (292204) DHT11_Demo: END[0m
+[0;32mI (293224) dth11: dth11_data_deal[0m
+[0;32mI (293224) dth11: xQueueReceive get[0m
+[0;32mI (293224) DHT11_Demo: END[0m
+[0;32mI (294244) dth11: dth11_data_deal[0m
+[0;32mI (294244) dth11: xQueueReceive get[0m
+[0;32mI (294244) DHT11_Demo: END[0m
+[0;32mI (295264) dth11: dth11_data_deal[0m
+[0;32mI (295264) dth11: xQueueReceive get[0m
+[0;32mI (295264) DHT11_Demo: END[0m
+[0;32mI (296284) dth11: dth11_data_deal[0m
+[0;32mI (296284) dth11: xQueueReceive get[0m
+[0;32mI (296284) DHT11_Demo: END[0m
+[0;32mI (297304) dth11: dth11_data_deal[0m
+[0;32mI (297304) dth11: xQueueReceive get[0m
+[0;32mI (297304) DHT11_Demo: END[0m
+[0;32mI (298324) dth11: dth11_data_deal[0m
+[0;32mI (298324) dth11: xQueueReceive get[0m
+[0;32mI (298324) DHT11_Demo: END[0m
+[0;32mI (299344) dth11: dth11_data_deal[0m
+[0;32mI (299344) dth11: xQueueReceive get[0m
+[0;32mI (299344) DHT11_Demo: END[0m
+[0;32mI (300364) dth11: dth11_data_deal[0m
+[0;32mI (300364) dth11: xQueueReceive get[0m
+[0;32mI (300364) DHT11_Demo: END[0m
+[0;32mI (301384) dth11: dth11_data_deal[0m
+[0;32mI (301384) dth11: xQueueReceive get[0m
+[0;32mI (301384) DHT11_Demo: END[0m
+[0;32mI (302404) dth11: dth11_data_deal[0m
+[0;32mI (302404) dth11: xQueueReceive get[0m
+[0;32mI (302404) DHT11_Demo: END[0m
+[0;32mI (303424) dth11: dth11_data_deal[0m
+[0;32mI (303424) dth11: xQueueReceive get[0m
+[0;32mI (303424) DHT11_Demo: END[0m
+[0;32mI (304444) dth11: dth11_data_deal[0m
+[0;32mI (304444) dth11: xQueueReceive get[0m
+[0;32mI (304444) DHT11_Demo: END[0m
+[0;32mI (305464) dth11: dth11_data_deal[0m
+[0;32mI (305464) dth11: xQueueReceive get[0m
+[0;32mI (305464) DHT11_Demo: END[0m
+[0;32mI (306484) dth11: dth11_data_deal[0m
+[0;32mI (306484) dth11: xQueueReceive get[0m
+[0;32mI (306484) DHT11_Demo: END[0m
+[0;32mI (307504) dth11: dth11_data_deal[0m
+[0;32mI (307504) dth11: xQueueReceive get[0m
+[0;32mI (307504) DHT11_Demo: END[0m
+[0;32mI (308524) dth11: dth11_data_deal[0m
+[0;32mI (308524) dth11: xQueueReceive get[0m
+[0;32mI (308524) DHT11_Demo: END[0m
+[0;32mI (309544) dth11: dth11_data_deal[0m
+[0;32mI (309544) dth11: xQueueReceive get[0m
+[0;32mI (309544) DHT11_Demo: END[0m
+[0;32mI (310564) dth11: dth11_data_deal[0m
+[0;32mI (310564) dth11: xQueueReceive get[0m
+[0;32mI (310564) DHT11_Demo: END[0m
+[0;32mI (311584) dth11: dth11_data_deal[0m
+[0;32mI (311584) dth11: xQueueReceive get[0m
+[0;32mI (311584) DHT11_Demo: END[0m
+[0;32mI (312604) dth11: dth11_data_deal[0m
+[0;32mI (312604) dth11: xQueueReceive get[0m
+[0;32mI (312604) DHT11_Demo: END[0m
+[0;32mI (313624) dth11: dth11_data_deal[0m
+[0;32mI (313624) dth11: xQueueReceive get[0m
+[0;32mI (313624) DHT11_Demo: END[0m
+[0;32mI (314644) dth11: dth11_data_deal[0m
+[0;32mI (314644) dth11: xQueueReceive get[0m
+[0;32mI (314644) DHT11_Demo: END[0m
+[0;32mI (315664) dth11: dth11_data_deal[0m
+[0;32mI (315664) dth11: xQueueReceive get[0m
+[0;32mI (315664) DHT11_Demo: END[0m
+[0;32mI (316684) dth11: dth11_data_deal[0m
+[0;32mI (316684) dth11: xQueueReceive get[0m
+[0;32mI (316684) DHT11_Demo: END[0m
+[0;32mI (317704) dth11: dth11_data_deal[0m
+[0;32mI (317704) dth11: xQueueReceive get[0m
+[0;32mI (317704) DHT11_Demo: END[0m
+[0;32mI (318724) dth11: dth11_data_deal[0m
+[0;32mI (318724) dth11: xQueueReceive get[0m
+[0;32mI (318724) DHT11_Demo: END[0m
+[0;32mI (319744) dth11: dth11_data_deal[0m
+[0;32mI (319744) dth11: xQueueReceive get[0m
+[0;32mI (319744) DHT11_Demo: END[0m
+[0;32mI (320764) dth11: dth11_data_deal[0m
+[0;32mI (320764) dth11: xQueueReceive get[0m
+[0;32mI (320764) DHT11_Demo: END[0m
+[0;32mI (321784) dth11: dth11_data_deal[0m
+[0;32mI (321784) dth11: xQueueReceive get[0m
+[0;32mI (321784) DHT11_Demo: END[0m
+[0;32mI (322804) dth11: dth11_data_deal[0m
+[0;32mI (322804) dth11: xQueueReceive get[0m
+[0;32mI (322804) DHT11_Demo: END[0m
+[0;32mI (323824) dth11: dth11_data_deal[0m
+[0;32mI (323824) dth11: xQueueReceive get[0m
+[0;32mI (323824) DHT11_Demo: END[0m
+[0;32mI (324844) dth11: dth11_data_deal[0m
+[0;32mI (324844) dth11: xQueueReceive get[0m
+[0;32mI (324844) DHT11_Demo: END[0m
+[0;32mI (325864) dth11: dth11_data_deal[0m
+[0;32mI (325864) dth11: xQueueReceive get[0m
+[0;32mI (325864) DHT11_Demo: END[0m
+[0;32mI (326884) dth11: dth11_data_deal[0m
+[0;32mI (326884) dth11: xQueueReceive get[0m
+[0;32mI (326884) DHT11_Demo: END[0m
+[0;32mI (327904) dth11: dth11_data_deal[0m
+[0;32mI (327904) dth11: xQueueReceive get[0m
+[0;32mI (327904) DHT11_Demo: END[0m
+[0;32mI (328924) dth11: dth11_data_deal[0m
+[0;32mI (328924) dth11: xQueueReceive get[0m
+[0;32mI (328924) DHT11_Demo: END[0m
+[0;32mI (329944) dth11: dth11_data_deal[0m
+[0;32mI (329944) dth11: xQueueReceive get[0m
+[0;32mI (329944) DHT11_Demo: END[0m
+[0;32mI (330964) dth11: dth11_data_deal[0m
+[0;32mI (330964) dth11: xQueueReceive get[0m
+[0;32mI (330964) DHT11_Demo: END[0m
+[0;32mI (331984) dth11: dth11_data_deal[0m
+[0;32mI (331984) dth11: xQueueReceive get[0m
+[0;32mI (331984) DHT11_Demo: END[0m
+[0;32mI (333004) dth11: dth11_data_deal[0m
+[0;32mI (333004) dth11: xQueueReceive get[0m
+[0;32mI (333004) DHT11_Demo: END[0m
+[0;32mI (334024) dth11: dth11_data_deal[0m
+[0;32mI (334024) dth11: xQueueReceive get[0m
+[0;32mI (334024) DHT11_Demo: END[0m
+[0;32mI (335044) dth11: dth11_data_deal[0m
+[0;32mI (335044) dth11: xQueueReceive get[0m
+[0;32mI (335044) DHT11_Demo: END[0m
+[0;32mI (336064) dth11: dth11_data_deal[0m
+[0;32mI (336064) dth11: xQueueReceive get[0m
+[0;32mI (336064) DHT11_Demo: END[0m
+[0;32mI (337084) dth11: dth11_data_deal[0m
+[0;32mI (337084) dth11: xQueueReceive get[0m
+[0;32mI (337084) DHT11_Demo: END[0m
+[0;32mI (338104) dth11: dth11_data_deal[0m
+[0;32mI (338104) dth11: xQueueReceive get[0m
+[0;32mI (338104) DHT11_Demo: END[0m
+[0;32mI (339124) dth11: dth11_data_deal[0m
+[0;32mI (339124) dth11: xQueueReceive get[0m
+[0;32mI (339124) DHT11_Demo: END[0m
+[0;32mI (340144) dth11: dth11_data_deal[0m
+[0;32mI (340144) dth11: xQueueReceive get[0m
+[0;32mI (340144) DHT11_Demo: END[0m
+[0;32mI (341164) dth11: dth11_data_deal[0m
+[0;32mI (341164) dth11: xQueueReceive get[0m
+[0;32mI (341164) DHT11_Demo: END[0m
+[0;32mI (342184) dth11: dth11_data_deal[0m
+[0;32mI (342184) dth11: xQueueReceive get[0m
+[0;32mI (342184) DHT11_Demo: END[0m
+[0;32mI (343204) dth11: dth11_data_deal[0m
+[0;32mI (343204) dth11: xQueueReceive get[0m
+[0;32mI (343204) DHT11_Demo: END[0m
+[0;32mI (344224) dth11: dth11_data_deal[0m
+[0;32mI (344224) dth11: xQueueReceive get[0m
+[0;32mI (344224) DHT11_Demo: END[0m
+[0;32mI (345244) dth11: dth11_data_deal[0m
+[0;32mI (345244) dth11: xQueueReceive get[0m
+[0;32mI (345244) DHT11_Demo: END[0m
+[0;32mI (346264) dth11: dth11_data_deal[0m
+[0;32mI (346264) dth11: xQueueReceive get[0m
+[0;32mI (346264) DHT11_Demo: END[0m
+[0;32mI (347284) dth11: dth11_data_deal[0m
+[0;32mI (347284) dth11: xQueueReceive get[0m
+[0;32mI (347284) DHT11_Demo: END[0m
+[0;32mI (348304) dth11: dth11_data_deal[0m
+[0;32mI (348304) dth11: xQueueReceive get[0m
+[0;32mI (348304) DHT11_Demo: END[0m
+[0;32mI (349324) dth11: dth11_data_deal[0m
+[0;32mI (349324) dth11: xQueueReceive get[0m
+[0;32mI (349324) DHT11_Demo: END[0m
+[0;32mI (350344) dth11: dth11_data_deal[0m
+[0;32mI (350344) dth11: xQueueReceive get[0m
+[0;32mI (350344) DHT11_Demo: END[0m
+[0;32mI (351364) dth11: dth11_data_deal[0m
+[0;32mI (351364) dth11: xQueueReceive get[0m
+[0;32mI (351364) DHT11_Demo: END[0m
+[0;32mI (352384) dth11: dth11_data_deal[0m
+[0;32mI (352384) dth11: xQueueReceive get[0m
+[0;32mI (352384) DHT11_Demo: END[0m
+[0;32mI (353404) dth11: dth11_data_deal[0m
+[0;32mI (353404) dth11: xQueueReceive get[0m
+[0;32mI (353404) DHT11_Demo: END[0m
+[0;32mI (354424) dth11: dth11_data_deal[0m
+[0;32mI (354424) dth11: xQueueReceive get[0m
+[0;32mI (354424) DHT11_Demo: END[0m
+[0;32mI (355444) dth11: dth11_data_deal[0m
+[0;32mI (355444) dth11: xQueueReceive get[0m
+[0;32mI (355444) DHT11_Demo: END[0m
+[0;32mI (356464) dth11: dth11_data_deal[0m
+[0;32mI (356464) dth11: xQueueReceive get[0m
+[0;32mI (356464) DHT11_Demo: END[0m
+[0;32mI (357484) dth11: dth11_data_deal[0m
+[0;32mI (357484) dth11: xQueueReceive get[0m
+[0;32mI (357484) DHT11_Demo: END[0m
+[0;32mI (358504) dth11: dth11_data_deal[0m
+[0;32mI (358504) dth11: xQueueReceive get[0m
+[0;32mI (358504) DHT11_Demo: END[0m
+[0;32mI (359524) dth11: dth11_data_deal[0m
+[0;32mI (359524) dth11: xQueueReceive get[0m
+[0;32mI (359524) DHT11_Demo: END[0m
+[0;32mI (360544) dth11: dth11_data_deal[0m
+[0;32mI (360544) dth11: xQueueReceive get[0m
+[0;32mI (360544) DHT11_Demo: END[0m
+[0;32mI (361564) dth11: dth11_data_deal[0m
+[0;32mI (361564) dth11: xQueueReceive get[0m
+[0;32mI (361564[0;32mI (362584) dth11: dth11_data_deal[0m
+[0;32mI (362584) dth11: xQueueReceive get[0m
+[0;32mI (362584) DHT11_Demo: END[0m
+[0;32mI (363604) dth11: dth11_data_deal[0m
+[0;32mI (363604) dth11: xQueueReceive get[0m
+[0;32mI (363604) DHT11_Demo: END[0m
+[0;32mI (364624) dth11: dth11_data_deal[0m
+[0;32mI (364624) dth11: xQueueReceive get[0m
+[0;32mI (364624) DHT11_Demo: END[0m
+[0;32mI (365644) dth11: dth11_data_deal[0m
+[0;32mI (365644) dth11: xQueueReceive get[0m
+[0;32mI (365644) DHT11_Demo: END[0m
+[0;32mI (366664) dth11: dth11_data_deal[0m
+[0;32mI (366664) dth11: xQueueReceive get[0m
+[0;32mI (366664) DHT11_Demo: END[0m
+[0;32mI (367684) dth11: dth11_data_deal[0m
+[0;32mI (367684) dth11: xQueueReceive get[0m
+[0;32mI (367684) DHT11_Demo: END[0m
+[0;32mI (368704) dth11: dth11_data_deal[0m
+[0;32mI (368704) dth11: xQueueReceive get[0m
+[0;32mI (368704) DHT11_Demo: END[0m
+[0;32mI (369724) dth11: dth11_data_deal[0m
+[0;32mI (369724) dth11: xQueueReceive get[0m
+[0;32mI (369724) DHT11_Demo: END[0m
+[0;32mI (370744) dth11: dth11_data_deal[0m
+[0;32mI (370744) dth11: xQueueReceive get[0m
+[0;32mI (370744) DHT11_Demo: END[0m
+[0;32mI (371764) dth11: dth11_data_deal[0m
+[0;32mI (371764) dth11: xQueueReceive get[0m
+[0;32mI (371764) DHT11_Demo: END[0m
+[0;32mI (372784) dth11: dth11_data_deal[0m
+[0;32mI (372784) dth11: xQueueReceive get[0m
+[0;32mI (372784) DHT11_Demo: END[0m
+[0;32mI (373804) dth11: dth11_data_deal[0m
+[0;32mI (373804) dth11: xQueueReceive get[0m
+[0;32mI (373804) DHT11_Demo: END[0m
+[0;32mI (374824) dth11: dth11_data_deal[0m
+[0;32mI (374824) dth11: xQueueReceive get[0m
+[0;32mI (374824) DHT11_Demo: END[0m
+[0;32mI (375844) dth11: dth11_data_deal[0m
+[0;32mI (375844) dth11: xQueueReceive get[0m
+[0;32mI (375844) DHT11_Demo: END[0m
+[0;32mI (376864) dth11: dth11_data_deal[0m
+[0;32mI (376864) dth11: xQueueReceive get[0m
+[0;32mI (376864) DHT11_Demo: END[0m
+[0;32mI (377884) dth11: dth11_data_deal[0m
+[0;32mI (377884) dth11: xQueueReceive get[0m
+[0;32mI (377884) DHT11_Demo: END[0m
+[0;32mI (378904) dth11: dth11_data_deal[0m
+[0;32mI (378904) dth11: xQueueReceive get[0m
+[0;32mI (378904) DHT11_Demo: END[0m
+[0;32mI (379924) dth11: dth11_data_deal[0m
+[0;32mI (379924) dth11: xQueueReceive get[0m
+[0;32mI (379924) DHT11_Demo: END[0m
+[0;32mI (380944) dth11: dth11_data_deal[0m
+[0;32mI (380944) dth11: xQueueReceive get[0m
+[0;32mI (380944) DHT11_Demo: END[0m
+[0;32mI (381964) dth11: dth11_data_deal[0m
+[0;32mI (381964) dth11: xQueueReceive get[0m
+[0;32mI (381964) DHT11_Demo: END[0m
+[0;32mI (382984) dth11: dth11_data_deal[0m
+[0;32mI (382984) dth11: xQueueReceive get[0m
+[0;32mI (382984) DHT11_Demo: END[0m
+[0;32mI (384004) dth11: dth11_data_deal[0m
+[0;32mI (384004) dth11: xQueueReceive get[0m
+[0;32mI (384004) DHT11_Demo: END[0m
+[0;32mI (385024) dth11: dth11_data_deal[0m
+[0;32mI (385024) dth11: xQueueReceive get[0m
+[0;32mI (385024) DHT11_Demo: END[0m
+[0;32mI (386044) dth11: dth11_data_deal[0m
+[0;32mI (386044) dth11: xQueueReceive get[0m
+[0;32mI (386044) DHT11_Demo: END[0m
+[0;32mI (387064) dth11: dth11_data_deal[0m
+[0;32mI (387064) dth11: xQueueReceive get[0m
+[0;32mI (387064) DHT11_Demo: END[0m
+[0;32mI (388084) dth11: dth11_data_deal[0m
+[0;32mI (388084) dth11: xQueueReceive get[0m
+[0;32mI (388084) DHT11_Demo: END[0m
+[0;32mI (389104) dth11: dth11_data_deal[0m
+[0;32mI (389104) dth11: xQueueReceive get[0m
+[0;32mI (389104) DHT11_Demo: END[0m
+[0;32mI (390124) dth11: dth11_data_deal[0m
+[0;32mI (390124) dth11: xQueueReceive get[0m
+[0;32mI (390124) DHT11_Demo: END[0m
+[0;32mI (391144) dth11: dth11_data_deal[0m
+[0;32mI (391144) dth11: xQueueReceive get[0m
+[0;32mI (391144) DHT11_Demo: END[0m
+[0;32mI (392164) dth11: dth11_data_deal[0m
+[0;32mI (392164) dth11: xQueueReceive get[0m
+[0;32mI (392164) DHT11_Demo: END[0m
+[0;32mI (393184) dth11: dth11_data_deal[0m
+[0;32mI (393184) dth11: xQueueReceive get[0m
+[0;32mI (393184) DHT11_Demo: END[0m
+[0;32mI (394204) dth11: dth11_data_deal[0m
+[0;32mI (394204) dth11: xQueueReceive get[0m
+[0;32mI (394204) DHT11_Demo: END[0m
+[0;32mI (395224) dth11: dth11_data_deal[0m
+[0;32mI (395224) dth11: xQueueReceive get[0m
+[0;32mI (395224) DHT11_Demo: END[0m
+[0;32mI (396244) dth11: dth11_data_deal[0m
+[0;32mI (396244) dth11: xQueueReceive get[0m
+[0;32mI (396244) DHT11_Demo: END[0m
+[0;32mI (397264) dth11: dth11_data_deal[0m
+[0;32mI (397264) dth11: xQueueReceive get[0m
+[0;32mI (397264) DHT11_Demo: END[0m
+[0;32mI (398284) dth11: dth11_data_deal[0m
+[0;32mI (398284) dth11: xQueueReceive get[0m
+[0;32mI (398284) DHT11_Demo: END[0m
+[0;32mI (399304) dth11: dth11_data_deal[0m
+[0;32mI (399304) dth11: xQueueReceive get[0m
+[0;32mI (399304
+[0;32mI (400324) dth11: dth11_data_deal[0m
+[0;32mI (400324) dth11: xQueueReceive get[0m
+[0;32mI (400324) DHT11_Demo: END[0m
+[0;32mI (401344) dth11: dth11_data_deal[0m
+[0;32mI (401344) dth11: xQueueReceive get[0m
+[0;32mI (401344) DHT11_Demo: END[0m
+[0;32mI (402364) dth11: dth11_data_deal[0m
+[0;32mI (402364) dth11: xQueueReceive get[0m
+[0;32mI (402364) DHT11_Demo: END[0m
+[0;32mI (403384) dth11: dth11_data_deal[0m
+[0;32mI (403384) dth11: xQueueReceive get[0m
+[0;32mI (403384) DHT11_Demo: END[0m
+[0;32mI (404404) dth11: dth11_data_deal[0m
+[0;32mI (404404) dth11: xQueueReceive get[0m
+[0;32mI (404404) DHT11_Demo: END[0m
+[0;32mI (405424) dth11: dth11_data_deal[0m
+[0;32mI (405424) dth11: xQueueReceive get[0m
+[0;32mI (405424) DHT11_Demo: END[0m
+[0;32mI (406444) dth11: dth11_data_deal[0m
+[0;32mI (406444) dth11: xQueueReceive get[0m
+[0;32mI (406444) DHT11_Demo: END[0m
+[0;32mI (407464) dth11: dth11_data_deal[0m
+[0;32mI (407464) dth11: xQueueReceive get[0m
+[0;32mI (407464) DHT11_Demo: END[0m
+[0;32mI (408484) dth11: dth11_data_deal[0m
+[0;32mI (408484) dth11: xQueueReceive get[0m
+[0;32mI (408484) DHT11_Demo: END[0m
+[0;32mI (409504) dth11: dth11_data_deal[0m
+[0;32mI (409504) dth11: xQueueReceive get[0m
+[0;32mI (409504) DHT11_Demo: END[0m
+[0;32mI (410524) dth11: dth11_data_deal[0m
+[0;32mI (410524) dth11: xQueueReceive get[0m
+[0;32mI (410524) DHT11_Demo: END[0m
+[0;32mI (411544) dth11: dth11_data_deal[0m
+[0;32mI (411544) dth11: xQueueReceive get[0m
+[0;32mI (411544) DHT11_Demo: END[0m
+[0;32mI (412564) dth11: dth11_data_deal[0m
+[0;32mI (412564) dth11: xQueueReceive get[0m
+[0;32mI (412564) DHT11_Demo: END[0m
+[0;32mI (413584) dth11: dth11_data_deal[0m
+[0;32mI (413584) dth11: xQueueReceive get[0m
+[0;32mI (413584) DHT11_Demo: END[0m
+[0;32mI (414604) dth11: dth11_data_deal[0m
+[0;32mI (414604) dth11: xQueueReceive get[0m
+[0;32mI (414604) DHT11_Demo: END[0m
+[0;32mI (415624) dth11: dth11_data_deal[0m
+[0;32mI (415624) dth11: xQueueReceive get[0m
+[0;32mI (415624) DHT11_Demo: END[0m
+[0;32mI (416644) dth11: dth11_data_deal[0m
+[0;32mI (416644) dth11: xQueueReceive get[0m
+[0;32mI (416644) DHT11_Demo: END[0m
+[0;32mI (417664) dth11: dth11_data_deal[0m
+[0;32mI (417664) dth11: xQueueReceive get[0m
+[0;32mI (417664) DHT11_Demo: END[0m
+[0;32mI (418684) dth11: dth11_data_deal[0m
+[0;32mI (418684) dth11: xQueueReceive get[0m
+[0;32mI (418684) DHT11_Demo: END[0m
+[0;32mI (419704) dth11: dth11_data_deal[0m
+[0;32mI (419704) dth11: xQueueReceive get[0m
+[0;32mI (419704) DHT11_Demo: END[0m
+[0;32mI (420724) dth11: dth11_data_deal[0m
+[0;32mI (420724) dth11: xQueueReceive get[0m
+[0;32mI (420724) DHT11_Demo: END[0m
+[0;32mI (421744) dth11: dth11_data_deal[0m
+[0;32mI (421744) dth11: xQueueReceive get[0m
+[0;32mI (421744) DHT11_Demo: END[0m
+[0;32mI (422764) dth11: dth11_data_deal[0m
+[0;32mI (422764) dth11: xQueueReceive get[0m
+[0;32mI (422764) DHT11_Demo: END[0m
+[0;32mI (423784) dth11: dth11_data_deal[0m
+[0;32mI (423784) dth11: xQueueReceive get[0m
+[0;32mI (423784) DHT11_Demo: END[0m
+[0;32mI (424804) dth11: dth11_data_deal[0m
+[0;32mI (424804) dth11: xQueueReceive get[0m
+[0;32mI (424804) DHT11_Demo: END[0m
+[0;32mI (425824) dth11: dth11_data_deal[0m
+[0;32mI (425824) dth11: xQueueReceive get[0m
+[0;32mI (425824) DHT11_Demo: END[0m
+[0;32mI (426844) dth11: dth11_data_deal[0m
+[0;32mI (426844) dth11: xQueueReceive get[0m
+[0;32mI (426844) DHT11_Demo: END[0m

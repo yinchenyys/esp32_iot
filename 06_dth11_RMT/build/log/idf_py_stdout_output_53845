@@ -1,0 +1,466 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boo (30) boot: compile time Mar 16 2025 17:35:16[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Pa   Type ST Offset   Length[0m
+             WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d688h ( 54920) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001d6b0 vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001f9d8 vaddr=40080000 size=00640h (  1600) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18bb4h (101300) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00038bdc vaddr=40080640 size=0d460h ( 54368) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     dht11[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Mar 16 2025 17:33:47[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  9e3020f119166feb...[0m
+[0;32mI (244) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (249) cpu_start: Min chip rev:     v0.0E6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2E40 len 0002D1C0 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008DAA0 len 00012560 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (443) DHT11_Demo: [APP] APP Is Start!~
+[0m
+[0;32mI (443) DHT11_Demo: [APP] IDF Version is 5.2.0[0m
+[0;32mI (443) DHT11_Demo: [APP] Free memory: 298752 bytes[0m
+[0;32mI (443) DHT11_Demo: [APP] IDF version: v5.2[0m
+[0;32mI (453) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (453) DHT11_Demo: START[0m
+[0;32mI (483) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (483) DHT11_Demo: END[0m
+[0;32mI (1503) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (1503) DHT11_Demo: END[0m
+[0;32mI (2523) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (2523) DHT11_Demo: END[0m
+[0;32mI (3543) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (3543) DHT11_Demo: END[0m
+[0;32mI (4563) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (4563) DHT11_Demo: END[0m
+[0;32mI (5583) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (5583) DHT11_Demo: END[0m
+[0;32mI (6603) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (6603) DHT11_Demo: END[0m
+[0;32mI (7623) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (7623) DHT11_Demo: END[0m
+[0;32mI (8643) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (8643) DHT11_Demo: END[0m
+[0;32mI (9663) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (9663) DHT11_Demo: END[0m
+[0;32mI (10683) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (10683) DHT11_Demo: END[0m
+[0;32mI (11703) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (11703) DHT11_Demo: END[0m
+[0;32mI (12723) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (12723) DHT11_Demo: END[0m
+[0;32mI (13743) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (13743) DHT11_Demo: END[0m
+[0;32mI (14763) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (14763) DHT11_Demo: END[0m
+[0;32mI (15783) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (15783) DHT11_Demo: END[0m
+[0;32mI (16803) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (16803) DHT11_Demo: END[0m
+[0;32mI (17823) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (17823) DHT11_Demo: END[0m
+[0;32mI (18843) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (18843) DHT11_Demo: END[0m
+[0;32mI (19863) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (19863) DHT11_Demo: END[0m
+[0;32mI (20883) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (20883) DHT11_Demo: END[0m
+[0;32mI (21903) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (21903) DHT11_Demo: END[0m
+[0;32mI (22923) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (22923) DHT11_Demo: END[0m
+[0;32mI (23943) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (23943) DHT11_Demo: END[0m
+[0;32mI (24963) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (24963) DHT11_Demo: END[0m
+[0;32mI (25983) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (25983) DHT11_Demo: END[0m
+[0;32mI (27003) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (27003) DHT11_Demo: END[0m
+[0;32mI (28023) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (28023) DHT11_Demo: END[0m
+[0;32mI (29043) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (29043) DHT11_Demo: END[0m
+[0;32mI (30063) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (30063) DHT11_Demo: END[0m
+[0;32mI (31083) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (31083) DHT11_Demo: END[0m
+[0;32mI (32103) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (32103) DHT11_Demo: END[0m
+[0;32mI (33123) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (33123) DHT11_Demo: END[0m
+[0;32mI (34143) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (34143) DHT11_Demo: END[0m
+[0;32mI (35163) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (35163) DHT11_Demo: END[0m
+[0;32mI (36183) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (36183) DHT11_Demo: END[0m
+[0;32mI (37203) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (37203) DHT11_Demo: END[0m
+[0;32mI (38223) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (38223) DHT11_Demo: END[0m
+[0;32mI (39243) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (39243) DHT11_Demo: END[0m
+[0;32mI (40263) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (40263) DHT11_Demo: END[0m
+[0;32mI (41283) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (41283) DHT11_Demo: END[0m
+[0;32mI (42303) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (42303) DHT11_Demo: END[0m
+[0;32mI (43323) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (43323) DHT11_Demo: END[0m
+[0;32mI (44343) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (44343) DHT11_Demo: END[0m
+[0;32mI (45363) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (45363) DHT11_Demo: END[0m
+[0;32mI (46383) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (46383) DHT11_Demo: END[0m
+[0;32mI (47403) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (47403) DHT11_Demo: END[0m
+[0;32mI (48423) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (48423) DHT11_Demo: END[0m
+[0;32mI (49443) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (49443) DHT11_Demo: END[0m
+[0;32mI (50463) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (50463) DHT11_Demo: END[0m
+[0;32mI (51483) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (51483) DHT11_Demo: END[0m
+[0;32mI (52503) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (52503) DHT11_Demo: END[0m
+[0;32mI (53523) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (53523) DHT11_Demo: END[0m
+[0;32mI (54543) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (54543) DHT11_Demo: END[0m
+[0;32mI (55563) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (55563) DHT11_Demo: END[0m
+[0;32mI (56583) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (56583) DHT11_Demo: END[0m
+[0;32mI (57603) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (57603) DHT11_Demo: END[0m
+[0;32mI (58623) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (58623) DHT11_Demo: END[0m
+[0;32mI (59643) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (59643) DHT11_Demo: END[0m
+[0;32mI (60663) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (60663) DHT11_Demo: END[0m
+[0;32mI (61683) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (61683) DHT11_Demo: END[0m
+[0;32mI (62703) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (62703) DHT11_Demo: END[0m
+[0;32mI (63723) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (63723) DHT11_Demo: END[0m
+[0;32mI (64743) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (64743) DHT11_Demo: END[0m
+[0;32mI (65763) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (65763) DHT11_Demo: END[0m
+[0;32mI (66783) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (66783) DHT11_Demo: END[0m
+[0;32mI (67803) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (67803) DHT11_Demo: END[0m
+[0;32mI (68823) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (68823) DHT11_Demo: END[0m
+[0;32mI (69843) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (69843) DHT11_Demo: END[0m
+[0;32mI (70863) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (70863) DHT11_Demo: END[0m
+[0;32mI (71883) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (71883) DHT11_Demo: END[0m
+[0;32mI (72903) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (72903) DHT11_Demo: END[0m
+[0;32mI (73923) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (73923) DHT11_Demo: END[0m
+[0;32mI (74943) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (74943) DHT11_Demo: END[0m
+[0;32mI (75963) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (75963) DHT11_Demo: END[0m
+[0;32mI (76983) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (76983) DHT11_Demo: END[0m
+[0;32mI (78003) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (78003) DHT11_Demo: END[0m
+[0;32mI (79023) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (79023) DHT11_Demo: END[0m
+[0;32mI (80043) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (80043) DHT11_Demo: END[0m
+[0;32mI (81063) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (81063) DHT11_Demo: END[0m
+[0;32mI (82083) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (82083) DHT11_Demo: END[0m
+[0;32mI (83103) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (83103) DHT11_Demo: END[0m
+[0;32mI (84123) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (84123) DHT11_Demo: END[0m
+[0;32mI (85143) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (85143) DHT11_Demo: END[0m
+[0;32mI (86163) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (86163) DHT11_Demo: END[0m
+[0;32mI (87183) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (87183) DHT11_Demo: END[0m
+[0;32mI (88203) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (88203) DHT11_Demo: END[0m
+[0;32mI (89223) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (89223) DHT11_Demo: END[0m
+[0;32mI (90243) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (90243) DHT11_Demo: END[0m
+[0;32mI (91263) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (91263) DHT11_Demo: END[0m
+[0;32mI (92283) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (92283) DHT11_Demo: END[0m
+[0;32mI (93303) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (93303) DHT11_Demo: END[0m
+[0;32mI (94323) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (94323) DHT11_Demo: END[0m
+[0;32mI (95343) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (95343) DHT11_Demo: END[0m
+[0;32mI (96363) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (96363) DHT11_Demo: END[0m
+[0;32mI (97383) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (97383) DHT11_Demo: END[0m
+[0;32mI (98403) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (98403) DHT11_Demo: END[0m
+[0;32mI (99423) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (99423) DHT11_Demo: END[0m
+[0;32mI (100443) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (100443) DHT11_Demo: END[0m
+[0;32mI (101463) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (101463) DHT11_Demo: END[0m
+[0;32mI (102483) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (102483) DHT11_Demo: END[0m
+[0;32mI (103503) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (103503) DHT11_Demo: END[0m
+[0;32mI (104523) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (104523) DHT11_Demo: END[0m
+[0;32mI (105543) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (105543) DHT11_Demo: END[0m
+[0;32mI (106563) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (106563) DHT11_Demo: END[0m
+[0;32mI (107583) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (107583) DHT11_Demo: END[0m
+[0;32mI (108603) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (108603) DHT11_Demo: END[0m
+[0;32mI (109623) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (109623) DHT11_Demo: END[0m
+[0;32mI (110643) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (110643) DHT11_Demo: END[0m
+[0;32mI (111663) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (111663) DHT11_Demo: END[0m
+[0;32mI (112683) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (112683) DHT11_Demo: END[0m
+[0;32mI (113703) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (113703) DHT11_Demo: END[0m
+[0;32mI (114723) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (114723) DHT11_Demo: END[0m
+[0;32mI (115743) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (115743) DHT11_Demo: END[0m
+[0;32mI (116763) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (116763) DHT11_Demo: END[0m
+[0;32mI (117783) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (117783) DHT11_Demo: END[0m
+[0;32mI (118803) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (118803) DHT11_Demo: END[0m
+[0;32mI (119823) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (119823) DHT11_Demo: END[0m
+[0;32mI (120843) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (120843) DHT11_Demo: END[0m
+[0;32mI (121863) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (121863) DHT11_Demo: END[0m
+[0;32mI (122883) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (122883) DHT11_Demo: END[0m
+[0;32mI (123903) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (123903) DHT11_Demo: END[0m
+[0;32mI (124923) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (124923) DHT11_Demo: END[0m
+[0;32mI (125943) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (125943) DHT11_Demo: END[0m
+[0;32mI (126963) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (126963) DHT11_Demo: END[0m
+[0;32mI (127983) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (127983) DHT11_Demo: END[0m
+[0;32mI (129003) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (129003) DHT11_Demo: END[0m
+[0;32mI (130023) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (130023) DHT11_Demo: END[0m
+[0;32mI (131043) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (131043) DHT11_Demo: END[0m
+[0;32mI (132063) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (132063) DHT11_Demo: END[0m
+[0;32mI (133083) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (133083) DHT11_Demo: END[0m
+[0;32mI (134103) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (134103) DHT11_Demo: END[0m
+[0;32mI (135123) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (135123) DHT11_Demo: END[0m
+[0;32mI (136143) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (136143) DHT11_Demo: END[0m
+[0;32mI (137163) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (137163) DHT11_Demo: END[0m
+[0;32mI (138183) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (138183) DHT11_Demo: END[0m
+[0;32mI (139203) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (139203) DHT11_Demo: END[0m
+[0;32mI (140223) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (140223) DHT11_Demo: END[0m
+[0;32mI (141243) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (141243) DHT11_Demo: END[0m
+[0;32mI (142263) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (142263) DHT11_Demo: END[0m
+[0;32mI (143283) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (143283) DHT11_Demo: END[0m
+[0;32mI (144303) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (144303) DHT11_Demo: END[0m
+[0;32mI (145323) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (145323) DHT11_Demo: END[0m
+[0;32mI (146343) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (146343) DHT11_Demo: END[0m
+[0;32mI (147363) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (147363) DHT11_Demo: END[0m
+[0;32mI (148383) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (148383) DHT11_Demo: END[0m
+[0;32mI (149403) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (149403) DHT11_Demo: END[0m
+[0;32mI (150423) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (150423) DHT11_Demo: END[0m
+[0;32mI (151443) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (151443) DHT11_Demo: END[0m
+[0;32mI (152463) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (152463) DHT11_Demo: END[0m
+[0;32mI (153483) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (153483) DHT11_Demo: END[0m
+[0;32mI (154503) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (154503) DHT11_Demo: END[0m
+[0;32mI (155523) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (155523) DHT11_Demo: END[0m
+[0;32mI (156543) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (156543) DHT11_Demo: END[0m
+[0;32mI (157563) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (157563) DHT11_Demo: END[0m
+[0;32mI (158583) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (158583) DHT11_Demo: END[0m
+[0;32mI (159603) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (159603) DHT11_Demo: END[0m
+[0;32mI (160623) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (160623) DHT11_Demo: END[0m
+[0;32mI (161643) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (161643) DHT11_Demo: END[0m
+[0;32mI (162663) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (162663) DHT11_Demo: END[0m
+[0;32mI (163683) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (163683) DHT11_Demo: END[0m
+[0;32mI (164703) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (164703) DHT11_Demo: END[0m
+[0;32mI (165723) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (165723) DHT11_Demo: END[0m
+[0;32mI (166743) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (166743) DHT11_Demo: END[0m
+[0;32mI (167763) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (167763) DHT11_Demo: END[0m
+[0;32mI (168783) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (168783) DHT11_Demo: END[0m
+[0;32mI (169803) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (169803) DHT11_Demo: END[0m
+[0;32mI (170823) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (170823) DHT11_Demo: END[0m
+[0;32mI (171843) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (171843) DHT11_Demo: END[0m
+[0;32mI (172863) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (172863) DHT11_Demo: END[0m
+[0;32mI (173883) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (173883) DHT11_Demo: END[0m
+[0;32mI (174903) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (174903) DHT11_Demo: END[0m
+[0;32mI (175923) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (175923) DHT11_Demo: END[0m
+[0;32mI (176943) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (176943) DHT11_Demo: END[0m
+[0;32mI (177963) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (177963) DHT11_Demo: END[0m
+[0;32mI (178983) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (178983) DHT11_Demo: END[0m
+[0;32mI (180003) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (180003) DHT11_Demo: END[0m
+[0;32mI (181023) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (181023) DHT11_Demo: END[0m
+[0;32mI (182043) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (182043) DHT11_Demo: END[0m
+[0;32mI (183063) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (183063) DHT11_Demo: END[0m
+[0;32mI (184083) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (184083) DHT11_Demo: END[0m
+[0;32mI (185103) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (185103) DHT11_Demo: END[0m
+[0;32mI (186123) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (186123) DHT11_Demo: END[0m
+[0;32mI (187143) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (187143) DHT11_Demo: END[0m
+[0;32mI (188163) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (188163) DHT11_Demo: END[0m
+[0;32mI (189183) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (189183) DHT11_Demo: END[0m
+[0;32mI (190203) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (190203) DHT11_Demo: END[0m
+[0;32mI (191223) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (191223) DHT11_Demo: END[0m
+[0;32mI (192243) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (192243) DHT11_Demo: END[0m
+[0;32mI (193263) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (193263) DHT11_Demo: END[0m
+[0;32mI (194283) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (194283) DHT11_Demo: END[0m
+[0;32mI (195303) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (195303) DHT11_Demo: END[0m
+[0;32mI (196323) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (196323) DHT11_Demo: END[0m
+[0;32mI (197343) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (197343) DHT11_Demo: END[0m
+[0;32mI (198363) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (198363) DHT11_Demo: END[0m
+[0;32mI (199383) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (199383) DHT11_Demo: END[0m
+[0;32mI (200403) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (200403) DHT11_Demo: END[0m
+[0;32mI (201423) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (201423) DHT11_Demo: END[0m
+[0;32mI (202443) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (202443) DHT11_Demo: END[0m
+[0;32mI (203463) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (203463) DHT11_Demo: END[0m
+[0;32mI (204483) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (204483) DHT11_Demo: END[0m
+[0;32mI (205503) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (205503) DHT11_Demo: END[0m
+[0;32mI (206523) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (206523) DHT11_Demo: END[0m
+[0;32mI (207543) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (207543) DHT11_Demo: END[0m
+[0;32mI (208563) DHT11_Demo: temp->0.0 Chum->0%[0m
+[0;32mI (208563) DHT11_Demo: END[0m

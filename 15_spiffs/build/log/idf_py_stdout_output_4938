@@ -1,0 +1,31 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun  7 2025 08:0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI2mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot:  3 storage          Unknown data     01 82 00110000 00080000[0m
+[0;32mI (98) boot: End of partitiotable[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 v1c1c0 vaddr=40080000 size=03e58h ( 15960) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1a6f0h (108272) map[0m
+[0;32mI (176) esp_image: segment 4: paddr=0003a718 vaddr=40083e58 size=08ff4h ( 36852) load[0m
+[0;32mI (198) boot: Loaded apcpu_start: Min chip rev:     v0.0[0m
+[0;32mI (252) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip reflash: detected chip: gd[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(8192k) larger[0;32mI (1992) spiffs: spiffs total_buf is 474641,spiffs used_buf is 502 [0m
+[0;32mI (2082) main_task: Returned from app_main()[0m

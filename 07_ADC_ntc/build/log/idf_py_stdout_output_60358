@@ -1,0 +1,69 @@
+gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;33mW (300) sets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_dr(30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Apr  9 2025 14:48:32[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;3) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI 
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a214h ( 41492) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001a23c vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=0001a248 vaddr=3ffb0000 size=0220ch (  8716) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=0001c45c vaddr=40080000 size=03bbch ( 15292) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1501ch ( 86044) map[0m
+[0;32mI (170) esp_image: segment 5: paddr=00035044 vaddr=40083bbc size=08b60h ( 35680) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     ntc[0m
+[0;32mI (218) cpu_start: App version:      1[0m
+[0;32mI (222) cpu_229) cpu_start: ELF file SHA256:  44c95336cda7bc77...[0m
+[0;32mI (234) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (239) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (244) cpu_start:x chip rev:     v3.99 [0m
+[0;32mI (249) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (254) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFB2B60 len 0002D4A0 (1
+[0;32mI (273) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (293) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io: dio[0m
+[0;33mW (300) spi_flash: Detected size192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) main_task: Started on CPU0[0m
+[0;32mI (324) main_task: Calling app_main()[0m
+[0;32mI (324) adc: calibration scheme version is Line Fitting[0m
+[0;31mE (324) adc_cali: adc_cali_create_scheme_line_fitting(158): invalid ADC unit[0m
+[0;32mI (334) NTC: k is 0.013920[0m
+[0;32mI (334) NTC: b is -3592[0m
+[0;32mI (334) main: current temp:0.00[0m
+[0;32mI (1344) NTC: k is 0.013920[0m
+[0;32mI (1344) NTC: b is -3592[0m
+[0;32mI (1344) main: current temp:0.00[0m
+[0;32mI (2344) NTC: k is 0.013920[0m
+[0;32mI (2344) NTC: b is -3592[0m
+[0;32mI (2344) main: current temp:0.00[0m
+[0;32mI (3344) NTC: k is 0.013920[0m
+[0;32mI (3344) NTC: b is -3592[0m
+[0;32mI (3344) main: current temp:0.00[0m
+[0;32mI (4344) NTC: k is 0.013920[0m
+[0;32mI (4344) NTC: b is -3592[0m
+[0;32mI (4344) main: current temp:0.00[0m
+[0;32mI (5344) NTC: k is 0.013920[0m
+[0;32mI (5344) NTC: b is -3592[0m
+[0;32mI (5344) main: current temp:0.00[0m

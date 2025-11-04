@@ -1,0 +1,1316 @@
+CPU0[0m
+[0;32mI (324) main_task: Calliets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Apr  9 2025 14:48:32[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Lab8) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2b4h ( 41652) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001a2dc vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=0001a2e8 vaddr=3ffb0000 size=0220ch (  8716) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=0001c4fc vaddr=40080000 size=03b1ch ( 15132) load[0m
+[0;32mI (138) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15094h ( 86164) map[0m
+[0;32mI (170) esp_image: segment 5: paddr=000350bc vaddr=40083b1c size=08c00h ( 35840) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Multicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) cpu_start: Application information:[0m
+[0;32mI (214) cpu_start: P025 14:47:55[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  74cf1234cd76e0b2...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (239) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (244) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (249) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (254) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFB2B60 len 0002D4A0 (181 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (294) spi_flash: detected chip: gd[0m
+[0;32mI (296) spi_flash: flash io:flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) main_task: Started on CPU0[0m
+[0;32mI (324) main_task: Calling app_main()[0m
+[0;32mI (324) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (324) adc: Calibration Success[0m
+[0;32mI (324) main: current temp:0.00[0m
+[0;32mI (1334) NTC: k is -0.002717[0m
+[0;32mI (1334) NTC: b is -181[0m
+[0;32mI (1334) main: current temp:28.49[0m
+[0;32mI (2334) NTC: k is -0.002717[0m
+[0;32mI (2334) NTC: b is -202[0m
+[0;32mI (2334) main: current temp:28.55[0m
+[0;32mI (3334) NTC: k is -0.002717[0m
+[0;32mI (3334) NTC: b is -181[0m
+[0;32mI (3334) main: current temp:28.49[0m
+[0;32mI (4334) NTC: k is -0.002717[0m
+[0;32mI (4334) NTC: b is -171[0m
+[0;32mI (4334) main: current temp:28.46[0m
+[0;32mI (5334) NTC: k is -0.002717[0m
+[0;32mI (5334) NTC: b is -181[0m
+[0;32mI (5334) main: current temp:28.49[0m
+[0;32mI (6334) NTC: k is -0.002717[0m
+[0;32mI (6334) NTC: b is -171[0m
+[0;32mI (6334) main: current temp:28.46[0m
+[0;32mI (7334) NTC: k is -0.002717[0m
+[0;32mI (7334) NTC: b is -192[0m
+[0;32mI (7334) main: current temp:28.52[0m
+[0;32mI (8334) NTC: k is -0.002717[0m
+[0;32mI (8334) NTC: b is -255[0m
+[0;32mI (8334) main: current temp:28.69[0m
+[0;32mI (9334) NTC: k is -0.002717[0m
+[0;32mI (9334) NTC: b is -337[0m
+[0;32mI (9334) main: current temp:28.92[0m
+[0;32mI (10334) NTC: k is -0.002849[0m
+[0;32mI (10334) NTC: b is -113[0m
+[0;32mI (10334) main: current temp:29.32[0m
+[0;32mI (11334) NTC: k is -0.002849[0m
+[0;32mI (11334) NTC: b is -274[0m
+[0;32mI (11334) main: current temp:29.78[0m
+[0;32mI (12334) NTC: k is -0.002985[0m
+[0;32mI (12334) NTC: b is -51[0m
+[0;32mI (12334) main: current temp:30.15[0m
+[0;32mI (13334) NTC: k is -0.002985[0m
+[0;32mI (13334) NTC: b is -178[0m
+[0;32mI (13334) main: current temp:30.53[0m
+[0;32mI (14334) NTC: k is -0.002985[0m
+[0;32mI (14334) NTC: b is -256[0m
+[0;32mI (14334) main: current temp:30.76[0m
+[0;32mI (15334) NTC: k is -0.002985[0m
+[0;32mI (15334) NTC: b is -313[0m
+[0;32mI (15334) main: current temp:30.93[0m
+[0;32mI (16334) NTC: k is -0.003135[0m
+[0;32mI (16334) NTC: b is -45[0m
+[0;32mI (16334) main: current temp:31.14[0m
+[0;32mI (17334) NTC: k is -0.003135[0m
+[0;32mI (17334) NTC: b is -82[0m
+[0;32mI (17334) main: current temp:31.26[0m
+[0;32mI (18334) NTC: k is -0.003135[0m
+[0;32mI (18334) NTC: b is -195[0m
+[0;32mI (18334) main: current temp:31.61[0m
+[0;32mI (19334) NTC: k is -0.003135[0m
+[0;32mI (19334) NTC: b is -297[0m
+[0;32mI (19334) main: current temp:31.93[0m
+[0;32mI (20334) NTC: k is -0.003279[0m
+[0;32mI (20334) NTC: b is -24[0m
+[0;32mI (20334) main: current temp:32.08[0m
+[0;32mI (21334) NTC: k is -0.003279[0m
+[0;32mI (21334) NTC: b is -69[0m
+[0;32mI (21334) main: current temp:32.23[0m
+[0;32mI (22334) NTC: k is -0.003279[0m
+[0;32mI (22334) NTC: b is -133[0m
+[0;32mI (22334) main: current temp:32.44[0m
+[0;32mI (23334) NTC: k is -0.003279[0m
+[0;32mI (23334) NTC: b is -169[0m
+[0;32mI (23334) main: current temp:32.55[0m
+[0;32mI (24334) NTC: k is -0.003279[0m
+[0;32mI (24334) NTC: b is -232[0m
+[0;32mI (24334) main: current temp:32.76[0m
+[0;32mI (25334) NTC: k is -0.003279[0m
+[0;32mI (25334) NTC: b is -259[0m
+[0;32mI (25334) main: current temp:32.85[0m
+[0;32mI (26334) NTC: k is -0.003279[0m
+[0;32mI (26334) NTC: b is -277[0m
+[0;32mI (26334) main: current temp:32.91[0m
+[0;32mI (27334) NTC: k is -0.003279[0m
+[0;32mI (27334) NTC: b is -285[0m
+[0;32mI (27334) main: current temp:32.93[0m
+[0;32mI (28334) NTC: k is -0.003279[0m
+[0;32mI (28334) NTC: b is -294[0m
+[0;32mI (28334) main: current temp:32.96[0m
+[0;32mI (29334) NTC: k is -0.003279[0m
+[0;32mI (29334) NTC: b is -277[0m
+[0;32mI (29334) main: current temp:32.91[0m
+[0;32mI (30334) NTC: k is -0.003279[0m
+[0;32mI (30334) NTC: b is -259[0m
+[0;32mI (30334) main: current temp:32.85[0m
+[0;32mI (31334) NTC: k is -0.003279[0m
+[0;32mI (31334) NTC: b is -241[0m
+[0;32mI (31334) main: current temp:32.79[0m
+[0;32mI (32334) NTC: k is -0.003279[0m
+[0;32mI (32334) NTC: b is -241[0m
+[0;32mI (32334) main: current temp:32.79[0m
+[0;32mI (33334) NTC: k is -0.003279[0m
+[0;32mI (33334) NTC: b is -223[0m
+[0;32mI (33334) main: current temp:32.73[0m
+[0;32mI (34334) NTC: k is -0.003279[0m
+[0;32mI (34334) NTC: b is -205[0m
+[0;32mI (34334) main: current temp:32.67[0m
+[0;32mI (35334) NTC: k is -0.003279[0m
+[0;32mI (35334) NTC: b is -178[0m
+[0;32mI (35334) main: current temp:32.58[0m
+[0;32mI (36334) NTC: k is -0.003279[0m
+[0;32mI (36334) NTC: b is -169[0m
+[0;32mI (36334) main: current temp:32.55[0m
+[0;32mI (37334) NTC: k is -0.003279[0m
+[0;32mI (37334) NTC: b is -178[0m
+[0;32mI (37334) main: current temp:32.58[0m
+[0;32mI (38334) NTC: k is -0.003279[0m
+[0;32mI (38334) NTC: b is -160[0m
+[0;32mI (38334) main: current temp:32.52[0m
+[0;32mI (39334) NTC: k is -0.003279[0m
+[0;32mI (39334) NTC: b is -142[0m
+[0;32mI (39334) main: current temp:32.47[0m
+[0;32mI (40334) NTC: k is -0.003279[0m
+[0;32mI (40334) NTC: b is -142[0m
+[0;32mI (40334) main: current temp:32.47[0m
+[0;32mI (41334) NTC: k is -0.003279[0m
+[0;32mI (41334) NTC: b is -124[0m
+[0;32mI (41334) main: current temp:32.41[0m
+[0;32mI (42334) NTC: k is -0.003279[0m
+[0;32mI (42334) NTC: b is -115[0m
+[0;32mI (42334) main: current temp:32.38[0m
+[0;32mI (43334) NTC: k is -0.003279[0m
+[0;32mI (43334) NTC: b is -124[0m
+[0;32mI (43334) main: current temp:32.41[0m
+[0;32mI (44334) NTC: k is -0.003279[0m
+[0;32mI (44334) NTC: b is -106[0m
+[0;32mI (44334) main: current temp:32.35[0m
+[0;32mI (45334) NTC: k is -0.003279[0m
+[0;32mI (45334) NTC: b is -79[0m
+[0;32mI (45334) main: current temp:32.26[0m
+[0;32mI (46334) NTC: k is -0.003279[0m
+[0;32mI (46334) NTC: b is -69[0m
+[0;32mI (46334) main: current temp:32.23[0m
+[0;32mI (47334) NTC: k is -0.003279[0m
+[0;32mI (47334) NTC: b is -60[0m
+[0;32mI (47334) main: current temp:32.20[0m
+[0;32mI (48334) NTC: k is -0.003279[0m
+[0;32mI (48334) NTC: b is -51[0m
+[0;32mI (48334) main: current temp:32.17[0m
+[0;32mI (49334) NTC: k is -0.003279[0m
+[0;32mI (49334) NTC: b is -33[0m
+[0;32mI (49334) main: current temp:32.11[0m
+[0;32mI (50334) NTC: k is -0.003279[0m
+[0;32mI (50334) NTC: b is -33[0m
+[0;32mI (50334) main: current temp:32.11[0m
+[0;32mI (51334) NTC: k is -0.003279[0m
+[0;32mI (51334) NTC: b is -33[0m
+[0;32mI (51334) main: current temp:32.11[0m
+[0;32mI (52334) NTC: k is -0.003279[0m
+[0;32mI (52334) NTC: b is -24[0m
+[0;32mI (52334) main: current temp:32.08[0m
+[0;32mI (53334) NTC: k is -0.003279[0m
+[0;32mI (53334) NTC: b is -24[0m
+[0;32mI (53334) main: current temp:32.08[0m
+[0;32mI (54334) NTC: k is -0.003279[0m
+[0;32mI (54334) NTC: b is -24[0m
+[0;32mI (54334) main: current temp:32.08[0m
+[0;32mI (55334) NTC: k is -0.003279[0m
+[0;32mI (55334) NTC: b is -5[0m
+[0;32mI (55334) main: current temp:32.02[0m
+[0;32mI (56334) NTC: k is -0.003279[0m
+[0;32mI (56334) NTC: b is -24[0m
+[0;32mI (56334) main: current temp:32.08[0m
+[0;32mI (57334) NTC: k is -0.003279[0m
+[0;32mI (57334) NTC: b is -15[0m
+[0;32mI (57334) main: current temp:32.05[0m
+[0;32mI (58334) NTC: k is -0.003135[0m
+[0;32mI (58334) NTC: b is -306[0m
+[0;32mI (58334) main: current temp:31.96[0m
+[0;32mI (59334) NTC: k is -0.003135[0m
+[0;32mI (59334) NTC: b is -278[0m
+[0;32mI (59334) main: current temp:31.87[0m
+[0;32mI (60334) NTC: k is -0.003135[0m
+[0;32mI (60334) NTC: b is -260[0m
+[0;32mI (60334) main: current temp:31.82[0m
+[0;32mI (61334) NTC: k is -0.003135[0m
+[0;32mI (61334) NTC: b is -251[0m
+[0;32mI (61334) main: current temp:31.79[0m
+[0;32mI (62334) NTC: k is -0.003135[0m
+[0;32mI (62334) NTC: b is -214[0m
+[0;32mI (62334) main: current temp:31.67[0m
+[0;32mI (63334) NTC: k is -0.003135[0m
+[0;32mI (63334) NTC: b is -214[0m
+[0;32mI (63334) main: current temp:31.67[0m
+[0;32mI (64334) NTC: k is -0.003135[0m
+[0;32mI (64334) NTC: b is -204[0m
+[0;32mI (64334) main: current temp:31.64[0m
+[0;32mI (65334) NTC: k is -0.003135[0m
+[0;32mI (65334) NTC: b is -186[0m
+[0;32mI (65334) main: current temp:31.58[0m
+[0;32mI (66334) NTC: k is -0.003135[0m
+[0;32mI (66334) NTC: b is -186[0m
+[0;32mI (66334) main: current temp:31.58[0m
+[0;32mI (67334) NTC: k is -0.003135[0m
+[0;32mI (67334) NTC: b is -176[0m
+[0;32mI (67334) main: current temp:31.55[0m
+[0;32mI (68334) NTC: k is -0.003135[0m
+[0;32mI (68334) NTC: b is -158[0m
+[0;32mI (68334) main: current temp:31.50[0m
+[0;32mI (69334) NTC: k is -0.003135[0m
+[0;32mI (69334) NTC: b is -148[0m
+[0;32mI (69334) main: current temp:31.46[0m
+[0;32mI (70334) NTC: k is -0.003135[0m
+[0;32mI (70334) NTC: b is -129[0m
+[0;32mI (70334) main: current temp:31.40[0m
+[0;32mI (71334) NTC: k is -0.003135[0m
+[0;32mI (71334) NTC: b is -129[0m
+[0;32mI (71334) main: current temp:31.40[0m
+[0;32mI (72334) NTC: k is -0.003135[0m
+[0;32mI (72334) NTC: b is -129[0m
+[0;32mI (72334) main: current temp:31.40[0m
+[0;32mI (73334) NTC: k is -0.003135[0m
+[0;32mI (73334) NTC: b is -101[0m
+[0;32mI (73334) main: current temp:31.32[0m
+[0;32mI (74334) NTC: k is -0.003135[0m
+[0;32mI (74334) NTC: b is -111[0m
+[0;32mI (74334) main: current temp:31.35[0m
+[0;32mI (75334) NTC: k is -0.003135[0m
+[0;32mI (75334) NTC: b is -101[0m
+[0;32mI (75334) main: current temp:31.32[0m
+[0;32mI (76334) NTC: k is -0.003135[0m
+[0;32mI (76334) NTC: b is -82[0m
+[0;32mI (76334) main: current temp:31.26[0m
+[0;32mI (77334) NTC: k is -0.003135[0m
+[0;32mI (77334) NTC: b is -82[0m
+[0;32mI (77334) main: current temp:31.26[0m
+[0;32mI (78334) NTC: k is -0.003135[0m
+[0;32mI (78334) NTC: b is -82[0m
+[0;32mI (78334) main: current temp:31.26[0m
+[0;32mI (79334) NTC: k is -0.003135[0m
+[0;32mI (79334) NTC: b is -82[0m
+[0;32mI (79334) main: current temp:31.26[0m
+[0;32mI (80334) NTC: k is -0.003135[0m
+[0;32mI (80334) NTC: b is -73[0m
+[0;32mI (80334) main: current temp:31.23[0m
+[0;32mI (81334) NTC: k is -0.003135[0m
+[0;32mI (81334) NTC: b is -16[0m
+[0;32mI (81334) main: current temp:31.05[0m
+[0;32mI (82334) NTC: k is -0.003135[0m
+[0;32mI (82334) NTC: b is -45[0m
+[0;32mI (82334) main: current temp:31.14[0m
+[0;32mI (83334) NTC: k is -0.003135[0m
+[0;32mI (83334) NTC: b is -54[0m
+[0;32mI (83334) main: current temp:31.17[0m
+[0;32mI (84334) NTC: k is -0.003135[0m
+[0;32mI (84334) NTC: b is -26[0m
+[0;32mI (84334) main: current temp:31.08[0m
+[0;32mI (85334) NTC: k is -0.003135[0m
+[0;32mI (85334) NTC: b is -16[0m
+[0;32mI (85334) main: current temp:31.05[0m
+[0;32mI (86334) NTC: k is -0.003135[0m
+[0;32mI (86334) NTC: b is -16[0m
+[0;32mI (86334) main: current temp:31.05[0m
+[0;32mI (87334) NTC: k is -0.003135[0m
+[0;32mI (87334) NTC: b is -26[0m
+[0;32mI (87334) main: current temp:31.08[0m
+[0;32mI (88334) NTC: k is -0.002985[0m
+[0;32mI (88334) NTC: b is -323[0m
+[0;32mI (88334) main: current temp:30.96[0m
+[0;32mI (89334) NTC: k is -0.002985[0m
+[0;32mI (89334) NTC: b is -332[0m
+[0;32mI (89334) main: current temp:30.99[0m
+[0;32mI (90334) NTC: k is -0.002985[0m
+[0;32mI (90334) NTC: b is -323[0m
+[0;32mI (90334) main: current temp:30.96[0m
+[0;32mI (91334) NTC: k is -0.002985[0m
+[0;32mI (91334) NTC: b is -323[0m
+[0;32mI (91334) main: current temp:30.96[0m
+[0;32mI (92334) NTC: k is -0.002985[0m
+[0;32mI (92334) NTC: b is -303[0m
+[0;32mI (92334) main: current temp:30.90[0m
+[0;32mI (93334) NTC: k is -0.002985[0m
+[0;32mI (93334) NTC: b is -313[0m
+[0;32mI (93334) main: current temp:30.93[0m
+[0;32mI (94334) NTC: k is -0.002985[0m
+[0;32mI (94334) NTC: b is -303[0m
+[0;32mI (94334) main: current temp:30.90[0m
+[0;32mI (95334) NTC: k is -0.002985[0m
+[0;32mI (95334) NTC: b is -294[0m
+[0;32mI (95334) main: current temp:30.88[0m
+[0;32mI (96334) NTC: k is -0.002985[0m
+[0;32mI (96334) NTC: b is -284[0m
+[0;32mI (96334) main: current temp:30.85[0m
+[0;32mI (97334) NTC: k is -0.002985[0m
+[0;32mI (97334) NTC: b is -294[0m
+[0;32mI (97334) main: current temp:30.88[0m
+[0;32mI (98334) NTC: k is -0.002985[0m
+[0;32mI (98334) NTC: b is -294[0m
+[0;32mI (98334) main: current temp:30.88[0m
+[0;32mI (99334) NTC: k is -0.002985[0m
+[0;32mI (99334) NTC: b is -284[0m
+[0;32mI (99334) main: current temp:30.85[0m
+[0;32mI (100334) NTC: k is -0.002985[0m
+[0;32mI (100334) NTC: b is -284[0m
+[0;32mI (100334) main: current temp:30.85[0m
+[0;32mI (101334) NTC: k is -0.002985[0m
+[0;32mI (101334) NTC: b is -284[0m
+[0;32mI (101334) main: current temp:30.85[0m
+[0;32mI (102334) NTC: k is -0.002985[0m
+[0;32mI (102334) NTC: b is -284[0m
+[0;32mI (102334) main: current temp:30.85[0m
+[0;32mI (103334) NTC: k is -0.002985[0m
+[0;32mI (103334) NTC: b is -265[0m
+[0;32mI (103334) main: current temp:30.79[0m
+[0;32mI (104334) NTC: k is -0.002985[0m
+[0;32mI (104334) NTC: b is -265[0m
+[0;32mI (104334) main: current temp:30.79[0m
+[0;32mI (105334) NTC: k is -0.002985[0m
+[0;32mI (105334) NTC: b is -256[0m
+[0;32mI (105334) main: current temp:30.76[0m
+[0;32mI (106334) NTC: k is -0.002985[0m
+[0;32mI (106334) NTC: b is -265[0m
+[0;32mI (106334) main: current temp:30.79[0m
+[0;32mI (107334) NTC: k is -0.002985[0m
+[0;32mI (107334) NTC: b is -265[0m
+[0;32mI (107334) main: current temp:30.79[0m
+[0;32mI (108334) NTC: k is -0.002985[0m
+[0;32mI (108334) NTC: b is -236[0m
+[0;32mI (108334) main: current temp:30.70[0m
+[0;32mI (109334) NTC: k is -0.002985[0m
+[0;32mI (109334) NTC: b is -265[0m
+[0;32mI (109334) main: current temp:30.79[0m
+[0;32mI (110334) NTC: k is -0.002985[0m
+[0;32mI (110334) NTC: b is -265[0m
+[0;32mI (110334) main: current temp:30.79[0m
+[0;32mI (111334) NTC: k is -0.002985[0m
+[0;32mI (111334) NTC: b is -236[0m
+[0;32mI (111334) main: current temp:30.70[0m
+[0;32mI (112334) NTC: k is -0.002985[0m
+[0;32mI (112334) NTC: b is -256[0m
+[0;32mI (112334) main: current temp:30.76[0m
+[0;32mI (113334) NTC: k is -0.002985[0m
+[0;32mI (113334) NTC: b is -246[0m
+[0;32mI (113334) main: current temp:30.73[0m
+[0;32mI (114334) NTC: k is -0.002985[0m
+[0;32mI (114334) NTC: b is -207[0m
+[0;32mI (114334) main: current temp:30.62[0m
+[0;32mI (115334) NTC: k is -0.002985[0m
+[0;32mI (115334) NTC: b is -227[0m
+[0;32mI (115334) main: current temp:30.68[0m
+[0;32mI (116334) NTC: k is -0.002985[0m
+[0;32mI (116334) NTC: b is -198[0m
+[0;32mI (116334) main: current temp:30.59[0m
+[0;32mI (117334) NTC: k is -0.002985[0m
+[0;32mI (117334) NTC: b is -207[0m
+[0;32mI (117334) main: current temp:30.62[0m
+[0;32mI (118334) NTC: k is -0.002985[0m
+[0;32mI (118334) NTC: b is -198[0m
+[0;32mI (118334) main: current temp:30.59[0m
+[0;32mI (119334) NTC: k is -0.002985[0m
+[0;32mI (119334) NTC: b is -207[0m
+[0;32mI (119334) main: current temp:30.62[0m
+[0;32mI (120334) NTC: k is -0.002985[0m
+[0;32mI (120334) NTC: b is -188[0m
+[0;32mI (120334) main: current temp:30.56[0m
+[0;32mI (121334) NTC: k is -0.002985[0m
+[0;32mI (121334) NTC: b is -178[0m
+[0;32mI (121334) main: current temp:30.53[0m
+[0;32mI (122334) NTC: k is -0.002985[0m
+[0;32mI (122334) NTC: b is -188[0m
+[0;32mI (122334) main: current temp:30.56[0m
+[0;32mI (123334) NTC: k is -0.002985[0m
+[0;32mI (123334) NTC: b is -188[0m
+[0;32mI (123334) main: current temp:30.56[0m
+[0;32mI (124334) NTC: k is -0.002985[0m
+[0;32mI (124334) NTC: b is -178[0m
+[0;32mI (124334) main: current temp:30.53[0m
+[0;32mI (125334) NTC: k is -0.002985[0m
+[0;32mI (125334) NTC: b is -178[0m
+[0;32mI (125334) main: current temp:30.53[0m
+[0;32mI (126334) NTC: k is -0.002985[0m
+[0;32mI (126334) NTC: b is -169[0m
+[0;32mI (126334) main: current temp:30.50[0m
+[0;32mI (127334) NTC: k is -0.002985[0m
+[0;32mI (127334) NTC: b is -169[0m
+[0;32mI (127334) main: current temp:30.50[0m
+[0;32mI (128334) NTC: k is -0.002985[0m
+[0;32mI (128334) NTC: b is -169[0m
+[0;32mI (128334) main: current temp:30.50[0m
+[0;32mI (129334) NTC: k is -0.002985[0m
+[0;32mI (129334) NTC: b is -169[0m
+[0;32mI (129334) main: current temp:30.50[0m
+[0;32mI (130334) NTC: k is -0.002985[0m
+[0;32mI (130334) NTC: b is -169[0m
+[0;32mI (130334) main: current temp:30.50[0m
+[0;32mI (131334) NTC: k is -0.002985[0m
+[0;32mI (131334) NTC: b is -159[0m
+[0;32mI (131334) main: current temp:30.47[0m
+[0;32mI (132334) NTC: k is -0.002985[0m
+[0;32mI (132334) NTC: b is -149[0m
+[0;32mI (132334) main: current temp:30.44[0m
+[0;32mI (133334) NTC: k is -0.002985[0m
+[0;32mI (133334) NTC: b is -130[0m
+[0;32mI (133334) main: current temp:30.39[0m
+[0;32mI (134334) NTC: k is -0.002985[0m
+[0;32mI (134334) NTC: b is -149[0m
+[0;32mI (134334) main: current temp:30.44[0m
+[0;32mI (135334) NTC: k is -0.002985[0m
+[0;32mI (135334) NTC: b is -149[0m
+[0;32mI (135334) main: current temp:30.44[0m
+[0;32mI (136334) NTC: k is -0.002985[0m
+[0;32mI (136334) NTC: b is -110[0m
+[0;32mI (136334) main: current temp:30.33[0m
+[0;32mI (137334) NTC: k is -0.002985[0m
+[0;32mI (137334) NTC: b is -120[0m
+[0;32mI (137334) main: current temp:30.36[0m
+[0;32mI (138334) NTC: k is -0.002985[0m
+[0;32mI (138334) NTC: b is -130[0m
+[0;32mI (138334) main: current temp:30.39[0m
+[0;32mI (139334) NTC: k is -0.002985[0m
+[0;32mI (139334) NTC: b is -110[0m
+[0;32mI (139334) main: current temp:30.33[0m
+[0;32mI (140334) NTC: k is -0.002985[0m
+[0;32mI (140334) NTC: b is -100[0m
+[0;32mI (140334) main: current temp:30.30[0m
+[0;32mI (141334) NTC: k is -0.002985[0m
+[0;32mI (141334) NTC: b is -100[0m
+[0;32mI (141334) main: current temp:30.30[0m
+[0;32mI (142334) NTC: k is -0.002985[0m
+[0;32mI (142334) NTC: b is -100[0m
+[0;32mI (142334) main: current temp:30.30[0m
+[0;32mI (143334) NTC: k is -0.002985[0m
+[0;32mI (143334) NTC: b is -91[0m
+[0;32mI (143334) main: current temp:30.27[0m
+[0;32mI (144334) NTC: k is -0.002985[0m
+[0;32mI (144334) NTC: b is -81[0m
+[0;32mI (144334) main: current temp:30.24[0m
+[0;32mI (145334) NTC: k is -0.002985[0m
+[0;32mI (145334) NTC: b is -61[0m
+[0;32mI (145334) main: current temp:30.18[0m
+[0;32mI (146334) NTC: k is -0.002985[0m
+[0;32mI (146334) NTC: b is -91[0m
+[0;32mI (146334) main: current temp:30.27[0m
+[0;32mI (147334) NTC: k is -0.002985[0m
+[0;32mI (147334) NTC: b is -71[0m
+[0;32mI (147334) main: current temp:30.21[0m
+[0;32mI (148334) NTC: k is -0.002985[0m
+[0;32mI (148334) NTC: b is -71[0m
+[0;32mI (148334) main: current temp:30.21[0m
+[0;32mI (149334) NTC: k is -0.002985[0m
+[0;32mI (149334) NTC: b is -71[0m
+[0;32mI (149334) main: current temp:30.21[0m
+[0;32mI (150334) NTC: k is -0.002985[0m
+[0;32mI (150334) NTC: b is -61[0m
+[0;32mI (150334) main: current temp:30.18[0m
+[0;32mI (151334) NTC: k is -0.002985[0m
+[0;32mI (151334) NTC: b is -51[0m
+[0;32mI (151334) main: current temp:30.15[0m
+[0;32mI (152334) NTC: k is -0.002985[0m
+[0;32mI (152334) NTC: b is -51[0m
+[0;32mI (152334) main: current temp:30.15[0m
+[0;32mI (153334) NTC: k is -0.002985[0m
+[0;32mI (153334) NTC: b is -51[0m
+[0;32mI (153334) main: current temp:30.15[0m
+[0;32mI (154334) NTC: k is -0.002985[0m
+[0;32mI (154334) NTC: b is -51[0m
+[0;32mI (154334) main: current temp:30.15[0m
+[0;32mI (155334) NTC: k is -0.002985[0m
+[0;32mI (155334) NTC: b is -42[0m
+[0;32mI (155334) main: current temp:30.13[0m
+[0;32mI (156334) NTC: k is -0.002985[0m
+[0;32mI (156334) NTC: b is -42[0m
+[0;32mI (156334) main: current temp:30.13[0m
+[0;32mI (157334) NTC: k is -0.002985[0m
+[0;32mI (157334) NTC: b is -42[0m
+[0;32mI (157334) main: current temp:30.13[0m
+[0;32mI (158334) NTC: k is -0.002985[0m
+[0;32mI (158334) NTC: b is -42[0m
+[0;32mI (158334) main: current temp:30.13[0m
+[0;32mI (159334) NTC: k is -0.002985[0m
+[0;32mI (159334) NTC: b is -42[0m
+[0;32mI (159334) main: current temp:30.13[0m
+[0;32mI (160334) NTC: k is -0.002985[0m
+[0;32mI (160334) NTC: b is -42[0m
+[0;32mI (160334) main: current temp:30.13[0m
+[0;32mI (161334) NTC: k is -0.002985[0m
+[0;32mI (161334) NTC: b is -42[0m
+[0;32mI (161334) main: current temp:30.13[0m
+[0;32mI (162334) NTC: k is -0.002985[0m
+[0;32mI (162334) NTC: b is -32[0m
+[0;32mI (162334) main: current temp:30.10[0m
+[0;32mI (163334) NTC: k is -0.002985[0m
+[0;32mI (163334) NTC: b is -22[0m
+[0;32mI (163334) main: current temp:30.07[0m
+[0;32mI (164334) NTC: k is -0.002985[0m
+[0;32mI (164334) NTC: b is -2[0m
+[0;32mI (164334) main: current temp:30.01[0m
+[0;32mI (165334) NTC: k is -0.002985[0m
+[0;32mI (165334) NTC: b is -2[0m
+[0;32mI (165334) main: current temp:30.01[0m
+[0;32mI (166334) NTC: k is -0.002985[0m
+[0;32mI (166334) NTC: b is -22[0m
+[0;32mI (166334) main: current temp:30.07[0m
+[0;32mI (167334) NTC: k is -0.002985[0m
+[0;32mI (167334) NTC: b is -12[0m
+[0;32mI (167334) main: current temp:30.04[0m
+[0;32mI (168334) NTC: k is -0.002985[0m
+[0;32mI (168334) NTC: b is -12[0m
+[0;32mI (168334) main: current temp:30.04[0m
+[0;32mI (169334) NTC: k is -0.002985[0m
+[0;32mI (169334) NTC: b is -12[0m
+[0;32mI (169334) main: current temp:30.04[0m
+[0;32mI (170334) NTC: k is -0.002985[0m
+[0;32mI (170334) NTC: b is -22[0m
+[0;32mI (170334) main: current temp:30.07[0m
+[0;32mI (171334) NTC: k is -0.002985[0m
+[0;32mI (171334) NTC: b is -2[0m
+[0;32mI (171334) main: current temp:30.01[0m
+[0;32mI (172334) NTC: k is -0.002985[0m
+[0;32mI (172334) NTC: b is -2[0m
+[0;32mI (172334) main: current temp:30.01[0m
+[0;32mI (173334) NTC: k is -0.002849[0m
+[0;32mI (173334) NTC: b is -323[0m
+[0;32mI (173334) main: current temp:29.92[0m
+[0;32mI (174334) NTC: k is -0.002985[0m
+[0;32mI (174334) NTC: b is -2[0m
+[0;32mI (174334) main: current temp:30.01[0m
+[0;32mI (175334) NTC: k is -0.002849[0m
+[0;32mI (175334) NTC: b is -323[0m
+[0;32mI (175334) main: current temp:29.92[0m
+[0;32mI (176334) NTC: k is -0.002849[0m
+[0;32mI (176334) NTC: b is -313[0m
+[0;32mI (176334) main: current temp:29.89[0m
+[0;32mI (177334) NTC: k is -0.002849[0m
+[0;32mI (177334) NTC: b is -323[0m
+[0;32mI (177334) main: current temp:29.92[0m
+[0;32mI (178334) NTC: k is -0.002849[0m
+[0;32mI (178334) NTC: b is -323[0m
+[0;32mI (178334) main: current temp:29.92[0m
+[0;32mI (179334) NTC: k is -0.002849[0m
+[0;32mI (179334) NTC: b is -313[0m
+[0;32mI (179334) main: current temp:29.89[0m
+[0;32mI (180334) NTC: k is -0.002849[0m
+[0;32mI (180334) NTC: b is -313[0m
+[0;32mI (180334) main: current temp:29.89[0m
+[0;32mI (181334) NTC: k is -0.002849[0m
+[0;32mI (181334) NTC: b is -323[0m
+[0;32mI (181334) main: current temp:29.92[0m
+[0;32mI (182334) NTC: k is -0.002849[0m
+[0;32mI (182334) NTC: b is -313[0m
+[0;32mI (182334) main: current temp:29.89[0m
+[0;32mI (183334) NTC: k is -0.002849[0m
+[0;32mI (183334) NTC: b is -313[0m
+[0;32mI (183334) main: current temp:29.89[0m
+[0;32mI (184334) NTC: k is -0.002849[0m
+[0;32mI (184334) NTC: b is -304[0m
+[0;32mI (184334) main: current temp:29.87[0m
+[0;32mI (185334) NTC: k is -0.002849[0m
+[0;32mI (185334) NTC: b is -313[0m
+[0;32mI (185334) main: current temp:29.89[0m
+[0;32mI (186334) NTC: k is -0.002849[0m
+[0;32mI (186334) NTC: b is -294[0m
+[0;32mI (186334) main: current temp:29.84[0m
+[0;32mI (187334) NTC: k is -0.002849[0m
+[0;32mI (187334) NTC: b is -294[0m
+[0;32mI (187334) main: current temp:29.84[0m
+[0;32mI (188334) NTC: k is -0.002849[0m
+[0;32mI (188334) NTC: b is -313[0m
+[0;32mI (188334) main: current temp:29.89[0m
+[0;32mI (189334) NTC: k is -0.002849[0m
+[0;32mI (189334) NTC: b is -284[0m
+[0;32mI (189334) main: current temp:29.81[0m
+[0;32mI (190334) NTC: k is -0.002849[0m
+[0;32mI (190334) NTC: b is -274[0m
+[0;32mI (190334) main: current temp:29.78[0m
+[0;32mI (191334) NTC: k is -0.002849[0m
+[0;32mI (191334) NTC: b is -264[0m
+[0;32mI (191334) main: current temp:29.75[0m
+[0;32mI (192334) NTC: k is -0.002849[0m
+[0;32mI (192334) NTC: b is -284[0m
+[0;32mI (192334) main: current temp:29.81[0m
+[0;32mI (193334) NTC: k is -0.002849[0m
+[0;32mI (193334) NTC: b is -274[0m
+[0;32mI (193334) main: current temp:29.78[0m
+[0;32mI (194334) NTC: k is -0.002849[0m
+[0;32mI (194334) NTC: b is -274[0m
+[0;32mI (194334) main: current temp:29.78[0m
+[0;32mI (195334) NTC: k is -0.002849[0m
+[0;32mI (195334) NTC: b is -274[0m
+[0;32mI (195334) main: current temp:29.78[0m
+[0;32mI (196334) NTC: k is -0.002849[0m
+[0;32mI (196334) NTC: b is -274[0m
+[0;32mI (196334) main: current temp:29.78[0m
+[0;32mI (197334) NTC: k is -0.002849[0m
+[0;32mI (197334) NTC: b is -264[0m
+[0;32mI (197334) main: current temp:29.75[0m
+[0;32mI (198334) NTC: k is -0.002849[0m
+[0;32mI (198334) NTC: b is -274[0m
+[0;32mI (198334) main: current temp:29.78[0m
+[0;32mI (199334) NTC: k is -0.002849[0m
+[0;32mI (199334) NTC: b is -254[0m
+[0;32mI (199334) main: current temp:29.72[0m
+[0;32mI (200334) NTC: k is -0.002849[0m
+[0;32mI (200334) NTC: b is -254[0m
+[0;32mI (200334) main: current temp:29.72[0m
+[0;32mI (201334) NTC: k is -0.002849[0m
+[0;32mI (201334) NTC: b is -244[0m
+[0;32mI (201334) main: current temp:29.70[0m
+[0;32mI (202334) NTC: k is -0.002849[0m
+[0;32mI (202334) NTC: b is -254[0m
+[0;32mI (202334) main: current temp:29.72[0m
+[0;32mI (203334) NTC: k is -0.002849[0m
+[0;32mI (203334) NTC: b is -254[0m
+[0;32mI (203334) main: current temp:29.72[0m
+[0;32mI (204334) NTC: k is -0.002849[0m
+[0;32mI (204334) NTC: b is -244[0m
+[0;32mI (204334) main: current temp:29.70[0m
+[0;32mI (205334) NTC: k is -0.002849[0m
+[0;32mI (205334) NTC: b is -244[0m
+[0;32mI (205334) main: current temp:29.70[0m
+[0;32mI (206334) NTC: k is -0.002849[0m
+[0;32mI (206334) NTC: b is -254[0m
+[0;32mI (206334) main: current temp:29.72[0m
+[0;32mI (207334) NTC: k is -0.002849[0m
+[0;32mI (207334) NTC: b is -254[0m
+[0;32mI (207334) main: current temp:29.72[0m
+[0;32mI (208334) NTC: k is -0.002849[0m
+[0;32mI (208334) NTC: b is -264[0m
+[0;32mI (208334) main: current temp:29.75[0m
+[0;32mI (209334) NTC: k is -0.002849[0m
+[0;32mI (209334) NTC: b is -234[0m
+[0;32mI (209334) main: current temp:29.67[0m
+[0;32mI (210334) NTC: k is -0.002849[0m
+[0;32mI (210334) NTC: b is -244[0m
+[0;32mI (210334) main: current temp:29.70[0m
+[0;32mI (211334) NTC: k is -0.002849[0m
+[0;32mI (211334) NTC: b is -224[0m
+[0;32mI (211334) main: current temp:29.64[0m
+[0;32mI (212334) NTC: k is -0.002849[0m
+[0;32mI (212334) NTC: b is -224[0m
+[0;32mI (212334) main: current temp:29.64[0m
+[0;32mI (213334) NTC: k is -0.002849[0m
+[0;32mI (213334) NTC: b is -234[0m
+[0;32mI (213334) main: current temp:29.67[0m
+[0;32mI (214334) NTC: k is -0.002849[0m
+[0;32mI (214334) NTC: b is -234[0m
+[0;32mI (214334) main: current temp:29.67[0m
+[0;32mI (215334) NTC: k is -0.002849[0m
+[0;32mI (215334) NTC: b is -224[0m
+[0;32mI (215334) main: current temp:29.64[0m
+[0;32mI (216334) NTC: k is -0.002849[0m
+[0;32mI (216334) NTC: b is -194[0m
+[0;32mI (216334) main: current temp:29.55[0m
+[0;32mI (217334) NTC: k is -0.002849[0m
+[0;32mI (217334) NTC: b is -244[0m
+[0;32mI (217334) main: current temp:29.70[0m
+[0;32mI (218334) NTC: k is -0.002849[0m
+[0;32mI (218334) NTC: b is -214[0m
+[0;32mI (218334) main: current temp:29.61[0m
+[0;32mI (219334) NTC: k is -0.002849[0m
+[0;32mI (219334) NTC: b is -214[0m
+[0;32mI (219334) main: current temp:29.61[0m
+[0;32mI (220334) NTC: k is -0.002849[0m
+[0;32mI (220334) NTC: b is -214[0m
+[0;32mI (220334) main: current temp:29.61[0m
+[0;32mI (221334) NTC: k is -0.002849[0m
+[0;32mI (221334) NTC: b is -204[0m
+[0;32mI (221334) main: current temp:29.58[0m
+[0;32mI (222334) NTC: k is -0.002849[0m
+[0;32mI (222334) NTC: b is -204[0m
+[0;32mI (222334) main: current temp:29.58[0m
+[0;32mI (223334) NTC: k is -0.002849[0m
+[0;32mI (223334) NTC: b is -204[0m
+[0;32mI (223334) main: current temp:29.58[0m
+[0;32mI (224334) NTC: k is -0.002849[0m
+[0;32mI (224334) NTC: b is -214[0m
+[0;32mI (224334) main: current temp:29.61[0m
+[0;32mI (225334) NTC: k is -0.002849[0m
+[0;32mI (225334) NTC: b is -194[0m
+[0;32mI (225334) main: current temp:29.55[0m
+[0;32mI (226334) NTC: k is -0.002849[0m
+[0;32mI (226334) NTC: b is -204[0m
+[0;32mI (226334) main: current temp:29.58[0m
+[0;32mI (227334) NTC: k is -0.002849[0m
+[0;32mI (227334) NTC: b is -214[0m
+[0;32mI (227334) main: current temp:29.61[0m
+[0;32mI (228334) NTC: k is -0.002849[0m
+[0;32mI (228334) NTC: b is -204[0m
+[0;32mI (228334) main: current temp:29.58[0m
+[0;32mI (229334) NTC: k is -0.002849[0m
+[0;32mI (229334) NTC: b is -194[0m
+[0;32mI (229334) main: current temp:29.55[0m
+[0;32mI (230334) NTC: k is -0.002849[0m
+[0;32mI (230334) NTC: b is -194[0m
+[0;32mI (230334) main: current temp:29.55[0m
+[0;32mI (231334) NTC: k is -0.002849[0m
+[0;32mI (231334) NTC: b is -183[0m
+[0;32mI (231334) main: current temp:29.52[0m
+[0;32mI (232334) NTC: k is -0.002849[0m
+[0;32mI (232334) NTC: b is -194[0m
+[0;32mI (232334) main: current temp:29.55[0m
+[0;32mI (233334) NTC: k is -0.002849[0m
+[0;32mI (233334) NTC: b is -204[0m
+[0;32mI (233334) main: current temp:29.58[0m
+[0;32mI (234334) NTC: k is -0.002849[0m
+[0;32mI (234334) NTC: b is -183[0m
+[0;32mI (234334) main: current temp:29.52[0m
+[0;32mI (235334) NTC: k is -0.002849[0m
+[0;32mI (235334) NTC: b is -183[0m
+[0;32mI (235334) main: current temp:29.52[0m
+[0;32mI (236334) NTC: k is -0.002849[0m
+[0;32mI (236334) NTC: b is -173[0m
+[0;32mI (236334) main: current temp:29.49[0m
+[0;32mI (237334) NTC: k is -0.002849[0m
+[0;32mI (237334) NTC: b is -183[0m
+[0;32mI (237334) main: current temp:29.52[0m
+[0;32mI (238334) NTC: k is -0.002849[0m
+[0;32mI (238334) NTC: b is -173[0m
+[0;32mI (238334) main: current temp:29.49[0m
+[0;32mI (239334) NTC: k is -0.002849[0m
+[0;32mI (239334) NTC: b is -173[0m
+[0;32mI (239334) main: current temp:29.49[0m
+[0;32mI (240334) NTC: k is -0.002849[0m
+[0;32mI (240334) NTC: b is -183[0m
+[0;32mI (240334) main: current temp:29.52[0m
+[0;32mI (241334) NTC: k is -0.002849[0m
+[0;32mI (241334) NTC: b is -173[0m
+[0;32mI (241334) main: current temp:29.49[0m
+[0;32mI (242334) NTC: k is -0.002849[0m
+[0;32mI (242334) NTC: b is -173[0m
+[0;32mI (242334) main: current temp:29.49[0m
+[0;32mI (243334) NTC: k is -0.002849[0m
+[0;32mI (243334) NTC: b is -183[0m
+[0;32mI (243334) main: current temp:29.52[0m
+[0;32mI (244334) NTC: k is -0.002849[0m
+[0;32mI (244334) NTC: b is -163[0m
+[0;32mI (244334) main: current temp:29.46[0m
+[0;32mI (245334) NTC: k is -0.002849[0m
+[0;32mI (245334) NTC: b is -153[0m
+[0;32mI (245334) main: current temp:29.44[0m
+[0;32mI (246334) NTC: k is -0.002849[0m
+[0;32mI (246334) NTC: b is -173[0m
+[0;32mI (246334) main: current temp:29.49[0m
+[0;32mI (247334) NTC: k is -0.002849[0m
+[0;32mI (247334) NTC: b is -173[0m
+[0;32mI (247334) main: current temp:29.49[0m
+[0;32mI (248334) NTC: k is -0.002849[0m
+[0;32mI (248334) NTC: b is -163[0m
+[0;32mI (248334) main: current temp:29.46[0m
+[0;32mI (249334) NTC: k is -0.002849[0m
+[0;32mI (249334) NTC: b is -153[0m
+[0;32mI (249334) main: current temp:29.44[0m
+[0;32mI (250334) NTC: k is -0.002849[0m
+[0;32mI (250334) NTC: b is -153[0m
+[0;32mI (250334) main: current temp:29.44[0m
+[0;32mI (251334) NTC: k is -0.002849[0m
+[0;32mI (251334) NTC: b is -153[0m
+[0;32mI (251334) main: current temp:29.44[0m
+[0;32mI (252334) NTC: k is -0.002849[0m
+[0;32mI (252334) NTC: b is -143[0m
+[0;32mI (252334) main: current temp:29.41[0m
+[0;32mI (253334) NTC: k is -0.002849[0m
+[0;32mI (253334) NTC: b is -153[0m
+[0;32mI (253334) main: current temp:29.44[0m
+[0;32mI (254334) NTC: k is -0.002849[0m
+[0;32mI (254334) NTC: b is -153[0m
+[0;32mI (254334) main: current temp:29.44[0m
+[0;32mI (255334) NTC: k is -0.002849[0m
+[0;32mI (255334) NTC: b is -153[0m
+[0;32mI (255334) main: current temp:29.44[0m
+[0;32mI (256334) NTC: k is -0.002849[0m
+[0;32mI (256334) NTC: b is -153[0m
+[0;32mI (256334) main: current temp:29.44[0m
+[0;32mI (257334) NTC: k is -0.002849[0m
+[0;32mI (257334) NTC: b is -153[0m
+[0;32mI (257334) main: current temp:29.44[0m
+[0;32mI (258334) NTC: k is -0.002849[0m
+[0;32mI (258334) NTC: b is -143[0m
+[0;32mI (258334) main: current temp:29.41[0m
+[0;32mI (259334) NTC: k is -0.002849[0m
+[0;32mI (259334) NTC: b is -143[0m
+[0;32mI (259334) main: current temp:29.41[0m
+[0;32mI (260334) NTC: k is -0.002849[0m
+[0;32mI (260334) NTC: b is -143[0m
+[0;32mI (260334) main: current temp:29.41[0m
+[0;32mI (261334) NTC: k is -0.002849[0m
+[0;32mI (261334) NTC: b is -143[0m
+[0;32mI (261334) main: current temp:29.41[0m
+[0;32mI (262334) NTC: k is -0.002849[0m
+[0;32mI (262334) NTC: b is -153[0m
+[0;32mI (262334) main: current temp:29.44[0m
+[0;32mI (263334) NTC: k is -0.002849[0m
+[0;32mI (263334) NTC: b is -143[0m
+[0;32mI (263334) main: current temp:29.41[0m
+[0;32mI (264334) NTC: k is -0.002849[0m
+[0;32mI (264334) NTC: b is -133[0m
+[0;32mI (264334) main: current temp:29.38[0m
+[0;32mI (265334) NTC: k is -0.002849[0m
+[0;32mI (265334) NTC: b is -143[0m
+[0;32mI (265334) main: current temp:29.41[0m
+[0;32mI (266334) NTC: k is -0.002849[0m
+[0;32mI (266334) NTC: b is -133[0m
+[0;32mI (266334) main: current temp:29.38[0m
+[0;32mI (267334) NTC: k is -0.002849[0m
+[0;32mI (267334) NTC: b is -133[0m
+[0;32mI (267334) main: current temp:29.38[0m
+[0;32mI (268334) NTC: k is -0.002849[0m
+[0;32mI (268334) NTC: b is -133[0m
+[0;32mI (268334) main: current temp:29.38[0m
+[0;32mI (269334) NTC: k is -0.002849[0m
+[0;32mI (269334) NTC: b is -143[0m
+[0;32mI (269334) main: current temp:29.41[0m
+[0;32mI (270334) NTC: k is -0.002849[0m
+[0;32mI (270334) NTC: b is -113[0m
+[0;32mI (270334) main: current temp:29.32[0m
+[0;32mI (271334) NTC: k is -0.002849[0m
+[0;32mI (271334) NTC: b is -113[0m
+[0;32mI (271334) main: current temp:29.32[0m
+[0;32mI (272334) NTC: k is -0.002849[0m
+[0;32mI (272334) NTC: b is -123[0m
+[0;32mI (272334) main: current temp:29.35[0m
+[0;32mI (273334) NTC: k is -0.002849[0m
+[0;32mI (273334) NTC: b is -133[0m
+[0;32mI (273334) main: current temp:29.38[0m
+[0;32mI (274334) NTC: k is -0.002849[0m
+[0;32mI (274334) NTC: b is -133[0m
+[0;32mI (274334) main: current temp:29.38[0m
+[0;32mI (275334) NTC: k is -0.002849[0m
+[0;32mI (275334) NTC: b is -123[0m
+[0;32mI (275334) main: current temp:29.35[0m
+[0;32mI (276334) NTC: k is -0.002849[0m
+[0;32mI (276334) NTC: b is -133[0m
+[0;32mI (276334) main: current temp:29.38[0m
+[0;32mI (277334) NTC: k is -0.002849[0m
+[0;32mI (277334) NTC: b is -123[0m
+[0;32mI (277334) main: current temp:29.35[0m
+[0;32mI (278334) NTC: k is -0.002849[0m
+[0;32mI (278334) NTC: b is -113[0m
+[0;32mI (278334) main: current temp:29.32[0m
+[0;32mI (279334) NTC: k is -0.002849[0m
+[0;32mI (279334) NTC: b is -123[0m
+[0;32mI (279334) main: current temp:29.35[0m
+[0;32mI (280334) NTC: k is -0.002849[0m
+[0;32mI (280334) NTC: b is -123[0m
+[0;32mI (280334) main: current temp:29.35[0m
+[0;32mI (281334) NTC: k is -0.002849[0m
+[0;32mI (281334) NTC: b is -123[0m
+[0;32mI (281334) main: current temp:29.35[0m
+[0;32mI (282334) NTC: k is -0.002849[0m
+[0;32mI (282334) NTC: b is -123[0m
+[0;32mI (282334) main: current temp:29.35[0m
+[0;32mI (283334) NTC: k is -0.002849[0m
+[0;32mI (283334) NTC: b is -123[0m
+[0;32mI (283334) main: current temp:29.35[0m
+[0;32mI (284334) NTC: k is -0.002849[0m
+[0;32mI (284334) NTC: b is -113[0m
+[0;32mI (284334) main: current temp:29.32[0m
+[0;32mI (285334) NTC: k is -0.002849[0m
+[0;32mI (285334) NTC: b is -113[0m
+[0;32mI (285334) main: current temp:29.32[0m
+[0;32mI (286334) NTC: k is -0.002849[0m
+[0;32mI (286334) NTC: b is -113[0m
+[0;32mI (286334) main: current temp:29.32[0m
+[0;32mI (287334) NTC: k is -0.002849[0m
+[0;32mI (287334) NTC: b is -113[0m
+[0;32mI (287334) main: current temp:29.32[0m
+[0;32mI (288334) NTC: k is -0.002849[0m
+[0;32mI (288334) NTC: b is -103[0m
+[0;32mI (288334) main: current temp:29.29[0m
+[0;32mI (289334) NTC: k is -0.002849[0m
+[0;32mI (289334) NTC: b is -113[0m
+[0;32mI (289334) main: current temp:29.32[0m
+[0;32mI (290334) NTC: k is -0.002849[0m
+[0;32mI (290334) NTC: b is -113[0m
+[0;32mI (290334) main: current temp:29.32[0m
+[0;32mI (291334) NTC: k is -0.002849[0m
+[0;32mI (291334) NTC: b is -103[0m
+[0;32mI (291334) main: current temp:29.29[0m
+[0;32mI (292334) NTC: k is -0.002849[0m
+[0;32mI (292334) NTC: b is -113[0m
+[0;32mI (292334) main: current temp:29.32[0m
+[0;32mI (293334) NTC: k is -0.002849[0m
+[0;32mI (293334) NTC: b is -92[0m
+[0;32mI (293334) main: current temp:29.26[0m
+[0;32mI (294334) NTC: k is -0.002849[0m
+[0;32mI (294334) NTC: b is -113[0m
+[0;32mI (294334) main: current temp:29.32[0m
+[0;32mI (295334) NTC: k is -0.002849[0m
+[0;32mI (295334) NTC: b is -92[0m
+[0;32mI (295334) main: current temp:29.26[0m
+[0;32mI (296334) NTC: k is -0.002849[0m
+[0;32mI (296334) NTC: b is -103[0m
+[0;32mI (296334) main: current temp:29.29[0m
+[0;32mI (297334) NTC: k is -0.002849[0m
+[0;32mI (297334) NTC: b is -92[0m
+[0;32mI (297334) main: current temp:29.26[0m
+[0;32mI (298334) NTC: k is -0.002849[0m
+[0;32mI (298334) NTC: b is -113[0m
+[0;32mI (298334) main: current temp:29.32[0m
+[0;32mI (299334) NTC: k is -0.002849[0m
+[0;32mI (299334) NTC: b is -92[0m
+[0;32mI (299334) main: current temp:29.26[0m
+[0;32mI (300334) NTC: k is -0.002849[0m
+[0;32mI (300334) NTC: b is -103[0m
+[0;32mI (300334) main: current temp:29.29[0m
+[0;32mI (301334) NTC: k is -0.002849[0m
+[0;32mI (301334) NTC: b is -92[0m
+[0;32mI (301334) main: current temp:29.26[0m
+[0;32mI (302334) NTC: k is -0.002849[0m
+[0;32mI (302334) NTC: b is -103[0m
+[0;32mI (302334) main: current temp:29.29[0m
+[0;32mI (303334) NTC: k is -0.002849[0m
+[0;32mI (303334) NTC: b is -92[0m
+[0;32mI (303334) main: current temp:29.26[0m
+[0;32mI (304334) NTC: k is -0.002849[0m
+[0;32mI (304334) NTC: b is -82[0m
+[0;32mI (304334) main: current temp:29.23[0m
+[0;32mI (305334) NTC: k is -0.002849[0m
+[0;32mI (305334) NTC: b is -103[0m
+[0;32mI (305334) main: current temp:29.29[0m
+[0;32mI (306334) NTC: k is -0.002849[0m
+[0;32mI (306334) NTC: b is -92[0m
+[0;32mI (306334) main: current temp:29.26[0m
+[0;32mI (307334) NTC: k is -0.002849[0m
+[0;32mI (307334) NTC: b is -92[0m
+[0;32mI (307334) main: current temp:29.26[0m
+[0;32mI (308334) NTC: k is -0.002849[0m
+[0;32mI (308334) NTC: b is -82[0m
+[0;32mI (308334) main: current temp:29.23[0m
+[0;32mI (309334) NTC: k is -0.002849[0m
+[0;32mI (309334) NTC: b is -92[0m
+[0;32mI (309334) main: current temp:29.26[0m
+[0;32mI (310334) NTC: k is -0.002849[0m
+[0;32mI (310334) NTC: b is -92[0m
+[0;32mI (310334) main: current temp:29.26[0m
+[0;32mI (311334) NTC: k is -0.002849[0m
+[0;32mI (311334) NTC: b is -92[0m
+[0;32mI (311334) main: current temp:29.26[0m
+[0;32mI (312334) NTC: k is -0.002849[0m
+[0;32mI (312334) NTC: b is -82[0m
+[0;32mI (312334) main: current temp:29.23[0m
+[0;32mI (313334) NTC: k is -0.002849[0m
+[0;32mI (313334) NTC: b is -52[0m
+[0;32mI (313334) main: current temp:29.15[0m
+[0;32mI (314334) NTC: k is -0.002849[0m
+[0;32mI (314334) NTC: b is -72[0m
+[0;32mI (314334) main: current temp:29.21[0m
+[0;32mI (315334) NTC: k is -0.002849[0m
+[0;32mI (315334) NTC: b is -82[0m
+[0;32mI (315334) main: current temp:29.23[0m
+[0;32mI (316334) NTC: k is -0.002849[0m
+[0;32mI (316334) NTC: b is -72[0m
+[0;32mI (316334) main: current temp:29.21[0m
+[0;32mI (317334) NTC: k is -0.002849[0m
+[0;32mI (317334) NTC: b is -72[0m
+[0;32mI (317334) main: current temp:29.21[0m
+[0;32mI (318334) NTC: k is -0.002849[0m
+[0;32mI (318334) NTC: b is -72[0m
+[0;32mI (318334) main: current temp:29.21[0m
+[0;32mI (319334) NTC: k is -0.002849[0m
+[0;32mI (319334) NTC: b is -62[0m
+[0;32mI (319334) main: current temp:29.18[0m
+[0;32mI (320334) NTC: k is -0.002849[0m
+[0;32mI (320334) NTC: b is -72[0m
+[0;32mI (320334) main: current temp:29.21[0m
+[0;32mI (321334) NTC: k is -0.002849[0m
+[0;32mI (321334) NTC: b is -62[0m
+[0;32mI (321334) main: current temp:29.18[0m
+[0;32mI (322334) NTC: k is -0.002849[0m
+[0;32mI (322334) NTC: b is -52[0m
+[0;32mI (322334) main: current temp:29.15[0m
+[0;32mI (323334) NTC: k is -0.002849[0m
+[0;32mI (323334) NTC: b is -62[0m
+[0;32mI (323334) main: current temp:29.18[0m
+[0;32mI (324334) NTC: k is -0.002849[0m
+[0;32mI (324334) NTC: b is -41[0m
+[0;32mI (324334) main: current temp:29.12[0m
+[0;32mI (325334) NTC: k is -0.002849[0m
+[0;32mI (325334) NTC: b is -41[0m
+[0;32mI (325334) main: current temp:29.12[0m
+[0;32mI (326334) NTC: k is -0.002849[0m
+[0;32mI (326334) NTC: b is -62[0m
+[0;32mI (326334) main: current temp:29.18[0m
+[0;32mI (327334) NTC: k is -0.002849[0m
+[0;32mI (327334) NTC: b is -52[0m
+[0;32mI (327334) main: current temp:29.15[0m
+[0;32mI (328334) NTC: k is -0.002849[0m
+[0;32mI (328334) NTC: b is -52[0m
+[0;32mI (328334) main: current temp:29.15[0m
+[0;32mI (329334) NTC: k is -0.002849[0m
+[0;32mI (329334) NTC: b is -72[0m
+[0;32mI (329334) main: current temp:29.21[0m
+[0;32mI (330334) NTC: k is -0.002849[0m
+[0;32mI (330334) NTC: b is -62[0m
+[0;32mI (330334) main: current temp:29.18[0m
+[0;32mI (331334) NTC: k is -0.002849[0m
+[0;32mI (331334) NTC: b is -62[0m
+[0;32mI (331334) main: current temp:29.18[0m
+[0;32mI (332334) NTC: k is -0.002849[0m
+[0;32mI (332334) NTC: b is -52[0m
+[0;32mI (332334) main: current temp:29.15[0m
+[0;32mI (333334) NTC: k is -0.002849[0m
+[0;32mI (333334) NTC: b is -52[0m
+[0;32mI (333334) main: current temp:29.15[0m
+[0;32mI (334334) NTC: k is -0.002849[0m
+[0;32mI (334334) NTC: b is -62[0m
+[0;32mI (334334) main: current temp:29.18[0m
+[0;32mI (335334) NTC: k is -0.002849[0m
+[0;32mI (335334) NTC: b is -52[0m
+[0;32mI (335334) main: current temp:29.15[0m
+[0;32mI (336334) NTC: k is -0.002849[0m
+[0;32mI (336334) NTC: b is -72[0m
+[0;32mI (336334) main: current temp:29.21[0m
+[0;32mI (337334) NTC: k is -0.002849[0m
+[0;32mI (337334) NTC: b is -72[0m
+[0;32mI (337334) main: current temp:29.21[0m
+[0;32mI (338334) NTC: k is -0.002849[0m
+[0;32mI (338334) NTC: b is -72[0m
+[0;32mI (338334) main: current temp:29.21[0m
+[0;32mI (339334) NTC: k is -0.002849[0m
+[0;32mI (339334) NTC: b is -62[0m
+[0;32mI (339334) main: current temp:29.18[0m
+[0;32mI (340334) NTC: k is -0.002849[0m
+[0;32mI (340334) NTC: b is -62[0m
+[0;32mI (340334) main: current temp:29.18[0m
+[0;32mI (341334) NTC: k is -0.002849[0m
+[0;32mI (341334) NTC: b is -72[0m
+[0;32mI (341334) main: current temp:29.21[0m
+[0;32mI (342334) NTC: k is -0.002849[0m
+[0;32mI (342334) NTC: b is -82[0m
+[0;32mI (342334) main: current temp:29.23[0m
+[0;32mI (343334) NTC: k is -0.002849[0m
+[0;32mI (343334) NTC: b is -72[0m
+[0;32mI (343334) main: current temp:29.21[0m
+[0;32mI (344334) NTC: k is -0.002849[0m
+[0;32mI (344334) NTC: b is -62[0m
+[0;32mI (344334) main: current temp:29.18[0m
+[0;32mI (345334) NTC: k is -0.002849[0m
+[0;32mI (345334) NTC: b is -62[0m
+[0;32mI (345334) main: current temp:29.18[0m
+[0;32mI (346334) NTC: k is -0.002849[0m
+[0;32mI (346334) NTC: b is -72[0m
+[0;32mI (346334) main: current temp:29.21[0m
+[0;32mI (347334) NTC: k is -0.002849[0m
+[0;32mI (347334) NTC: b is -103[0m
+[0;32mI (347334) main: current temp:29.29[0m
+[0;32mI (348334) NTC: k is -0.002849[0m
+[0;32mI (348334) NTC: b is -103[0m
+[0;32mI (348334) main: current temp:29.29[0m
+[0;32mI (349334) NTC: k is -0.002849[0m
+[0;32mI (349334) NTC: b is -92[0m
+[0;32mI (349334) main: current temp:29.26[0m
+[0;32mI (350334) NTC: k is -0.002849[0m
+[0;32mI (350334) NTC: b is -72[0m
+[0;32mI (350334) main: current temp:29.21[0m
+[0;32mI (351334) NTC: k is -0.002849[0m
+[0;32mI (351334) NTC: b is -52[0m
+[0;32mI (351334) main: current temp:29.15[0m
+[0;32mI (352334) NTC: k is -0.002849[0m
+[0;32mI (352334) NTC: b is -41[0m
+[0;32mI (352334) main: current temp:29.12[0m
+[0;32mI (353334) NTC: k is -0.002849[0m
+[0;32mI (353334) NTC: b is -21[0m
+[0;32mI (353334) main: current temp:29.06[0m
+[0;32mI (354334) NTC: k is -0.002849[0m
+[0;32mI (354334) NTC: b is -11[0m
+[0;32mI (354334) main: current temp:29.03[0m
+[0;32mI (355334) NTC: k is -0.002717[0m
+[0;32mI (355334) NTC: b is -348[0m
+[0;32mI (355334) main: current temp:28.95[0m
+[0;32mI (356334) NTC: k is -0.002717[0m
+[0;32mI (356334) NTC: b is -317[0m
+[0;32mI (356334) main: current temp:28.86[0m
+[0;32mI (357334) NTC: k is -0.002717[0m
+[0;32mI (357334) NTC: b is -358[0m
+[0;32mI (357334) main: current temp:28.97[0m
+[0;32mI (358334) NTC: k is -0.002717[0m
+[0;32mI (358334) NTC: b is -327[0m
+[0;32mI (358334) main: current temp:28.89[0m
+[0;32mI (359334) NTC: k is -0.002717[0m
+[0;32mI (359334) NTC: b is -306[0m
+[0;32mI (359334) main: current temp:28.83[0m
+[0;32mI (360334) NTC: k is -0.002717[0m
+[0;32mI (360334) NTC: b is -317[0m
+[0;32mI (360334) main: current temp:28.86[0m
+[0;32mI (361334) NTC: k is -0.002717[0m
+[0;32mI (361334) NTC: b is -317[0m
+[0;32mI (361334) main: current temp:28.86[0m
+[0;32mI (362334) NTC: k is -0.002717[0m
+[0;32mI (362334) NTC: b is -296[0m
+[0;32mI (362334) main: current temp:28.80[0m
+[0;32mI (363334) NTC: k is -0.002717[0m
+[0;32mI (363334) NTC: b is -286[0m
+[0;32mI (363334) main: current temp:28.78[0m
+[0;32mI (364334) NTC: k is -0.002717[0m
+[0;32mI (364334) NTC: b is -275[0m
+[0;32mI (364334) main: current temp:28.75[0m
+[0;32mI (365334) NTC: k is -0.002717[0m
+[0;32mI (365334) NTC: b is -255[0m
+[0;32mI (365334) main: current temp:28.69[0m
+[0;32mI (366334) NTC: k is -0.002717[0m
+[0;32mI (366334) NTC: b is -265[0m
+[0;32mI (366334) main: current temp:28.72[0m
+[0;32mI (367334) NTC: k is -0.002717[0m
+[0;32mI (367334) NTC: b is -255[0m
+[0;32mI (367334) main: current temp:28.69[0m
+[0;32mI (368334) NTC: k is -0.002717[0m
+[0;32mI (368334) NTC: b is -234[0m
+[0;32mI (368334) main: current temp:28.64[0m
+[0;32mI (369334) NTC: k is -0.002717[0m
+[0;32mI (369334) NTC: b is -234[0m
+[0;32mI (369334) main: current temp:28.64[0m
+[0;32mI (370334) NTC: k is -0.002717[0m
+[0;32mI (370334) NTC: b is -234[0m
+[0;32mI (370334) main: current temp:28.64[0m
+[0;32mI (371334) NTC: k is -0.002717[0m
+[0;32mI (371334) NTC: b is -234[0m
+[0;32mI (371334) main: current temp:28.64[0m
+[0;32mI (372334) NTC: k is -0.002717[0m
+[0;32mI (372334) NTC: b is -213[0m
+[0;32mI (372334) main: current temp:28.58[0m
+[0;32mI (373334) NTC: k is -0.002717[0m
+[0;32mI (373334) NTC: b is -202[0m
+[0;32mI (373334) main: current temp:28.55[0m
+[0;32mI (374334) NTC: k is -0.002717[0m
+[0;32mI (374334) NTC: b is -213[0m
+[0;32mI (374334) main: current temp:28.58[0m
+[0;32mI (375334) NTC: k is -0.002717[0m
+[0;32mI (375334) NTC: b is -213[0m
+[0;32mI (375334) main: current temp:28.58[0m
+[0;32mI (376334) NTC: k is -0.002717[0m
+[0;32mI (376334) NTC: b is -202[0m
+[0;32mI (376334) main: current temp:28.55[0m
+[0;32mI (377334) NTC: k is -0.002717[0m
+[0;32mI (377334) NTC: b is -192[0m
+[0;32mI (377334) main: current temp:28.52[0m
+[0;32mI (378334) NTC: k is -0.002717[0m
+[0;32mI (378334) NTC: b is -181[0m
+[0;32mI (378334) main: current temp:28.49[0m
+[0;32mI (379334) NTC: k is -0.002717[0m
+[0;32mI (379334) NTC: b is -181[0m
+[0;32mI (379334) main: current temp:28.49[0m
+[0;32mI (380334) NTC: k is -0.002717[0m
+[0;32mI (380334) NTC: b is -150[0m
+[0;32mI (380334) main: current temp:28.41[0m
+[0;32mI (381334) NTC: k is -0.002717[0m
+[0;32mI (381334) NTC: b is -150[0m
+[0;32mI (381334) main: current temp:28.41[0m
+[0;32mI (382334) NTC: k is -0.002717[0m
+[0;32mI (382334) NTC: b is -171[0m
+[0;32mI (382334) main: current temp:28.46[0m
+[0;32mI (383334) NTC: k is -0.002717[0m
+[0;32mI (383334) NTC: b is -139[0m
+[0;32mI (383334) main: current temp:28.38[0m
+[0;32mI (384334) NTC: k is -0.002717[0m
+[0;32mI (384334) NTC: b is -108[0m
+[0;32mI (384334) main: current temp:28.29[0m
+[0;32mI (385334) NTC: k is -0.002717[0m
+[0;32mI (385334) NTC: b is -118[0m
+[0;32mI (385334) main: current temp:28.32[0m
+[0;32mI (386334) NTC: k is -0.002717[0m
+[0;32mI (386334) NTC: b is -97[0m
+[0;32mI (386334) main: current temp:28.26[0m
+[0;32mI (387334) NTC: k is -0.002717[0m
+[0;32mI (387334) NTC: b is -108[0m
+[0;32mI (387334) main: current temp:28.29[0m
+[0;32mI (388334) NTC: k is -0.002717[0m
+[0;32mI (388334) NTC: b is -87[0m
+[0;32mI (388334) main: current temp:28.24[0m
+[0;32mI (389334) NTC: k is -0.002717[0m
+[0;32mI (389334) NTC: b is -87[0m
+[0;32mI (389334) main: current temp:28.24[0m
+[0;32mI (390334) NTC: k is -0.002717[0m
+[0;32mI (390334) NTC: b is -65[0m
+[0;32mI (390334) main: current temp:28.18[0m
+[0;32mI (391334) NTC: k is -0.002717[0m
+[0;32mI (391334) NTC: b is -65[0m
+[0;32mI (391334) main: current temp:28.18[0m
+[0;32mI (392334) NTC: k is -0.002717[0m
+[0;32mI (392334) NTC: b is -76[0m
+[0;32mI (392334) main: current temp:28.21[0m
+[0;32mI (393334) NTC: k is -0.002717[0m
+[0;32mI (393334) NTC: b is -55[0m
+[0;32mI (393334) main: current temp:28.15[0m
+[0;32mI (394334) NTC: k is -0.002717[0m
+[0;32mI (394334) NTC: b is -44[0m
+[0;32mI (394334) main: current temp:28.12[0m
+[0;32mI (395334) NTC: k is -0.002717[0m
+[0;32mI (395334) NTC: b is -33[0m
+[0;32mI (395334) main: current temp:28.09[0m
+[0;32mI (396334) NTC: k is -0.002717[0m
+[0;32mI (396334) NTC: b is -33[0m
+[0;32mI (396334) main: current temp:28.09[0m
+[0;32mI (397334) NTC: k is -0.002717[0m
+[0;32mI (397334) NTC: b is -1[0m
+[0;32mI (397334) main: current temp:28.00[0m
+[0;32mI (398334) NTC: k is -0.002717[0m
+[0;32mI (398334) NTC: b is -12[0m
+[0;32mI (398334) main: current temp:28.03[0m
+[0;32mI (399334) NTC: k is -0.002717[0m
+[0;32mI (399334) NTC: b is -1[0m
+[0;32mI (399334) main: current temp:28.00[0m
+[0;32mI (400334) NTC: k is -0.002591[0m
+[0;32mI (400334) NTC: b is -366[0m
+[0;32mI (400334) main: current temp:27.95[0m
+[0;32mI (401334) NTC: k is -0.002591[0m
+[0;32mI (401334) NTC: b is -377[0m
+[0;32mI (401334) main: current temp:27.98[0m
+[0;32mI (402334) NTC: k is -0.002591[0m
+[0;32mI (402334) NTC: b is -345[0m
+[0;32mI (402334) main: current temp:27.89[0m
+[0;32mI (403334) NTC: k is -0.002591[0m
+[0;32mI (403334) NTC: b is -355[0m
+[0;32mI (403334) main: current temp:27.92[0m
+[0;32mI (404334) NTC: k is -0.002591[0m
+[0;32mI (404334) NTC: b is -345[0m
+[0;32mI (404334) main: current temp:27.89[0m
+[0;32mI (405334) NTC: k is -0.002591[0m
+[0;32mI (405334) NTC: b is -345[0m
+[0;32mI (405334) main: current temp:27.89[0m
+[0;32mI (406334) NTC: k is -0.002591[0m
+[0;32mI (406334) NTC: b is -355[0m
+[0;32mI (406334) main: current temp:27.92[0m
+[0;32mI (407334) NTC: k is -0.002591[0m
+[0;32mI (407334) NTC: b is -334[0m
+[0;32mI (407334) main: current temp:27.87[0m
+[0;32mI (408334) NTC: k is -0.002591[0m
+[0;32mI (408334) NTC: b is -323[0m
+[0;32mI (408334) main: current temp:27.84[0m
+[0;32mI (409334) NTC: k is -0.002591[0m
+[0;32mI (409334) NTC: b is -334[0m
+[0;32mI (409334) main: current temp:27.87[0m
+[0;32mI (410334) NTC: k is -0.002591[0m
+[0;32mI (410334) NTC: b is -302[0m
+[0;32mI (410334) main: current temp:27.78[0m
+[0;32mI (411334) NTC: k is -0.002591[0m
+[0;32mI (411334) NTC: b is -334[0m
+[0;32mI (411334) main: current temp:27.87[0m
+[0;32mI (412334) NTC: k is -0.002591[0m
+[0;32mI (412334) NTC: b is -291[0m
+[0;32mI (412334) main: current temp:27.75[0m
+[0;32mI (413334) NTC: k is -0.002591[0m
+[0;32mI (413334) NTC: b is -258[0m
+[0;32mI (413334) main: current temp:27.67[0m
+[0;32mI (414334) NTC: k is -0.002591[0m
+[0;32mI (414334) NTC: b is -312[0m
+[0;32mI (414334) main: current temp:27.81[0m
+[0;32mI (415334) NTC: k is -0.002591[0m
+[0;32mI (415334) NTC: b is -312[0m
+[0;32mI (415334) main: current temp:27.81[0m
+[0;32mI (416334) NTC: k is -0.002591[0m
+[0;32mI (416334) NTC: b is -280[0m
+[0;32mI (416334) main: current temp:27.73[0m
+[0;32mI (417334) NTC: k is -0.002591[0m
+[0;32mI (417334) NTC: b is -269[0m
+[0;32mI (417334) main: current temp:27.70[0m
+[0;32mI (418334) NTC: k is -0.002591[0m
+[0;32mI (418334) NTC: b is -280[0m
+[0;32mI (418334) main: current temp:27.73[0m
+[0;32mI (419334) NTC: k is -0.002591[0m
+[0;32mI (419334) NTC: b is -280[0m
+[0;32mI (419334) main: current temp:27.73[0m
+[0;32mI (420334) NTC: k is -0.002591[0m
+[0;32mI (420334) NTC: b is -291[0m
+[0;32mI (420334) main: current temp:27.75[0m

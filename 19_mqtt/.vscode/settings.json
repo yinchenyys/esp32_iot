@@ -1,0 +1,7 @@
+{
+    "idf.pythonInstallPath": "/usr/bin/python3",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "simple_wifi_sta.h": "c"
+    }
+}

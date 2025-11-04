@@ -1,0 +1,164 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 28 2025 02:51:03[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory      00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26eech (159468) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=00036f14 vaddr=3ffb0000 size=03c04h ( 15364) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003ab20 vaddr=40080000 size=054f8h ( 21752) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=99438h (627768) map[0;32mI (388) esp_image: segment 4: paddr=000d9460 vaddr=400854f8 size=11188h ( 70024) load[0m
+[0;32mI (427) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (427) boot: Disabling RNG early entropy source...art: App version:      1[0m
+[0;32mI (460) cpu_start: Compile time:     Jun 28 2025 02:50:12[0m
+[0;32mI (466) cpu_start: ELF file SHA256:  20e7c340718d61ae...[0m
+[0;32mI (472) cpu_start: ESP-IDF:          v5.2-dirty[0m
+[0;32mI (491) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (499) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (505) heap_init: At 3FFB8358 len 00027CA8 (159 KiB): DRAM[0m
+[0;32mI (511) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (517) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (524) heap_init: At 40096680 len 00009980 (38 KiB): IRAM[0m
+[0;32mI (531) spi_flash: detected chip: gd[0m
+[0;32mI (534) spi_flash: flash io: dio[0m
+[0;33mW (538) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (552) main_task: Started on CPU0[0m
+[0;32mI (562) main_task: Calling app_main()[0m
+[0;32mI (612) wifi:wifi driver task: 3ffc0358, prio:23, stack:6656, core=0[0m
+[0;32mI (622) wifi:wifi firmware version: cc1dd81[0m
+[0;32mI (622) wifi:wifi certification version: v7.0[0m
+[0;32mI (632) wifi:config NVS flash: enabled[0m
+[0;32mI (632) wifi:config nano formating: disabled[0m
+[0;32mI (632) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (632) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (642) wifi:Init management short buffer num: 32[0m
+[0;32mI (642) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (652) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (652) wifi:Init static rx buffer num: 10[0m
+[0;32mI (652) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (662) wifi_init: rx ba win: 6[0m
+[0;32mI (662) wifi_init: tcpip mbox: 32[0m
+[0;32mI (672) wifi_init: udp mbox: 6[0m
+[0;32mI (672) wifi_init: tcp mbox: 6[0m
+[0;32mI (672) wifi_init: tcp tx win: 5744[0m
+[0;32mI (682) wifi_init: tcp rx win: 5744[0m
+[0;32mI (682) wifi_init: tcp mss: 1440[0m
+[0;32mI (692) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (692) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (702) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (792) wifi:mode : sta (f8:b3:b7:d2:38:38)[0m
+[0;32mI (792) wifi:enable tsf[0m
+[0;32mI (792) wifi: wifi_init_sta finished.[0m
+[0;32mI (802) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (812) wifi:state: init -> auth (b0)[0m
+[0;32mI (822) wifi:state: auth -> assoc (0)[0m
+[0;32mI (872) wifi:state: assoc -> run (10)[0m
+[0;32mI (902) wifi:connected with esp, aid = 7, channel 1, BW20, bssid = 52:d5:80:b1:1a:72[0m
+[0;32mI (902) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (902) wifi:pm start, type: 1[0m
+
+[0;32mI (902) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (912) wifi: connected to AP[0m
+[0;32mI (932) wifi:<ba-add>idx:0 (ifx:0, 52:d5:80:b1:1a:72), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1062) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1062) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1912) esp_netif_handlers: sta ip: 192.168.182.164, mask: 255.255.255.0, gw: 192.168.182.179[0m
+[0;32mI (1912) wifi: get ip address[0m
+[0;32mI (1912) main: mqtt connect->clientId:mqttx_d11213,username:yys,password:12345678[0m
+[0;32mI (2912) main: mqtt connected[0m
+[0;32mI (3222) main:  mqtt subscribed ack, msg_id=20378[0m
+[0;32mI (4342) main: mqtt publish ack, msg_id=22676[0m
+[0;32mI (6292) main: mqtt publish ack, msg_id=37445[0m
+[0;32mI (8342) main: mqtt publish ack, msg_id=63372[0m
+[0;32mI (10382) main: mqtt publish ack, msg_id=20729[0m
+[0;32mI (12442) main: mqtt publish ack, msg_id=53660[0m
+[0;32mI (14282) main: mqtt publish ack, msg_id=55226[0m
+[0;32mI (16422) main: mqtt publish ack, msg_id=17568[0m
+[0;32mI (18272) main: mqtt publish ack, msg_id=40881[0m
+[0;32mI (20422) main: mqtt publish ack, msg_id=37200[0m
+[0;32mI (22262) main: mqtt publish ack, msg_id=46618[0m
+[0;32mI (24412) main: mqtt publish ack, msg_id=17379[0m
+[0;32mI (26262) main: mqtt publish ack, msg_id=14436[0m
+[0;32mI (28212) main: mqtt publish ack, msg_id=17756[0m
+[0;32mI (30252) main: mqtt publish ack, msg_id=20600[0m
+[0;32mI (32202) main: mqtt publish ack, msg_id=48869[0m
+[0;32mI (34352) main: mqtt publish ack, msg_id=64653[0m
+[0;32mI (36392) main: mqtt publish ack, msg_id=35943[0m
+[0;32mI (38342) main: mqtt publish ack, msg_id=61244[0m
+[0;32mI (40392) main: mqtt publish ack, msg_id=60763[0m
+[0;32mI (42342) main: mqtt publish ack, msg_id=2721[0m
+[0;32mI (44282) main: mqtt publish ack, msg_id=58439[0m
+[0;32mI (46332) main: mqtt publish ack, msg_id=65133[0m
+[0;32mI (48382) main: mqtt publish ack, msg_id=30452[0m
+[0;32mI (50422) main: mqtt publish ack, msg_id=53291[0m
+[0;32mI (52372) main: mqtt publish ack, msg_id=26892[0m
+[0;32mI (54312) main: mqtt publish ack, msg_id=42033[0m
+[0;32mI (56372) main: mqtt publish ack, msg_id=29945[0m
+[0;32mI (58312) main: mqtt publish ack, msg_id=3105[0m
+[0;32mI (60362) main: mqtt publish ack, msg_id=58297[0m
+[0;32mI (62412) main: mqtt publish ack, msg_id=6229[0m
+[0;32mI (64352) main: mqtt publish ack, msg_id=38493[0m
+[0;32mI (66292) main: mqtt publish ack, msg_id=36540[0m
+[0;32mI (68342) main: mqtt publish ack, msg_id=16480[0m
+[0;32mI (70292) main: mqtt publish ack, msg_id=61858[0m
+[0;32mI (72342) main: mqtt publish ack, msg_id=41480[0m
+[0;32mI (74282) main: mqtt publish ack, msg_id=31400[0m
+[0;32mI (76332) main: mqtt publish ack, msg_id=34967[0m
+[0;32mI (78282) main: mqtt publish ack, msg_id=65149[0m
+[0;32mI (80322) main: mqtt publish ack, msg_id=33838[0m
+[0;32mI (82272) main: mqtt publish ack, msg_id=26341[0m
+[0;32mI (84422) main: mqtt publish ack, msg_id=62388[0m
+[0;32mI (86172) main: mqtt publish ack, msg_id=29023[0m
+[0;32mI (88212) main: mqtt publish ack, msg_id=63648[0m
+[0;32mI (90262) main: mqtt publish ack, msg_id=60863[0m
+[0;32mI (92202) main: mqtt publish ack, msg_id=17506[0m
+[0;32mI (94152) main: mqtt publish ack, msg_id=55059[0m
+[0;32mI (96202) main: mqtt publish ack, msg_id=54951[0m
+[0;32mI (98152) main: mqtt publish ack, msg_id=41280[0m
+[0;32mI (100192) main: mqtt publish ack, msg_id=37113[0m
+[0;32mI (102242) main: mqtt publish ack, msg_id=9705[0m
+[0;32mI (104182) main: mqtt publish ack, msg_id=45084[0m
+[0;32mI (106242) main: mqtt publish ack, msg_id=24434[0m
+[0;32mI (108192) main: mqtt publish ack, msg_id=19520[0m
+[0;32mI (110222) main: mqtt publish ack, msg_id=51816[0m
+[0;32mI (112172) main: mqtt publish ack, msg_id=42204[0m
+[0;32mI (114222) main: mqtt publish ack, msg_id=39102[0m
+[0;32mI (116472) main: mqtt publish ack, msg_id=22478[0m
+[0;32mI (118212) main: mqtt publish ack, msg_id=36710[0m
+[0;32mI (120262) main: mqtt publish ack, msg_id=19584[0m
+[0;32mI (122312) main: mqtt publish ack, msg_id=34023[0m
+[0;32mI (124262) main: mqtt publish ack, msg_id=16065[0m
+[0;32mI (126202) main: mqtt publish ack, msg_id=41667[0m
+[0;32mI (128352) main: mqtt publish ack, msg_id=12334[0m
+[0;32mI (130292) main: mqtt publish ack, msg_id=53213[0m
+[0;32mI (132242) main: mqtt publish ack, msg_id=58057[0m
+[0;32mI (134182) main: mqtt publish ack, msg_id=33771[0m
+[0;32mI (136342) main: mqtt publish ack, msg_id=2513[0m
+[0;32mI (138182) main: mqtt publish ack, msg_id=62758[0m
+[0;32mI (140332) main: mqtt publish ack, msg_id=39669[0m
+[0;32mI (142272) main: mqtt publish ack, msg_id=5012[0m
+[0;32mI (144222) main: mqtt publish ack, msg_id=13902[0m
+[0;32mI (146272) main: mqtt publish ack, msg_id=32396[0m
+[0;32mI (148212) main: mqtt publish ack, msg_id=20162[0m
+[0;32mI (150272) main: mqtt publish ack, msg_id=18461[0m
+[0;32mI (152412) main: mqtt publish ack, msg_id=59996[0m
+[0;32mI (154262) main: mqtt publish ack, msg_id=63076[0m

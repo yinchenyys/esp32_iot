@@ -1,0 +1,151 @@
+x�����ʒ�B�Z�	�: DRAM[0m
+[0;32mI (276) he�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 16 2025 17:35:16[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0d6d8h ( 55000) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001d700 vaddr=3ffb0000 size=02320h (  8992) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001fa28 vaddr=40080000 size=005f0h (  1520) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18c4ch (101452) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00038c74 vaddr=400805f0 size=0d4b0h ( 54448) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (211) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (223) cpu_start: Project name:     dht11[0m
+[0;32mI (227) cpu_start: App version:      1[0m
+[0;32mI (232) cpu_start: Compile time:     Mar 16 2025 17:33:47[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  83dbcd379668fe8b...[0m
+[0;32mI (244) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (249) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (253) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (258) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (263) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 3FFB2E48 len 0002D1B8 (180 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 4008DAA0 len 00012560 (73 KiB): IRAM[0m
+[0;32mI (303) spi_flash: detected chip: gd[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(8192k) larger than the size in the binary image header(4096k). Using the size in the binary image header.[0m
+[0;32mI (324) main_task: Started on CPU0[0m
+[0;32mI (334) main_task: Calling app_main()[0m
+[0;32mI (444) DHT11_Demo: [APP] APP Is Start!~
+[0m
+[0;32mI (444) DHT11_Demo: [APP] IDF Version is 5.2.0[0m
+[0;32mI (444) DHT11_Demo: [APP] Free memory: 298744 bytes[0m
+[0;32mI (444) DHT11_Demo: [APP] IDF version: v5.2[0m
+[0;32mI (454) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (454) DHT11_Demo: START[0m
+[0;32mI (484) DHT11_Demo: temp->28.0 Chum->46%[0m
+[0;32mI (1504) DHT11_Demo: temp->28.6 Chum->46%[0m
+[0;32mI (2524) DHT11_Demo: temp->28.1 Chum->46%[0m
+[0;32mI (3544) DHT11_Demo: temp->28.9 Chum->46%[0m
+[0;32mI (4564) DHT11_Demo: temp->28.0 Chum->46%[0m
+[0;32mI (5584) DHT11_Demo: temp->28.4 Chum->46%[0m
+[0;32mI (6604) DHT11_Demo: temp->28.3 Chum->46%[0m
+[0;32mI (7624) DHT11_Demo: temp->28.4 Chum->46%[0m
+[0;32mI (8644) DHT11_Demo: temp->28.2 Chum->46%[0m
+[0;32mI (9664) DHT11_Demo: temp->28.9 Chum->46%[0m
+[0;32mI (10684) DHT11_Demo: temp->28.2 Chum->46%[0m
+[0;32mI (11704) DHT11_Demo: temp->28.2 Chum->46%[0m
+[0;32mI (12724) DHT11_Demo: temp->28.8 Chum->46%[0m
+[0;32mI (13744) DHT11_Demo: temp->28.2 Chum->46%[0m
+[0;32mI (14764) DHT11_Demo: temp->28.4 Chum->46%[0m
+[0;32mI (15784) DHT11_Demo: temp->28.1 Chum->46%[0m
+[0;32mI (16804) DHT11_Demo: temp->28.8 Chum->46%[0m
+[0;32mI (17824) DHT11_Demo: temp->28.2 Chum->46%[0m
+[0;32mI (18844) DHT11_Demo: temp->28.9 Chum->50%[0m
+[0;32mI (19864) DHT11_Demo: temp->28.5 Chum->53%[0m
+[0;32mI (20884) DHT11_Demo: temp->28.0 Chum->55%[0m
+[0;32mI (26984) DHT11_Demo: temp->28.7 Chum->57%[0m
+[0;32mI (28004) DHT11_Demo: temp->28.2 Chum->65%[0m
+[0;32mI (29024) DHT11_Demo: temp->28.2 Chum->64%[0m
+[0;32mI (30044) DHT11_Demo: temp->28.7 Chum->63%[0m
+[0;32mI (31064) DHT11_Demo: temp->28.9 Chum->62%[0m
+[0;32mI (32084) DHT11_Demo: temp->28.7 Chum->61%[0m
+[0;32mI (33104) DHT11_Demo: temp->28.4 Chum->60%[0m
+[0;32mI (34124) DHT11_Demo: temp->28.8 Chum->60%[0m
+[0;32mI (36164) DHT11_Demo: temp->29.8 Chum->61%[0m
+[0;32mI (37184) DHT11_Demo: temp->29.5 Chum->60%[0m
+[0;32mI (38204) DHT11_Demo: temp->29.2 Chum->59%[0m
+[0;32mI (39224) DHT11_Demo: temp->29.6 Chum->58%[0m
+[0;32mI (40244) DHT11_Demo: temp->29.9 Chum->57%[0m
+[0;32mI (41264) DHT11_Demo: temp->29.7 Chum->57%[0m
+[0;32mI (42284) DHT11_Demo: temp->29.4 Chum->56%[0m
+[0;32mI (43304) DHT11_Demo: temp->29.3 Chum->55%[0m
+[0;32mI (44324) DHT11_Demo: temp->29.2 Chum->55%[0m
+[0;32mI (45344) DHT11_Demo: temp->29.8 Chum->54%[0m
+[0;32mI (46364) DHT11_Demo: temp->29.3 Chum->53%[0m
+[0;32mI (47384) DHT11_Demo: temp->29.6 Chum->53%[0m
+[0;32mI (48404) DHT11_Demo: temp->29.5 Chum->52%[0m
+[0;32mI (49424) DHT11_Demo: temp->29.8 Chum->52%[0m
+[0;32mI (50444) DHT11_Demo: temp->29.5 Chum->51%[0m
+[0;32mI (51464) DHT11_Demo: temp->29.2 Chum->51%[0m
+[0;32mI (52484) DHT11_Demo: temp->29.2 Chum->50%[0m
+[0;32mI (53504) DHT11_Demo: temp->29.4 Chum->50%[0m
+[0;32mI (54524) DHT11_Demo: temp->29.8 Chum->50%[0m
+[0;32mI (55544) DHT11_Demo: temp->29.7 Chum->49%[0m
+[0;32mI (56564) DHT11_Demo: temp->29.3 Chum->49%[0m
+[0;32mI (57584) DHT11_Demo: temp->29.6 Chum->49%[0m
+[0;32mI (58604) DHT11_Demo: temp->29.1 Chum->48%[0m
+[0;32mI (59624) DHT11_Demo: temp->29.7 Chum->48%[0m
+[0;32mI (60644) DHT11_Demo: temp->29.5 Chum->48%[0m
+[0;32mI (61664) DHT11_Demo: temp->29.9 Chum->48%[0m
+[0;32mI (62684) DHT11_Demo: temp->29.7 Chum->47%[0m
+[0;32mI (63704) DHT11_Demo: temp->29.5 Chum->47%[0m
+[0;32mI (64724) DHT11_Demo: temp->29.5 Chum->47%[0m
+[0;32mI (65744) DHT11_Demo: temp->29.3 Chum->47%[0m
+[0;32mI (66764) DHT11_Demo: temp->29.3 Chum->47%[0m
+[0;32mI (67784) DHT11_Demo: temp->29.3 Chum->47%[0m
+[0;32mI (68804) DHT11_Demo: temp->29.2 Chum->47%[0m
+[0;32mI (69824) DHT11_Demo: temp->29.3 Chum->46%[0m
+[0;32mI (70844) DHT11_Demo: temp->29.2 Chum->46%[0m
+[0;32mI (71864) DHT11_Demo: temp->29.1 Chum->46%[0m
+[0;32mI (72884) DHT11_Demo: temp->29.1 Chum->46%[0m
+[0;32mI (73904) DHT11_Demo: temp->29.0 Chum->46%[0m
+[0;32mI (74924) DHT11_Demo: temp->29.9 Chum->46%[0m
+[0;32mI (75944) DHT11_Demo: temp->29.8 Chum->46%[0m
+[0;32mI (76964) DHT11_Demo: temp->29.6 Chum->46%[0m
+[0;32mI (77984) DHT11_Demo: temp->29.6 Chum->46%[0m
+[0;32mI (79004) DHT11_Demo: temp->29.7 Chum->45%[0m
+[0;32mI (80024) DHT11_Demo: temp->30.4 Chum->45%[0m
+[0;32mI (81044) DHT11_Demo: temp->30.0 Chum->45%[0m
+[0;32mI (82064) DHT11_Demo: temp->30.5 Chum->45%[0m
+[0;32mI (83084) DHT11_Demo: temp->30.2 Chum->45%[0m
+[0;32mI (84104) DHT11_Demo: temp->30.5 Chum->45%[0m
+[0;32mI (85124) DHT11_Demo: temp->30.2 Chum->44%[0m
+[0;32mI (86144) DHT11_Demo: temp->30.8 Chum->44%[0m
+[0;32mI (87164) DHT11_Demo: temp->30.1 Chum->44%[0m
+[0;32mI (88184) DHT11_Demo: temp->30.4 Chum->44%[0m
+[0;32mI (89204) DHT11_Demo: temp->30.1 Chum->44%[0m
+[0;32mI (90224) DHT11_Demo: temp->30.5 Chum->44%[0m
+[0;32mI (91244) DHT11_Demo: temp->30.4 Chum->44%[0m
+[0;32mI (92264) DHT11_Demo: temp->30.3 Chum->44%[0m
+[0;32mI (93284) DHT11_Demo: temp->30.4 Chum->44%[0m
+[0;32mI (94304) DHT11_Demo: temp->30.3 Chum->44%[0m
+[0;32mI (95324) DHT11_Demo: temp->30.6 Chum->44%[0m

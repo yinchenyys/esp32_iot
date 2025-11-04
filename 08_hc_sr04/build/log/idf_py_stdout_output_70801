@@ -1,0 +1,25 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/ys/esp/cx/08_hc_sr04/build/bootloader/esp-idf/esptool_py && /home/ys/.espressif/python_env/idf5.2_py3.8_env/bin/python /home/ys/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ys/esp/cx/08_hc_sr04/build/bootloader/bootloader.bin
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main_test.c.obj
+../main/main_test.c: In function 'app_main':
+../main/main_test.c:64:31: warning: passing argument 1 of 'mcpwm_new_capture_channel' from incompatible pointer type [-Wincompatible-pointer-types]
+   64 |     mcpwm_new_capture_channel(&sr04_cap_timer,&config2,&sr04_cap_channel);
+      |                               ^~~~~~~~~~~~~~~
+      |                               |
+      |                               struct mcpwm_cap_timer_t **
+In file included from ../main/main_test.c:4:
+/home/ys/esp/esp-idf/components/driver/mcpwm/include/driver/mcpwm_cap.h:166:62: note: expected 'mcpwm_cap_timer_handle_t' {aka 'struct mcpwm_cap_timer_t *'} but argument is of type 'struct mcpwm_cap_timer_t **'
+  166 | esp_err_t mcpwm_new_capture_channel(mcpwm_cap_timer_handle_t cap_timer, const mcpwm_capture_channel_config_t *config, mcpwm_cap_channel_handle_t *ret_cap_channel);
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable sr04.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/ys/esp/cx/08_hc_sr04/build/sr04.bin
+[7/7] cd /home/ys/esp/cx/08_hc_sr04/build/esp-idf/esptool_py && /home/ys/.espressif/python_env/idf5.2_py3.8_env/bin/python /home/ys/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ys/esp/cx/08_hc_sr04/build/partition_table/partition-table.bin /home/ys/esp/cx/08_hc_sr04/build/sr04.bin
+sr04.bin binary size 0x2ea10 bytes. Smallest app partition is 0x100000 bytes. 0xd15f0 bytes (82%) free.

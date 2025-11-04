@@ -1,0 +1,281 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3f (SPI_FAST_FLASH_BOOT)
+configsip: 153911750, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Mar 14 2025 01:45:30[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 0000         factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09554h ( 38228) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=0001957c vaddr=3ffb0000 size=0220ch (  8716) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001b790 vaddr=40080000 size=04888h ( 18568) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1348ch ( 78988) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000334b4 vaddr=40084888 size=07f9ch ( 32668) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (177) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu start user code[0m
+[0;32mI (197) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (197) cpu_start: Application information:[0m
+[0;32mI (200) cpu_start: Project name:     01_test_queue[0m
+[0;32mI (206) cpu_start: App version:      1[0m
+[0;32mI (210) cpu_start: Compile time:     Mar 14 2025 01:44:50[0m
+[0;32mI (216) cpu_start: ELF file SHA256:  77f280b4c...[0m
+[0;32mI (222) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (226) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (231) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (236) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (241) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (248) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFB2AD0 len 0002D530 (181 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 4008C824 len 000137DC (77 KiB): IRAM[0m
+[0;32mI (281) spi_flash: detected chip: gd[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[0;32mI (311) taskB: TaskB send is 0[0m
+[0;32mI (311) taskA: TaskA send is 0[0m
+[0;32mI (1321) taskA: TaskA send is 1[0m
+[0;32mI (1321) taskB: TaskB send is 1[0m
+[0;32mI (2321) taskA: TaskA send is 2[0m
+[0;32mI (2321) taskB: TaskB send is 2[0m
+[0;32mI (3321) taskA: TaskA send is 3[0m
+[0;32mI (3321) taskB: TaskB send is 3[0m
+[0;32mI (4321) taskA: TaskA send is 4[0m
+[0;32mI (4321) taskB: TaskB send is 4[0m
+[0;32mI (5321) taskA: TaskA send is 5[0m
+[0;32mI (5321) taskB: TaskB send is 5[0m
+[0;32mI (6321) taskA: TaskA send is 6[0m
+[0;32mI (6321) taskB: TaskB send is 6[0m
+[0;32mI (7321) taskA: TaskA send is 7[0m
+[0;32mI (7321) taskB: TaskB send is 7[0m
+[0;32mI (8321) taskA: TaskA send is 8[0m
+[0;32mI (8321) taskB: TaskB send is 8[0m
+[0;32mI (9321) taskA: TaskA send is 9[0m
+[0;32mI (9321) taskB: TaskB send is 9[0m
+[0;32mI (10321) taskA: TaskA send is 10[0m
+[0;32mI (10321) taskB: TaskB send is 10[0m
+[0;32mI (11321) taskA: TaskA send is 11[0m
+[0;32mI (11321) taskB: TaskB send is 11[0m
+[0;32mI (12321) taskA: TaskA send is 12[0m
+[0;32mI (12321) taskB: TaskB send is 12[0m
+[0;32mI (13321) taskA: TaskA send is 13[0m
+[0;32mI (13321) taskB: TaskB send is 13[0m
+[0;32mI (14321) taskA: TaskA send is 14[0m
+[0;32mI (14321) taskB: TaskB send is 14[0m
+[0;32mI (15321) taskA: TaskA send is 15[0m
+[0;32mI (15321) taskB: TaskB send is 15[0m
+[0;32mI (16321) taskA: TaskA send is 16[0m
+[0;32mI (16321) taskB: TaskB send is 16[0m
+[0;32mI (17321) taskA: TaskA send is 17[0m
+[0;32mI (17321) taskB: TaskB send is 17[0m
+[0;32mI (18321) taskA: TaskA send is 18[0m
+[0;32mI (18321) taskB: TaskB send is 18[0m
+[0;32mI (19321) taskA: TaskA send is 19[0m
+[0;32mI (19321) taskB: TaskB send is 19[0m
+[0;32mI (20321) taskA: TaskA send is 20[0m
+[0;32mI (20321) taskB: TaskB send is 20[0m
+[0;32mI (21321) taskA: TaskA send is 21[0m
+[0;32mI (21321) taskB: TaskB send is 21[0m
+[0;32mI (22321) taskA: TaskA send is 22[0m
+[0;32mI (22321) taskB: TaskB send is 22[0m
+[0;32mI (23321) taskA: TaskA send is 23[0m
+[0;32mI (23321) taskB: TaskB send is 23[0m
+[0;32mI (24321) taskA: TaskA send is 24[0m
+[0;32mI (24321) taskB: TaskB send is 24[0m
+[0;32mI (25321) taskA: TaskA send is 25[0m
+[0;32mI (25321) taskB: TaskB send is 25[0m
+[0;32mI (26321) taskA: TaskA send is 26[0m
+[0;32mI (26321) taskB: TaskB send is 26[0m
+[0;32mI (27321) taskA: TaskA send is 27[0m
+[0;32mI (27321) taskB: TaskB send is 27[0m
+[0;32mI (28321) taskA: TaskA send is 28[0m
+[0;32mI (28321) taskB: TaskB send is 28[0m
+[0;32mI (29321) taskA: TaskA send is 29[0m
+[0;32mI (29321) taskB: TaskB send is 29[0m
+[0;32mI (30321) taskA: TaskA send is 30[0m
+[0;32mI (30321) taskB: TaskB send is 30[0m
+[0;32mI (31321) taskA: TaskA send is 31[0m
+[0;32mI (31321) taskB: TaskB send is 31[0m
+[0;32mI (32321) taskA: TaskA send is 32[0m
+[0;32mI (32321) taskB: TaskB send is 32[0m
+[0;32mI (33321) taskA: TaskA send is 33[0m
+[0;32mI (33321) taskB: TaskB send is 33[0m
+[0;32mI (34321) taskA: TaskA send is 34[0m
+[0;32mI (34321) taskB: TaskB send is 34[0m
+[0;32mI (35321) taskA: TaskA send is 35[0m
+[0;32mI (35321) taskB: TaskB send is 35[0m
+[0;32mI (36321) taskA: TaskA send is 36[0m
+[0;32mI (36321) taskB: TaskB send is 36[0m
+[0;32mI (37321) taskA: TaskA send is 37[0m
+[0;32mI (37321) taskB: TaskB send is 37[0m
+[0;32mI (38321) taskA: TaskA send is 38[0m
+[0;32mI (38321) taskB: TaskB send is 38[0m
+[0;32mI (39321) taskA: TaskA send is 39[0m
+[0;32mI (39321) taskB: TaskB send is 39[0m
+[0;32mI (40321) taskA: TaskA send is 40[0m
+[0;32mI (40321) taskB: TaskB send is 40[0m
+[0;32mI (41321) taskA: TaskA send is 41[0m
+[0;32mI (41321) taskB: TaskB send is 41[0m
+[0;32mI (42321) taskA: TaskA send is 42[0m
+[0;32mI (42321) taskB: TaskB send is 42[0m
+[0;32mI (43321) taskA: TaskA send is 43[0m
+[0;32mI (43321) taskB: TaskB send is 43[0m
+[0;32mI (44321) taskA: TaskA send is 44[0m
+[0;32mI (44321) taskB: TaskB send is 44[0m
+[0;32mI (45321) taskA: TaskA send is 45[0m
+[0;32mI (45321) taskB: TaskB send is 45[0m
+[0;32mI (46321) taskA: TaskA send is 46[0m
+[0;32mI (46321) taskB: TaskB send is 46[0m
+[0;32mI (47321) taskA: TaskA send is 47[0m
+[0;32mI (47321) taskB: TaskB send is 47[0m
+[0;32mI (48321) taskA: TaskA send is 48[0m
+[0;32mI (48321) taskB: TaskB send is 48[0m
+[0;32mI (49321) taskA: TaskA send is 49[0m
+[0;32mI (49321) taskB: TaskB send is 49[0m
+[0;32mI (50321) taskA: TaskA send is 50[0m
+[0;32mI (50321) taskB: TaskB send is 50[0m
+[0;32mI (51321) taskA: TaskA send is 51[0m
+[0;32mI (51321) taskB: TaskB send is 51[0m
+[0;32mI (52321) taskA: TaskA send is 52[0m
+[0;32mI (52321) taskB: TaskB send is 52[0m
+[0;32mI (53321) taskA: TaskA send is 53[0m
+[0;32mI (53321) taskB: TaskB send is 53[0m
+[0;32mI (54321) taskA: TaskA send is 54[0m
+[0;32mI (54321) taskB: TaskB send is 54[0m
+[0;32mI (55321) taskA: TaskA send is 55[0m
+[0;32mI (55321) taskB: TaskB send is 55[0m
+[0;32mI (56321) taskA: TaskA send is 56[0m
+[0;32mI (56321) taskB: TaskB send is 56[0m
+[0;32mI (57321) taskA: TaskA send is 57[0m
+[0;32mI (57321) taskB: TaskB send is 57[0m
+[0;32mI (58321) taskA: TaskA send is 58[0m
+[0;32mI (58321) taskB: TaskB send is 58[0m
+[0;32mI (59321) taskA: TaskA send is 59[0m
+[0;32mI (59321) taskB: TaskB send is 59[0m
+[0;32mI (60321) taskA: TaskA send is 60[0m
+[0;32mI (60321) taskB: TaskB send is 60[0m
+[0;32mI (61321) taskA: TaskA send is 61[0m
+[0;32mI (61321) taskB: TaskB send is 61[0m
+[0;32mI (62321) taskA: TaskA send is 62[0m
+[0;32mI (62321) taskB: TaskB send is 62[0m
+[0;32mI (63321) taskA: TaskA send is 63[0m
+[0;32mI (63321) taskB: TaskB send is 63[0m
+[0;32mI (64321) taskA: TaskA send is 64[0m
+[0;32mI (64321) taskB: TaskB send is 64[0m
+[0;32mI (65321) taskA: TaskA send is 65[0m
+[0;32mI (65321) taskB: TaskB send is 65[0m
+[0;32mI (66321) taskA: TaskA send is 66[0m
+[0;32mI (66321) taskB: TaskB send is 66[0m
+[0;32mI (67321) taskA: TaskA send is 67[0m
+[0;32mI (67321) taskB: TaskB send is 67[0m
+[0;32mI (68321) taskA: TaskA send is 68[0m
+[0;32mI (68321) taskB: TaskB send is 68[0m
+[0;32mI (69321) taskA: TaskA send is 69[0m
+[0;32mI (69321) taskB: TaskB send is 69[0m
+[0;32mI (70321) taskA: TaskA send is 70[0m
+[0;32mI (70321) taskB: TaskB send is 70[0m
+[0;32mI (71321) taskA: TaskA send is 71[0m
+[0;32mI (71321) taskB: TaskB send is 71[0m
+[0;32mI (72321) taskA: TaskA send is 72[0m
+[0;32mI (72321) taskB: TaskB send is 72[0m
+[0;32mI (73321) taskA: TaskA send is 73[0m
+[0;32mI (73321) taskB: TaskB send is 73[0m
+[0;32mI (74321) taskA: TaskA send is 74[0m
+[0;32mI (74321) taskB: TaskB send is 74[0m
+[0;32mI (75321) taskA: TaskA send is 75[0m
+[0;32mI (75321) taskB: TaskB send is 75[0m
+[0;32mI (76321) taskA: TaskA send is 76[0m
+[0;32mI (76321) taskB: TaskB send is 76[0m
+[0;32mI (77321) taskA: TaskA send is 77[0m
+[0;32mI (77321) taskB: TaskB send is 77[0m
+[0;32mI (78321) taskA: TaskA send is 78[0m
+[0;32mI (78321) taskB: TaskB send is 78[0m
+[0;32mI (79321) taskA: TaskA send is 79[0m
+[0;32mI (79321) taskB: TaskB send is 79[0m
+[0;32mI (80321) taskA: TaskA send is 80[0m
+[0;32mI (80321) taskB: TaskB send is 80[0m
+[0;32mI (81321) taskA: TaskA send is 81[0m
+[0;32mI (81321) taskB: TaskB send is 81[0m
+[0;32mI (82321) taskA: TaskA send is 82[0m
+[0;32mI (82321) taskB: TaskB send is 82[0m
+[0;32mI (83321) taskA: TaskA send is 83[0m
+[0;32mI (83321) taskB: TaskB send is 83[0m
+[0;32mI (84321) taskA: TaskA send is 84[0m
+[0;32mI (84321) taskB: TaskB send is 84[0m
+[0;32mI (85321) taskA: TaskA send is 85[0m
+[0;32mI (85321) taskB: TaskB send is 85[0m
+[0;32mI (86321) taskA: TaskA send is 86[0m
+[0;32mI (86321) taskB: TaskB send is 86[0m
+[0;32mI (87321) taskA: TaskA send is 87[0m
+[0;32mI (87321) taskB: TaskB send is 87[0m
+[0;32mI (88321) taskA: TaskA send is 88[0m
+[0;32mI (88321) taskB: TaskB send is 88[0m
+[0;32mI (89321) taskA: TaskA send is 89[0m
+[0;32mI (89321) taskB: TaskB send is 89[0m
+[0;32mI (90321) taskA: TaskA send is 90[0m
+[0;32mI (90321) taskB: TaskB send is 90[0m
+[0;32mI (91321) taskA: TaskA send is 91[0m
+[0;32mI (91321) taskB: TaskB send is 91[0m
+[0;32mI (92321) taskA: TaskA send is 92[0m
+[0;32mI (92321) taskB: TaskB send is 92[0m
+[0;32mI (93321) taskA: TaskA send is 93[0m
+[0;32mI (93321) taskB: TaskB send is 93[0m
+[0;32mI (94321) taskA: TaskA send is 94[0m
+[0;32mI (94321) taskB: TaskB send is 94[0m
+[0;32mI (95321) taskA: TaskA send is 95[0m
+[0;32mI (95321) taskB: TaskB send is 95[0m
+[0;32mI (96321) taskA: TaskA send is 96[0m
+[0;32mI (96321) taskB: TaskB send is 96[0m
+[0;32mI (97321) taskA: TaskA send is 97[0m
+[0;32mI (97321) taskB: TaskB send is 97[0m
+[0;32mI (98321) taskA: TaskA send is 98[0m
+[0;32mI (98321) taskB: TaskB send is 98[0m
+[0;32mI (99321) taskA: TaskA send is 99[0m
+[0;32mI (99321) taskB: TaskB send is 99[0m
+[0;32mI (100321) taskA: TaskA send is 100[0m
+[0;32mI (100321) taskB: TaskB send is 100[0m
+[0;32mI (101321) taskA: TaskA send is 101[0m
+[0;32mI (101321) taskB: TaskB send is 101[0m
+[0;32mI (102321) taskA: TaskA send is 102[0m
+[0;32mI (102321) taskB: TaskB send is 102[0m
+[0;32mI (103321) taskA: TaskA send is 103[0m
+[0;32mI (103321) taskB: TaskB send is 103[0m
+[0;32mI (104321) taskA: TaskA send is 104[0m
+[0;32mI (104321) taskB: TaskB send is 104[0m
+[0;32mI (105321) taskA: TaskA send is 105[0m
+[0;32mI (105321) taskB: TaskB send is 105[0m
+[0;32mI (106321) taskA: TaskA send is 106[0m
+[0;32mI (106321) taskB: TaskB send is 106[0m
+[0;32mI (107321) taskA: TaskA send is 107[0m
+[0;32mI (107321) taskB: TaskB send is 107[0m
+[0;32mI (108321) taskA: TaskA send is 108[0m
+[0;32mI (108321) taskB: TaskB send is 108[0m
+[0;32mI (109321) taskA: TaskA send is 109[0m
+[0;32mI (109321) taskB: TaskB send is 109[0m
+[0;32mI (110321) taskA: TaskA send is 110[0m
+[0;32mI (110321) taskB: TaskB send is 110[0m
+[0;32mI (111321) taskA: TaskA send is 111[0m
+[0;32mI (111321) taskB: TaskB send is 111[0m
+[0;32mI (112321) taskA: TaskA send is 112[0m
+[0;32mI (112321) taskB: TaskB send is 112[0m
+[0;32mI (113321) taskA: TaskA send is 113[0m
+[0;32mI (113321) taskB: TaskB send is 113[0m

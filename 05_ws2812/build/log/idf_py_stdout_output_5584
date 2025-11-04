@@ -1,0 +1,77 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/ys/esp/cx/05_ws2812/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "ws2812" version: 1
+-- Adding linker script /home/ys/esp/cx/05_ws2812/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/ys/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/ys/esp/esp-idf/components/app_trace /home/ys/esp/esp-idf/components/app_update /home/ys/esp/esp-idf/components/bootloader /home/ys/esp/esp-idf/components/bootloader_support /home/ys/esp/esp-idf/components/bt /home/ys/esp/esp-idf/components/cmock /home/ys/esp/esp-idf/components/console /home/ys/esp/esp-idf/components/cxx /home/ys/esp/esp-idf/components/driver /home/ys/esp/esp-idf/components/efuse /home/ys/esp/esp-idf/components/esp-tls /home/ys/esp/esp-idf/components/esp_adc /home/ys/esp/esp-idf/components/esp_app_format /home/ys/esp/esp-idf/components/esp_bootloader_format /home/ys/esp/esp-idf/components/esp_coex /home/ys/esp/esp-idf/components/esp_common /home/ys/esp/esp-idf/components/esp_eth /home/ys/esp/esp-idf/components/esp_event /home/ys/esp/esp-idf/components/esp_gdbstub /home/ys/esp/esp-idf/components/esp_hid /home/ys/esp/esp-idf/components/esp_http_client /home/ys/esp/esp-idf/components/esp_http_server /home/ys/esp/esp-idf/components/esp_https_ota /home/ys/esp/esp-idf/components/esp_https_server /home/ys/esp/esp-idf/components/esp_hw_support /home/ys/esp/esp-idf/components/esp_lcd /home/ys/esp/esp-idf/components/esp_local_ctrl /home/ys/esp/esp-idf/components/esp_mm /home/ys/esp/esp-idf/components/esp_netif /home/ys/esp/esp-idf/components/esp_netif_stack /home/ys/esp/esp-idf/components/esp_partition /home/ys/esp/esp-idf/components/esp_phy /home/ys/esp/esp-idf/components/esp_pm /home/ys/esp/esp-idf/components/esp_psram /home/ys/esp/esp-idf/components/esp_ringbuf /home/ys/esp/esp-idf/components/esp_rom /home/ys/esp/esp-idf/components/esp_system /home/ys/esp/esp-idf/components/esp_timer /home/ys/esp/esp-idf/components/esp_wifi /home/ys/esp/esp-idf/components/espcoredump /home/ys/esp/esp-idf/components/esptool_py /home/ys/esp/esp-idf/components/fatfs /home/ys/esp/esp-idf/components/freertos /home/ys/esp/esp-idf/components/hal /home/ys/esp/esp-idf/components/heap /home/ys/esp/esp-idf/components/http_parser /home/ys/esp/esp-idf/components/idf_test /home/ys/esp/esp-idf/components/ieee802154 /home/ys/esp/esp-idf/components/json /home/ys/esp/esp-idf/components/log /home/ys/esp/esp-idf/components/lwip /home/ys/esp/cx/05_ws2812/main /home/ys/esp/esp-idf/components/mbedtls /home/ys/esp/esp-idf/components/mqtt /home/ys/esp/esp-idf/components/newlib /home/ys/esp/esp-idf/components/nvs_flash /home/ys/esp/esp-idf/components/nvs_sec_provider /home/ys/esp/esp-idf/components/openthread /home/ys/esp/esp-idf/components/partition_table /home/ys/esp/esp-idf/components/perfmon /home/ys/esp/esp-idf/components/protobuf-c /home/ys/esp/esp-idf/components/protocomm /home/ys/esp/esp-idf/components/pthread /home/ys/esp/esp-idf/components/sdmmc /home/ys/esp/esp-idf/components/soc /home/ys/esp/esp-idf/components/spi_flash /home/ys/esp/esp-idf/components/spiffs /home/ys/esp/esp-idf/components/tcp_transport /home/ys/esp/esp-idf/components/ulp /home/ys/esp/esp-idf/components/unity /home/ys/esp/esp-idf/components/usb /home/ys/esp/esp-idf/components/vfs /home/ys/esp/esp-idf/components/wear_levelling /home/ys/esp/esp-idf/components/wifi_provisioning /home/ys/esp/esp-idf/components/wpa_supplicant /home/ys/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ys/esp/cx/05_ws2812/build
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/ys/esp/cx/05_ws2812/build/bootloader/esp-idf/esptool_py && /home/ys/.espressif/python_env/idf5.2_py3.8_env/bin/python /home/ys/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/ys/esp/cx/05_ws2812/build/bootloader/bootloader.bin
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/led_ws2812.c.obj
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Generating ld/sections.ld
+[6/9] Linking CXX executable ws2812.elf
+[7/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/ys/esp/cx/05_ws2812/build/ws2812.bin
+[8/9] cd /home/ys/esp/cx/05_ws2812/build/esp-idf/esptool_py && /home/ys/.espressif/python_env/idf5.2_py3.8_env/bin/python /home/ys/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ys/esp/cx/05_ws2812/build/partition_table/partition-table.bin /home/ys/esp/cx/05_ws2812/build/ws2812.bin
+ws2812.bin binary size 0x30510 bytes. Smallest app partition is 0x100000 bytes. 0xcfaf0 bytes (81%) free.
+[8/9] cd /home/ys/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ys/esp/esp-idf -D "SERIAL_TOOL=/home/ys/.espressif/python_env/idf5.2_py3.8_env/bin/python;;/home/ys/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ys/esp/cx/05_ws2812/build -P /home/ys/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 ws2812.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WDR2-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: f8:b3:b7:d2:38:38
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00040fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26704 bytes to 16348...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16348 compressed) at 0x00001000 in 0.7 seconds (effective 292.2 kbit/s)...
+Hash of data verified.
+Compressed 197904 bytes to 106303...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001ce29... (28 %)
+Writing at 0x000229ad... (42 %)
+Writing at 0x0002868e... (57 %)
+Writing at 0x0002f8fc... (71 %)
+Writing at 0x000370e9... (85 %)
+Writing at 0x0003d6c6... (100 %)
+Wrote 197904 bytes (106303 compressed) at 0x00010000 in 2.6 seconds (effective 606.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 502.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
