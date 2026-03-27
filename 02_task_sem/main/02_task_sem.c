@@ -230,8 +230,18 @@ void TaskC(void* param)
 
 void app_main(void)
 {
-    sem_handle=xSemaphoreCreateCounting(10,0);//可以拿10个，已经拿走1个
+    sem_handle=xSemaphoreCreateCounting(10,1);//可以拿10个，已经拿走1个
     xTaskCreatePinnedToCore(TaskA,"TaskA",2048,NULL,3,NULL,1);
     xTaskCreatePinnedToCore(TaskB,"TaskB",2048,NULL,3,NULL,1);
     xTaskCreatePinnedToCore(TaskC,"TaskC",2048,NULL,3,NULL,1);
 }
+
+
+
+//sem_handle = xSemaphoreCreateBinary();
+//sem_handle = xSemaphoreCreateCounting(10,1);
+//pdTRUW == xSemaphoreGive(bin_sem)
+//pdTRUE == xSemaphoreTake(bin_sem,portMAX_DELAY)
+
+
+

@@ -112,3 +112,9 @@ void app_main(void)
     xTaskCreatePinnedToCore(TaskB,"TaskB",2048,NULL,3,NULL,1);
     xTaskCreatePinnedToCore(TaskC,"TaskC",2048,NULL,3,NULL,1);
 }
+
+//  event_handle = xEventGroupCreate();
+//  xEventGroupSetBits(event_handle,BIT0);
+//  ev=xEventGroupWaitBits(event_handle,BIT0|BIT1,true,false,pdMS_TO_TICKS(500));
+
+

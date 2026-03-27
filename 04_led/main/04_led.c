@@ -383,6 +383,9 @@ EventGroupHandle_t Event_handle;
 #define LED_GPIO    GPIO_NUM_27
 
 
+
+
+
 bool IRAM_ATTR  ledc_cb_t_use(const ledc_cb_param_t *param, void *user_arg)
 {
     BaseType_t xReturn;
@@ -427,55 +430,8 @@ void TaskA(void* param)
 }
 
 
-
-void short_press_handle(void)
-{
-    // gpio_set_level(LED_GPIO,gpio_get_level(LED_GPIO)?0:1);
-    if(gpio_get_level(LED_GPIO)==0)
-        gpio_set_level(LED_GPIO,1);
-    else
-        gpio_set_level(LED_GPIO,0);
-    ESP_LOGI("LED","led level is %d",gpio_get_level(LED_GPIO));
-}
-
-
-void long_press_handle(void)
-{
-    ESP_LOGI("LED","get long press");
-}
-
-
-
 void app_main(void)
 {
-    // //加入按键配置
-    // button_config_t btn_cfg = 
-    // {
-    //     .gpio_num = BTN_GPIO,       //gpio号
-    //     .active_level = 0,          //按下的电平
-    //     .long_press_time = 3000,    //长按时间
-    //     .short_cb = short_press_handle,           //短按回调函数
-    //     .long_cb = long_press_handle             //长按回调函数
-    // };
-    // button_event_set(&btn_cfg);     //添加按键响应事件处理
-
-
-    // gpio_config_t led_gpio_t = 
-    // {
-    //     .intr_type = GPIO_INTR_DISABLE,
-    //     .mode = GPIO_MODE_OUTPUT,
-    //     .pin_bit_mask = (1ull<<LED_GPIO),
-    //     .pull_down_en = GPIO_PULLDOWN_DISABLE,
-    //     .pull_up_en = GPIO_PULLUP_DISABLE,
-    // };
-    // ESP_ERROR_CHECK(gpio_config(&led_gpio_t));
-
-    //  gpio_set_level(LED_GPIO,0);
-
-
-
-
-
 
     ledc_channel_config_t ledc_conf =
     {
@@ -502,8 +458,6 @@ void app_main(void)
     ledc_timer_config(&timer_conf);
 
     ledc_fade_func_install(0);
-    //ledc_set_fade_time_and_start(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,0,8192,2000);
-    // ledc_set_fade(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,8192,LEDC_DUTY_DIR_INCREASE,30,30,1);
     ledc_set_fade_with_time(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,8192,2000);
     ledc_fade_start(LEDC_LOW_SPEED_MODE,LEDC_CHANNEL_0,LEDC_FADE_NO_WAIT);
 
@@ -518,12 +472,64 @@ void app_main(void)
 
 }
 
+//================================================================================================
 
+// 单独设置GPIO控制灯亮
+// void short_press_handle(void)
+// {
+//     // gpio_set_level(LED_GPIO,gpio_get_level(LED_GPIO)?0:1);
+//     if(gpio_get_level(LED_GPIO)==0)
+//         gpio_set_level(LED_GPIO,1);
+//     else
+//         gpio_set_level(LED_GPIO,0);
+//     ESP_LOGI("LED","led level is %d",gpio_get_level(LED_GPIO));
+// }
+
+
+// void long_press_handle(void)
+// {
+//     ESP_LOGI("LED","get long press");
+// }
+
+// void app_main(void)
+// {
+//     //加入按键配置
+//     button_config_t btn_cfg = 
+//     {
+//         .gpio_num = BTN_GPIO,       //gpio号
+//         .active_level = 0,          //按下的电平
+//         .long_press_time = 3000,    //长按时间
+//         .short_cb = short_press_handle,           //短按回调函数
+//         .long_cb = long_press_handle             //长按回调函数
+//     };
+//     button_event_set(&btn_cfg);     //添加按键响应事件处理
+
+
+//     gpio_config_t led_gpio_t = 
+//     {
+//         .intr_type = GPIO_INTR_DISABLE,
+//         .mode = GPIO_MODE_OUTPUT,
+//         .pin_bit_mask = (1ull<<LED_GPIO),
+//         .pull_down_en = GPIO_PULLDOWN_DISABLE,
+//         .pull_up_en = GPIO_PULLUP_DISABLE,
+//     };
+//     ESP_ERROR_CHECK(gpio_config(&led_gpio_t));
+
+//      gpio_set_level(LED_GPIO,0);
+// }
+
+
+//================================================================================================
+
+
+
+
+//单独控制小的亮度不渐变
 // esp_err_t bsp_display_brightness_init(void)//设置单通道亮度示例
 // {
 //     // Setup LEDC peripheral for PWM backlight control
 //     const ledc_channel_config_t LCD_backlight_channel = {
-//         .gpio_num = BSP_LCD_BACKLIGHT,
+//         .gpio_num = GPIO_NUM_27,//哪一个GPIO口
 //         .speed_mode = LEDC_LOW_SPEED_MODE,
 //         .channel = LCD_LEDC_CH,//想怎么强大的pwn通道，他们还有7个
 //         .intr_type = LEDC_INTR_DISABLE,
@@ -562,4 +568,10 @@ void app_main(void)
 //     ESP_ERROR_CHECK(ledc_update_duty(LEDC_LOW_SPEED_MODE, LCD_LEDC_CH));
 
 //     return ESP_OK;
+// }
+
+// void app_main(void)
+// {
+//      bsp_display_brightness_init();
+//       bsp_display_brightness_set(50);
 // }

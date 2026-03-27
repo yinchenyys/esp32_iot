@@ -12,5 +12,6 @@
         "string_view": "c",
         "span": "c",
         "ets_sys.h": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }

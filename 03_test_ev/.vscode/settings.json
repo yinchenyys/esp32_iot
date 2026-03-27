@@ -18,5 +18,6 @@
         "istream": "c",
         "ostream": "c",
         "variant": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }

@@ -3,5 +3,6 @@
     "files.associations": {
         "*.cpp": "cpp",
         "unity.h": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }

@@ -3,5 +3,6 @@
     "files.associations": {
         "*.cpp": "cpp",
         "nvs_flash.h": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }

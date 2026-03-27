@@ -14,5 +14,6 @@
         "gpio.h": "c",
         "string.h": "c",
         "format": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }

@@ -241,5 +241,8 @@ void app_main(void)
 {
     queue_handle=xQueueCreate(10,sizeof(queue_data));
     xTaskCreatePinnedToCore(TaskA,"TaskA",2048,NULL,3,NULL,1);
-    xTaskCreatePinnedToCore(TaskB,"TaskB",2048,NULL,3,NULL,1);
 }
+
+//queue_handle=xQueueCreate(10,sizeof(queue_data));
+//xQueueSend(queue_handle, &data , 100);
+//xQueueRecive(queue_handle, &data , 100);

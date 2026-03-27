@@ -1,4 +1,4 @@
-# Install script for directory: /home/ys/esp/cx/10_uart/main
+# Install script for directory: /home/ys/esp/cx/esp32_iot/10_uart/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

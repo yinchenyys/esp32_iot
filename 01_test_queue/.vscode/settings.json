@@ -3,5 +3,6 @@
     "files.associations": {
         "*.cpp": "cpp",
         "esp_log.h": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }

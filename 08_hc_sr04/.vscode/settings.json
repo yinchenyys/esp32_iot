@@ -6,5 +6,6 @@
         "gpio.h": "c",
         "mcpwm_cap.h": "c",
         "cstdint": "c"
-    }
+    },
+    "idf.adapterTargetName": "esp32"
 }
