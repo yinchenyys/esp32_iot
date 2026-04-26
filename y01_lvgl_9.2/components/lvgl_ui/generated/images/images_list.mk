@@ -1,0 +1,1 @@
+GEN_CSRCS += _wifi_RGB565A8_32x32.c _line_RGB565A8_257x10.c _yu_RGB565A8_62x66.c

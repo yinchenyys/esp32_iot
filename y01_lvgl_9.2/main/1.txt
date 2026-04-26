@@ -1,0 +1,17 @@
+1.打开ntp
+（Top) → Component config → LWIP → SNTP修改获取ntp的网站数量及间隔，默认是1小时
+
+
+选好这三个，选择根目录，并打开图片编码器，47对应acsll的“/”，
+(Top) → Component config → LVGL configuration → 3rd Party Libraries
+[*] File system on top of stdio API
+(47)    Set an upper cased letter on which the drive will accessible (e.g. 65 for 'A')
+(/)     Set the working directory
+[*] PNG decoder library
+
+选择调用c的 malloc/realloc/free，自己的分配没多少东西
+(Top) → Component config → LVGL configuration → Memory Settings → Malloc functions source
+(Standard C functions malloc/realloc/free)  --->
+
+生成字体放在/home/ys/esp/cx/esp32_iot/y01_lvgl_9.2/components/lvgl_ui/generated/guider_customer_fonts
+并在/home/ys/esp/cx/esp32_iot/y01_lvgl_9.2/components/lvgl_ui/generated/gui_guider.h声明

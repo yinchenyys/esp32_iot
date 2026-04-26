@@ -1,0 +1,15 @@
+(Top) → Serial flasher config → Flash size -> 16MB
+频率选80MZ,最大240，越大耗电量越快
+(Top) → Component config → ESP PSRAM → Support for external, SPI-connected RAM → SPI RAM config →Octal Mode PSRAM
+(Top) → Component config → ESP PSRAM → Support for external, SPI-connected RAM → SPI RAM config → 80MHz clock speed
+(Top) → Component config → ESP System Settings →CPU frequency (240 MHz)  --->
+
+
+02：打开http的webSocket
+(Top) → Component config → HTTP Server ->[*] WebSocket server support
+
+(Top) → Component config → HTTP Server ->  Max HTTP URI Length (int)  改成1024,
+
+选择用自己的虚拟空间后，在main的Cmake中写入，
+spiffs_create_partition_image(html ../html FLASH_IN_PROJECT)
+表示把../html的文件以flash烧录到csv名为html的空间

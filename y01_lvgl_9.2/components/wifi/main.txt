@@ -1,0 +1,86 @@
+#include <stdio.h>
+
+#include "esp_log.h"
+#include "nvs_flash.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+// #include "wifi_manager.h"
+#include "ap_wifi.h"
+#include "button.h"
+
+#define TAG "main"
+
+
+// #define yys_ssid "yys"
+// #define yys_password "15088145513qq"
+
+// void wifi_del(WIFI_STATE wifi_sta)
+// {
+//     if(wifi_sta == WIFI_STATE_CONNECT )
+//     {
+//         ESP_LOGI(TAG,"connect to the AP success");
+//     }
+//     else if(wifi_sta == WIFI_STATE_DISCONNECT )
+//     {
+//         ESP_LOGI(TAG,"connect to the AP fail");
+//     }
+// }
+
+// void app_main(void)
+// {
+//     nvs_flash_init();
+//     wifi_manager_init(wifi_del);
+//     wifi_manager_connect(yys_ssid,yys_password);
+//     while (1)
+//     {
+//         vTaskDelay(20);
+//     }
+    
+
+// }
+
+
+void wifi_state_callack(WIFI_STATE state)
+{
+    if(state == WIFI_STATE_CONNECTED)
+    {
+        ESP_LOGI(TAG, "Wifi connected");
+    }
+    else if(state == WIFI_STATE_DISCONNECT)
+    {
+        ESP_LOGI(TAG, "Wifi disconnect");
+    }
+}
+
+
+
+void short_press_handle(void)
+{
+
+}
+
+
+void long_press_handle(void)
+{
+    ap_wifi_apcfg();
+    ESP_LOGI("LED","get long press");
+}
+
+
+void app_main(void)
+{
+    nvs_flash_init();
+    ap_wifi_init(wifi_state_callack);
+    // //加入按键配置
+    button_config_t btn_cfg = 
+    {
+        .gpio_num = BTN_GPIO,       //gpio号
+        .active_level = 0,          //按下的电平
+        .long_press_time = 3000,    //长按时间
+        .short_cb = short_press_handle,           //短按回调函数
+        .long_cb = long_press_handle             //长按回调函数
+    };
+    button_event_set(&btn_cfg);     //添加按键响应事件处理
+
+}
+
